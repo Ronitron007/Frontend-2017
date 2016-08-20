@@ -41,6 +41,36 @@ angular
         controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
+      .when('/exhibitions', {
+        templateUrl: 'views/exhibitions.html',
+        controller: 'ExhibitionsCtrl',
+        controllerAs: 'exhibitions'
+      })
+      .when('/hospitality', {
+        templateUrl: 'views/hospitality.html',
+        controller: 'HospitalityCtrl',
+        controllerAs: 'hospitality'
+      })
+      .when('/shows', {
+        templateUrl: 'views/shows.html',
+        controller: 'ShowsCtrl',
+        controllerAs: 'shows'
+      })
+      .when('/spotlight', {
+        templateUrl: 'views/spotlight.html',
+        controller: 'SpotlightCtrl',
+        controllerAs: 'spotlight'
+      })
+      .when('/summit', {
+        templateUrl: 'views/summit.html',
+        controller: 'SummitCtrl',
+        controllerAs: 'summit'
+      })
+      .when('/socialCampaign', {
+        templateUrl: 'views/socialcampaign.html',
+        controller: 'SocialcampaignCtrl',
+        controllerAs: 'socialCampaign'
+      })
       .otherwise({
         redirectTo: '/'
       });
