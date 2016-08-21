@@ -1,0 +1,29 @@
+#spotlight-banner{
+	height:200px;
+	
+}
+
+#spotlight-building{
+	height:300px;
+	
+    float: right;
+
+}
+.spotlight-container{
+
+}
+
+#spotlight-placeholder{
+	height: 300px;
+	float: left;
+	clear: both;
+}
+
+.spotlight-container2{
+  clear: right;
+}
+#spotlight-subtitle{
+	height: 200px;
+	float: right;
+
+}

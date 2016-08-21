@@ -1,0 +1,37 @@
+#hospitality-banner{
+	height: 200px;
+	
+}
+
+#hospitality-building{
+	height: 300px;
+	
+    float: right;
+
+	
+}
+
+.hospitality-container{
+
+
+	}
+
+#hospitality-subtitle{
+
+	height: 200px;
+	float: right;
+
+
+}
+
+#hospitality-placeholder{
+	height: 300px;
+	float:left;
+	clear: both;
+}
+
+.hospitality-container2{
+	
+clear: right;
+    
+}
