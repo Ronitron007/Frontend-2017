@@ -15,3 +15,14 @@ angular.module('frontend2017App')
       'Karma'
     ];
   });
+
+// var myApp = angular.module("myApp", ["sn.skrollr"]);
+// myApp.config(["snSkrollrProvider", function(snSkrollrProvider) {
+//   snSkrollrProvider.config = { smoothScrolling: true};
+// }]);
+
+// // 2. initialise skrollr at runtime
+// myApp.run(["snSkrollr", function(snSkrollr) {
+//   snSkrollr.init();
+// }])
+

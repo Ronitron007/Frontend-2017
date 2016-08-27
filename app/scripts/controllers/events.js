@@ -9,6 +9,6 @@
  */
 angular.module('frontend2017App')
   .controller('EventsCtrl', function () {
-this.yolo = "yolo";
+
 
   });
