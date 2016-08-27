@@ -88,17 +88,12 @@ body {
 #Scene{
   position: fixed;
   width: 100%;
-<<<<<<< HEAD
   height: 885px;
-=======
-  height: 700px;
->>>>>>> 9394c35fa85b49b3bc310d22fe5a4ba572b4757c
   margin-top: -350px;
   top: 50%;
   }
 .parallax-layer{
   position: absolute;
-<<<<<<< HEAD
   height: 885px;
   background-repeat: no-repeat;
   }
@@ -121,19 +116,6 @@ body {
 /*    background-size: 375% 100%; 
 */    left:185px;
     top:400px;
-=======
-  height: 700px;
-  background-repeat: no-repeat;
-  }
-#bg1{
-  background: url(../images/bg-1.jpg);
-  width: 3528px;
-  }
-#bg2{
-  background: url(../images/bg-2.png) left bottom;
-  /* These images are big… but worth it */
-  width: 4368px;
->>>>>>> 9394c35fa85b49b3bc310d22fe5a4ba572b4757c
   }
 
 
