@@ -1,5 +1,9 @@
 #hospitality-banner{
 	height: 200px;
+	float: left;
+	clear: both;
+	margin-top: -275px;
+	margin-left: -15px;
 	
 }
 

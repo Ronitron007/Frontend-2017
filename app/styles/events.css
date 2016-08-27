@@ -1,17 +1,16 @@
 #events-banner{
 	height: 200px;
-	width:200px;
-	margin-left: -30px;
-	margin-top: -100px;
+	float: left;
+	clear: both;
+	margin-top: -275px;
+	margin-left: -15px;
 }
 
 #events-building{
 	height: 300px;
-	width:300px;
+	
 	float: right;
-	margin-top: -20px;
-	margin-right: 45px;
-
+	
 }
 
 .events-buttons{

@@ -36,6 +36,12 @@ angular
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
+      .when('/eventList', { 
+        templateUrl: 'views/event-list.html',
+        controller: 'EventsListCtrl',
+        controllerAs: 'event-list'
+
+      })
       .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl',
@@ -70,6 +76,16 @@ angular
         templateUrl: 'views/socialcampaign.html',
         controller: 'SocialcampaignCtrl',
         controllerAs: 'socialCampaign'
+      })
+      .when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'RegisterCtrl',
+        controllerAs: 'register'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
       })
       .otherwise({
         redirectTo: '/'
