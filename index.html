@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!--events..css-->
+    <link rel="stylesheet" href="styles/events.css">
+    <!--exhibitions..css-->
+    <link rel="stylesheet" href="styles/exhibitions.css">
+    <!--spotlight..css-->
+    <link rel="stylesheet" href="styles/spotlight.css">
+    <!--hospitality..css-->
+    <link rel="stylesheet" href="styles/hospitality.css">
+    <!--shows..css-->
+    <link rel="stylesheet" href="styles/shows.css">
+    <!--summit..css-->
+    <link rel="stylesheet" href="styles/summit.css">
+    <!--socialCampaign..css-->
+    <link rel="stylesheet" href="styles/socialCampaign.css">
+    <!--event-list..css-->
+    <link rel="stylesheet" href="styles/event-list.css">
+     <!--navbar..css-->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="frontend2017App">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+     <!-- Top Nav-Bar -->
+      <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div class="navbar-header">
+ 
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+          <span class="sr-only ">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+       <a class="navbar-brand" href=""><img id="logo" src="../images/design-2/toolbarElements/logo.png ">
+        </a>
+      </div>
+     
+      <div id="navbar1" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">EVENTS</a></li>
+          <li><a href="#">HOSPITALITY</a></li>
+          <li><a href="#">SOCIAL WING</a></li>
+          <li><a href="#">SUMMIT</a></li>
+          <li><a href="#">SPONSORS</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+         <li>
+         <!-- Search Bar -->
+    <div class="form"> <span class="toggle"></span>
+        <form role="search" method="get" id="searchform" action="">
+            <input type="text" placeholder="Search" id="s" name="s" value="">
+            <input type="submit" value="" id="searchsubmit">
+        </form>
+</div></li>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">REGISTER</a></li> 
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+    </div>
+            
+   <div id="bg">
+ <!-- <img id="logo" src="../images/design-2/toolbarElements/logo.png ">
+ <ul id="navbar">
+<li><img class="fonts" src="../images/design-2/toolbarElements/about.png"></li>
+<li><img class="fonts" src="/../images/design-2/toolbarElements/events.png "></li>
+<li><img class="fonts" src="../images/design-2/toolbarElements/hospitality.png "></li>
+<li><img class="socialWingFont" src="../images/design-2/toolbarElements/socialWing.png "></li>
+<li><img class="summitFonts" src="../images/design-2/toolbarElements/summit.png "></li>
+<li><img class="fonts" src="../images/design-2/toolbarElements/sponsors.png "></li>
+
+<li><img class="register" src="../images/design-2/toolbarElements/register.png "></li>
+<li><img class="login" src="../images/design-2/toolbarElements/login.png"></li>
+<li><img class="search" src="../images/design-2/toolbarElements/searchIcon.png "></li>
+
+
+</ul> -->
+
+
+
+
+
+    <div class="no-container">
+    <div ng-view=""></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> Shaastra</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/skrollr/src/skrollr.js"></script>
+    <script src="bower_components/angular-skrollr/dist/angular-skrollr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/events.js"></script>
+        <script src="scripts/controllers/exhibitions.js"></script>
+        <script src="scripts/controllers/hospitality.js"></script>
+        <script src="scripts/controllers/shows.js"></script>
+        <script src="scripts/controllers/spotlight.js"></script>
+        <script src="scripts/controllers/summit.js"></script>
+        <script src="scripts/controllers/socialcampaign.js"></script>
+        <script src="scripts/controllers/register.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

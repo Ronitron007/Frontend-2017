@@ -1,0 +1,41 @@
+#summit-banner{
+	height: 200px;
+	float: left;
+	clear: both;
+	margin-top: -275px;
+	margin-left: -15px;
+	
+}
+
+#summit-building{
+	height: 300px;
+	
+    float: right;
+
+	
+}
+
+.summit-container{
+
+
+	}
+
+#summit-subtitle{
+
+	height: 200px;
+	float: right;
+
+
+}
+
+#summit-placeholder{
+	height: 300px;
+	float:left;
+	clear: both;
+}
+
+.summit-container2{
+	
+clear: right;
+    
+}

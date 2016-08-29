@@ -1,0 +1,41 @@
+#socialCampaign-banner{
+	height: 200px;
+	float: left;
+	clear: both;
+	margin-top: -275px;
+	margin-left: -15px;
+	
+}
+
+#socialCampaign-building{
+	height: 300px;
+	
+    float: right;
+
+	
+}
+
+.socialCampaign-container{
+
+
+	}
+
+#socialCampaign-subtitle{
+
+	height: 200px;
+	float: right;
+
+
+}
+
+#socialCampaign-placeholder{
+	height: 300px;
+	float:left;
+	clear: both;
+}
+
+.socialCampaign-container2{
+	
+clear: right;
+    
+}
