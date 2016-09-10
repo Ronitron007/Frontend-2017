@@ -6,19 +6,16 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 
+
 <br />
 <br />
-
-<ul>
-<li id="aerofest"><a ng-href="/event-list/aerofest"><img class="events-buttons" src="../images/elements/events/aerofest-Button.png"></a></li>
-<li id="b-Events"><a ng-href="/event-list/b-Events"><img class="events-buttons" src="../images/elements/events/b-Events-Button.png"></a></li>
-<li id="coding"><a ng-href="/event-list/coding"><img class="events-buttons" src="../images/elements/events/coding-Button.png"></a></li>
-<li id="electronics"><a ng-href="/event-list/electronics"><img class="events-buttons" src="../images/elements/events/electronics-Button.png"></a></li>
-<li id="involve"><a ng-href="/event-list/involve"><img class="events-buttons" src="../images/elements/events/involve-Button.png"></a></li>
-<li id="quizzing"><a ng-href="/event-list/quizzing"><img class="events-buttons" src="../images/elements/events/quizzing-Button.png"></a></li>
-<li id="research"><a ng-href="/event-list/research"><img class="events-buttons" src="../images/elements/events/research-Button.png"></a></li>
-</ul>
+<div ng-repeat="events in eventList" class="ng-scope">
 
 
+<div style="border: 1px solid black; width:152px;height:200px;float: left;margin-left: 25px;">
+<img class="img-thumbnail img-click" style="width:150px;" ng-src="http://shaastra.org:8001/api/uploads/57c99e7da65edf661ac429da/cs.jpg" ng-click="goto($index)" role="button" tabindex="0" src="http://shaastra.org:8001/api/uploads/57c99e7da65edf661ac429da/cs.jpg">
+<h4 style="text-align: center;" class="ng-binding"></h4>
 </div>
 
+</div>
+</div>

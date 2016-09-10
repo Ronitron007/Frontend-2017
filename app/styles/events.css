@@ -30,3 +30,6 @@ ul{
 li{
 	display: inline;
 }
+.img-click{
+	cursor: pointer;
+}

@@ -1,0 +1,15 @@
+<div ng-controller="EventListsCtrl">
+
+
+
+
+
+<div ng-repeat="eventLists in eventsJSON">
+
+  <div style="border: 1px solid black; width:152px;height:200px;float: left;margin-left: 25px; margin-bottom:25px;">
+  <img class="img-thumbnail img-click" style="width:150px;" ng-src="http://shaastra.org:8001/api/uploads/{{eventLists.imageid}}/{{eventLists.imagename}}" ng-click="gotoEventDetails($index)">
+  <h4 style="text-align: center;">{{eventLists.name}}</h4>
+</div>
+
+</div>
+</div>
