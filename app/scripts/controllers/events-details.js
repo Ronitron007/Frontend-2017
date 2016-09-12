@@ -9,9 +9,14 @@
  */
 angular.module('frontend2017App')
   .controller('EventsDetailsCtrl', function ($scope,$http,$routeParams) {
-
+    $scope.Details="";
     $scope.eveDetails={};
     $http.get('http://shaastra.org:8001/api/events/showWeb/' + $routeParams.detailsId)
        .then(function (response) {
          $scope.eveDetails=response.data;});
+
+    $scope.showInfo = function(index){
+        $scope.Details=eveDetails.eventTabs[index].info;
+
+    }
   });
