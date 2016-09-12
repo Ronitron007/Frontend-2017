@@ -49,8 +49,10 @@ position: relative;
     margin: 0 auto;
     position: relative;
     top: 5px;
-    width: 300px;
+    width: 350px;
     z-index: 2;
+    
+
 }
  .toggle {
     background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #333333;
@@ -76,6 +78,7 @@ position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
+     transition-delay: 10s;
 }
 .form:hover #searchform {
     display: block;
@@ -84,9 +87,10 @@ position: relative;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     visibility: visible;
-    width: 250px;
-   
+    width: 300px;  
+     transition-delay: 0s;
 }
+ 
 #searchform #s {
     background: none repeat scroll 0 0 #E14D43;
     border: medium none;
@@ -96,9 +100,12 @@ position: relative;
     font-family: helvetica, verdana, arial, sans-serif;
     font-size: 15px;
     height: 100%;
-    padding: 0 15px;
+    padding-left: 15px ;
+    padding-right:70px;
     width: 100%;
+    
 }
+
 #searchform #searchsubmit {
     background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #c6473f;
      background-size: 320px 300px;
@@ -124,4 +131,31 @@ position: relative;
     left:100px;
 }
 
+}
+.close-icon {
+    border:1px solid transparent;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+    content: "X";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute; 
+    z-index:1;
+    right: 55px;
+    top: 13px;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    cursor: pointer;
+}
+#s:not(:valid) ~ .close-icon {
+    display: none;
 }
