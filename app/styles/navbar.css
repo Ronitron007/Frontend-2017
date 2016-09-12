@@ -26,8 +26,8 @@ background-color:#0c0c0c;
 
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    background-color: #FFFF00;
-    color: red;
+    background-color:white;
+    color: #0c0c0c;
 }
 
 .navbar-brand {
@@ -49,7 +49,7 @@ position: relative;
     margin: 0 auto;
     position: relative;
     top: 5px;
-    width: 350px;
+    width: 300px;
     z-index: 2;
     
 
@@ -58,7 +58,7 @@ position: relative;
     background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #333333;
     background-size: 320px 300px;
     border: medium none;
-    color: #FFFFFF;
+    color: black;
     cursor: pointer;
     display: block;
     height: 40px;
@@ -78,7 +78,7 @@ position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-     transition-delay: 10s;
+     transition-delay: 5s;
 }
 .form:hover #searchform {
     display: block;
@@ -87,14 +87,14 @@ position: relative;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     visibility: visible;
-    width: 300px;  
+    width: 250px;  
      transition-delay: 0s;
 }
  
 #searchform #s {
-    background: none repeat scroll 0 0 #E14D43;
+    background: none repeat scroll 0 0 #0000;
     border: medium none;
-    color: #FFFFFF;
+    color: black;
     float: left;
     outline: none;
     font-family: helvetica, verdana, arial, sans-serif;
@@ -151,7 +151,7 @@ position: relative;
     top: 13px;
     bottom: 0;
     text-align: center;
-    color: white;
+    color: black;
     font-weight: normal;
     font-size: 12px;
     cursor: pointer;
