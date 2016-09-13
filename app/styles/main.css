@@ -98,24 +98,43 @@ body {
   background-repeat: no-repeat;
   }
 #bg1{
-  background: url('/images/full.jpg');
-  width: 11024px;
-  height: 885px;
-  background-size: 77%;
+  background: url('/images/buildings3.png');
+  width: 10000px;
+  height: 803px;
+  background-size: 100% 85%;
   background-repeat: no-repeat;
   }
-/*#bg2{
-  background: url('/images/bg-2.png') left bottom;
-   These images are big… but worth it 
-  width: 4368px;
-  }*/
-  #man{
-    background-image: url('/images/blind.png');
-    height: 275px;
-    width: 150px;
-/*    background-size: 375% 100%; 
-*/    left:185px;
-    top:400px;
+#bg2{
+  background: url('/images/clouds.png');
+  width: 10000px;
+  height: 400px;
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+  z-index:-10;
   }
+  #man{
+    background-image: url('/images/jetpack3.png');
+    height: 157px;
+    width: 100px;
+    /*background-size: 400% 100%; */
+  left:185px;
+    top:450px;
+  }
+::-webkit-scrollbar 
+{
+  width:12px;
+}
 
+::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(255,0,0,0.4);
+}
+::-webkit-scrollbar-thumb 
+{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
 

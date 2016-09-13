@@ -1,10 +1,19 @@
+    <link rel="stylesheet" href="styles/main.css">
 <div id="skrollr-body">
 	<div id="Scene">
-		<div id="bg1" class="parallax-layer" z-index: -10;
+		<div id="bg1" class="parallax-layer"
 			data-0="left:0px;"
-			data-45000="left:-7190px;">
+			data-20000="left:-8680px;">
 		</div>
-		<div id="man" class="parallax-layer">
+		<div id="bg2" class="parallax-layer"
+				data-0="left:0px;"
+		data-20000="left:-4340px;">
+			
+		</div>
+		<div id="man" class="parallax-layer"
+		data-0="left:185px;"
+		data-20000="left:185px;"
+		data-25000="left:1000px;">
 		</div>
 	</div>
 </div>
@@ -13,7 +22,7 @@
 
 	<script type="text/javascript">
 	var man = $('#man'),
-	pLocs = [0, -150, -300, -450]
+	pLocs = [0, -105, -210, -315]
 	curFrm = 0,
 	lastStep=0;
 
@@ -23,19 +32,19 @@ skrollr.init({
 		// since the last time we shifted the background image,
 		// we must be moving forward, so move to the next frame
 		// in the spritesheet
-		if(o.curTop > lastStep + 100) {
+		if(o.curTop > lastStep + 50) {
 			if (curFrm>=4){ curFrm=-1; }
 			man.css('background-position', pLocs[curFrm++] + 'px 0px');
 			lastStep = o.curTop;
 		// If the user has scrolled 50 pixels up,
 		// we’re moving backwards, so move to the previous frame
-		} else if(o.curTop < lastStep - 100) {
+		} else if(o.curTop < lastStep - 50) {
 			if (curFrm<=-1){ curFrm=4; }
 			man.css('background-position', pLocs[curFrm--] + 'px 0px');
 			lastStep = o.curTop;
 		}
 	}
 });
-// var s = skrollr.init()
+skrollr.init.destroy();
 
 	</script>
