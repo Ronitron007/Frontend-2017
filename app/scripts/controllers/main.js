@@ -9,11 +9,7 @@
  */
 angular.module('frontend2017App')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    
   });
 
 // var myApp = angular.module("myApp", ["sn.skrollr"]);

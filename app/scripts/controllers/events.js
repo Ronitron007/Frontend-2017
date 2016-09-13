@@ -10,6 +10,8 @@
 angular.module('frontend2017App')
   .controller('EventsCtrl', function ($scope,$http,$location) {
 
+    skrollr.init().destroy();
+    
      $scope.eventList=[];
      $http.get('http://shaastra.org:8001/api/eventLists/events')
      .then(function(response){
