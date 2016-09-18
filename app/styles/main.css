@@ -104,6 +104,7 @@ body {
   background-size: 100% 85%;
   background-repeat: no-repeat;
   }
+  /*background*/
 #bg2{
   background: url('/images/clouds.png');
   width: 10000px;
@@ -112,14 +113,13 @@ body {
   background-repeat: no-repeat;
   z-index:-10;
   }
+  /*cloud layer*/
   #man{
-    background-image: url('/images/jetpack3.png');
-    height: 157px;
-    width: 100px;
-    /*background-size: 400% 100%; */
+  height: 157px;
   left:185px;
-    top:450px;
+  top:450px;
   }
+  /*moving sprite*/
 ::-webkit-scrollbar 
 {
   width:12px;
@@ -137,4 +137,20 @@ body {
     background: rgba(255,0,0,0.8); 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
   }
+  /*custom scrollbar on chrome*/
+.jetpack{
+  width: 100px;
+  background-image: url('/images/jetpack3.png');
+}
+/*sets the jetpack sprite*/
 
+.blind{
+  width: 150px;
+  background-image: url('/images/blindman3.png');
+}
+/*sets the blindman sprite*/
+.wheelchair{
+  width: 130px;
+  background-image: url('/images/wheelchair3.png');
+}
+/*sets the wheelchair sprite*/
