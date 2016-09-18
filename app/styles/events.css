@@ -1,9 +1,8 @@
 #events-banner{
+	position: absolute;
 	height: 200px;
 	float: left;
-	clear: both;
-	margin-top: -275px;
-	margin-left: -15px;
+	top: -150px;
 }
 
 #events-building{
