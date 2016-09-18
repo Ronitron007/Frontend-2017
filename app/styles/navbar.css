@@ -6,8 +6,7 @@ height:450px;
 margin-top: -200px;
 margin-left: -175px;
 float: left;
-    }
-   
+    } 
 @font-face {
     font-family: KeepCalm;
     src: url(fonts/KeepCalm-Medium.ttf);
@@ -118,17 +117,22 @@ position: relative;
     right: 0;
     width: 50px;
 }
+
 @media only screen and (max-width: 767px) {
 .navbar-brand
 {
     left:650%;
-    top:-22px;
+    top:-48px;
 }
-
 .form
 {
     top:15px;
     left:100px;
+}
+.navbar-nav, .navbar-brand {
+    padding-top:0px !important; padding-bottom:0 !important;
+    height: 4px;
+
 }
 
 }
@@ -159,3 +163,4 @@ position: relative;
 #s:not(:valid) ~ .close-icon {
     display: none;
 }
+
