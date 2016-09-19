@@ -1,0 +1,53 @@
+<div class="header" ng-controller="NavbarCtrl">
+     <!-- Top Nav-Bar -->
+      <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+          <span class="sr-only ">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+       <a class="navbar-brand" href="#/"><img id="logo" src="../images/design-2/toolbarElements/logo.png ">
+        </a>
+      </div>
+
+      <div id="navbar1" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#/about">ABOUT</a></li>
+          <li><a href="#/events">EVENTS</a></li>
+          <li><a href="#hospitality">HOSPITALITY</a></li>
+          <li><a href="#socialCampaign">SOCIAL WING</a></li>
+          <li><a href="#/summit">SUMMIT</a></li>
+          <li><a href="#spotlight">SPOTLIGHT</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+         <li>
+         <!-- Search Bar -->
+    <div class="form"> <span class="toggle"></span>
+        <form role="search" method="get" id="searchform" action="">
+            <input type="text" placeholder="Search" id="s" name="s" value="">
+            </input>
+           
+            <input type="submit" value="" id="searchsubmit">
+ <button class="close-icon" type="reset"></button>
+        </form>
+</div></li>
+          <li ng-hide="isLoggedIn()"><a href="#/login">LOGIN</a></li>
+          <li ng-hide="isLoggedIn()"><a href="#/register">REGISTER</a></li>
+          <li ng-show="isLoggedIn()" class="nav-item-new dropdown"><a class="ai dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }} <span class="glyphicon glyphicon-user user-icon"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a id="dropdownElements" href="#/dashboard"><span>Dashboard</span></a></li>
+              <li><a id="dropdownElements" ng-click="logout()"><span>Logout</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+    </div>

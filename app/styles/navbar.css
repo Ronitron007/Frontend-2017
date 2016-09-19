@@ -7,6 +7,15 @@ margin-top: -200px;
 margin-left: -175px;
 float: left;
     }
+
+#dropdownElements{
+    color: black;
+    cursor: pointer;
+}
+
+#dropdownMenu1{
+    cursor: pointer;
+}
    
 @font-face {
     font-family: KeepCalm;
@@ -159,3 +168,4 @@ position: relative;
 #s:not(:valid) ~ .close-icon {
     display: none;
 }
+

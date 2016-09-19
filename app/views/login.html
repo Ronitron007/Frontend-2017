@@ -1,40 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Login | Shaastra 2017</title>
-		<link rel='stylesheet' href="bower_components/bootstrap/dist/css/bootstrap.css">
-	</head>
-	<body>
-		<style type="text/css">
-			.input-login {
-				border-radius: 5px;
-				border-width: 3px;
-				border-color: black;
-				padding: 5px 10px 5px 10px;
-				margin: 5px 0px 5px 0px;
-
-			}
-
-			/*.form {
-				width: 16%;
-				margin: auto;
-			}*/
-
-			/*.loginsubmit {
-				width: 100%;
-				margin: auto;
-			}
-		</style>
 		<div class="content">
-			<img class="shaastra-logo-line" src='../images/design-2/centerImage.png' style="width:29.8020527859vw; margin-right: 35.098973607vw; margin-left:35.098973607vw; padding-top: 100px;">
+			<img class="shaastra-logo-line" src='../images/design-2/shaastra_logo_line.png' style="width:29.8020527859vw; margin-right: 35.098973607vw; margin-left:35.098973607vw; padding-top: 100px;">
 			<div class="form">
 				<form method="post" id="login">
-					<input type="email" class="input-login" placeholder="Email Address" id="loginemail" name="loginemail" value="">
-					<input type="password" class="input-login" placeholder="Password" name="loginpassword" id="loginpassword" value="">
-					<input type="image" class="loginsubmit" name="loginsubmit" value="loginsubmit" src="../images/design-2/login&RegisterElements/Login-Button.png" alt="Submit" onmouseover="this.src='../images/design-2/login&RegisterElements/Login-Button.png'" style="max-width: 10.997067448vw;">
+					<input type="email" class="input-login" placeholder="Email Address" id="loginemail" ng-model="username">
+					<input type="password" class="input-login" placeholder="Password" name="loginpassword" ng-model="password">
+					<input type="image" class="loginsubmit" name="loginsubmit" value="loginsubmit" src="../images/design-2/login&RegisterElements/Login-Button.png" alt="Submit" onmouseover="this.src='../images/design-2/login&RegisterElements/Login-Button.png'" style="max-width: 10.997067448vw;" ng-click="loginUser()">
 
 				</form>
 			</div>
 		</div>
-	</body>
-</html>
