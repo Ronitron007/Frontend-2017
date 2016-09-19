@@ -60,15 +60,28 @@
       </div>
 
       <div id="navbar1" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#/about">ABOUT</a></li>
-          <li><a href="#/events">EVENTS</a></li>
-          <li><a href="#hospitality">HOSPITALITY</a></li>
-          <li><a href="#socialCampaign">SOCIAL WING</a></li>
-          <li><a href="#/summit">SUMMIT</a></li>
-          <li><a href="#spotlight">SPONSORS</a></li>
+        <ul class="nav navbar-nav navbar-left" >
+       
+          <li><a class="con" href="#/about">ABOUT</a></li>
+          <li><a class="con" href="#/events">EVENTS</a></li>
+          <li><a class="con" href="#hospitality">HOSPITALITY</a></li>
+          <li><a class="con" href="#socialCampaign">SOCIAL WING</a></li>
+          <li><a class="con" href="#/summit">SUMMIT</a></li>
+          <li><a class="con" href="#spotlight">SPONSORS</a></li>
+           <li class="close-menu"  ng-click="showfull_menu=false" id="close-menu">
+      <a href="#menu-closed">
+        &#215; Collapse
+      </a>
+    </li>
+    <li class="show-menu"  id="open-menu">
+      <a ng-click="showfull_menu=true" href="#menu">
+        &#9776; Menu
+      </a>
+    </li>
+    
+
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul ng-hide="showfull_menu" class="nav navbar-nav navbar-right">
          <li>
          <!-- Search Bar -->
     <div class="form"> <span class="toggle"></span>
@@ -90,25 +103,7 @@
     </div>
 
    <div>
- <!-- <img id="logo" src="../images/design-2/toolbarElements/logo.png ">
- <ul id="navbar">
-<li><img class="fonts" src="../images/design-2/toolbarElements/about.png"></li>
-<li><img class="fonts" src="/../images/design-2/toolbarElements/events.png "></li>
-<li><img class="fonts" src="../images/design-2/toolbarElements/hospitality.png "></li>
-<li><img class="socialWingFont" src="../images/design-2/toolbarElements/socialWing.png "></li>
-<li><img class="summitFonts" src="../images/design-2/toolbarElements/summit.png "></li>
-<li><img class="fonts" src="../images/design-2/toolbarElements/sponsors.png "></li>
-
-<li><img class="register" src="../images/design-2/toolbarElements/register.png "></li>
-<li><img class="login" src="../images/design-2/toolbarElements/login.png"></li>
-<li><img class="search" src="../images/design-2/toolbarElements/searchIcon.png "></li>
-
-
-</ul> -->
-
-
-
-
+ 
 
     <div class="no-container">
     <div ng-view=""></div>

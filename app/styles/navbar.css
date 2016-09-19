@@ -18,11 +18,10 @@ li,form input{
 
 .nav.navbar-nav li a {
     color: white;
+    font-size: 0.9em;  
 }
-
 .navbar-inner{
 background-color:#0c0c0c;
-
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color:white;
@@ -41,8 +40,11 @@ background-color:#0c0c0c;
 .navbar-header{
 width:7%;
 position: relative;
-
 }
+#navbar1{
+    width: 100%;
+}
+
 
 .form {
     margin: 0 auto;
@@ -50,9 +52,8 @@ position: relative;
     top: 5px;
     width: 300px;
     z-index: 2;
-    
-
 }
+
  .toggle {
     background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #333333;
     background-size: 320px 300px;
@@ -132,9 +133,7 @@ position: relative;
 .navbar-nav, .navbar-brand {
     padding-top:0px !important; padding-bottom:0 !important;
     height: 4px;
-
 }
-
 }
 .close-icon {
     border:1px solid transparent;
@@ -164,3 +163,44 @@ position: relative;
     display: none;
 }
 
+.navbar .close-menu,.navbar .show-menu{
+    display:none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .navbar .show-menu{
+        display:inline-block;
+    }
+}    
+
+#navbar1>ul>li.close-menu{
+    display:none
+}
+#navbar1>ul>li.close-menu a{
+    color:#e18728
+}
+
+#navbar1>ul>li.con{
+    position: absolute;
+    z-index: 700;
+}
+#navbar1>ul>li.show-menu{
+    position:absolute;
+    z-index: 700;
+    padding-left:40px;
+    background:-webkit-linear-gradient(left, rgba(34,34,34,0) 0, #222 2em);
+    background:linear-gradient(to right, rgba(34,34,34,0) 0, #222 2em)
+}
+#navbar1>ul>li a{
+    display:block}
+
+.navbar #navbar1 .close-menu{display:none;}
+
+@media (max-width: 48.75em){
+    .navbar #navbar1{display:block;height:auto;position:relative;border-top:10px solid #e18728;padding:0;top:0 !important}
+#navbar1{height:auto;background:#444}
+#navbar1>ul>li{height:auto}
+#navbar1>ul>li>a{line-height:1.4;height:auto;padding:5px 10px;font-size:16px}
+.show-menu,.close-menu{display:none}
+}
