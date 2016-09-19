@@ -6,7 +6,17 @@ height:450px;
 margin-top: -200px;
 margin-left: -175px;
 float: left;
-    } 
+    }
+
+#dropdownElements{
+    color: black;
+    cursor: pointer;
+}
+
+#dropdownMenu1{
+    cursor: pointer;
+}
+   
 @font-face {
     font-family: KeepCalm;
     src: url(fonts/KeepCalm-Medium.ttf);
@@ -168,11 +178,11 @@ position: relative;
 }
 
 
-@media only screen and (max-width: 1200px) {
+/*@media only screen and (max-width: 1200px) {
     .navbar .show-menu{
         display:inline-block;
     }
-}    
+}    */
 
 #navbar1>ul>li.close-menu{
     display:none
@@ -202,5 +212,5 @@ position: relative;
 #navbar1{height:auto;background:#444}
 #navbar1>ul>li{height:auto}
 #navbar1>ul>li>a{line-height:1.4;height:auto;padding:5px 10px;font-size:16px}
-.show-menu,.close-menu{display:none}
+
 }

@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="styles/socialCampaign.css">
     <!--event-lists..css-->
     <link rel="stylesheet" href="styles/event-lists.css">
-    <!--events-details..css-->
     <link rel="stylesheet" href="styles/events-details.css">
      <!--navbar..css-->
     <link rel="stylesheet" href="styles/navbar.css">
@@ -55,7 +54,7 @@
           <span class="icon-bar"></span>
         </button>
 
-       <a class="navbar-brand" href="#/"><img id="logo" src="../images/design-2/toolbarElements/logo.png ">
+       <a class="navbar-brand" href=""><img id="logo" src="../images/design-2/toolbarElements/logo.png ">
         </a>
       </div>
 
@@ -68,18 +67,17 @@
           <li><a class="con" href="#socialCampaign">SOCIAL WING</a></li>
           <li><a class="con" href="#/summit">SUMMIT</a></li>
           <li><a class="con" href="#spotlight">SPONSORS</a></li>
+          <li class="show-menu"  id="open-menu">
+      <a ng-click="showfull_menu=true" href="#menu">
+        &#9776; Menu
+      </a>
+    </li>
            <li class="close-menu"  ng-click="showfull_menu=false" id="close-menu">
       <a href="#menu-closed">
         &#215; Collapse
       </a>
     </li>
-    <li class="show-menu"  id="open-menu">
-      <a ng-click="showfull_menu=true" href="#menu">
-        &#9776; Menu
-      </a>
-    </li>
     
-
         </ul>
         <ul ng-hide="showfull_menu" class="nav navbar-nav navbar-right">
          <li>
