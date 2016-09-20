@@ -29,9 +29,14 @@
     <link rel="stylesheet" href="styles/socialCampaign.css">
     <!--event-lists..css-->
     <link rel="stylesheet" href="styles/event-lists.css">
+    <!--events-details..css-->
     <link rel="stylesheet" href="styles/events-details.css">
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/login.css">
      <!--navbar..css-->
     <link rel="stylesheet" href="styles/navbar.css">
+    <!-- dashboard..css -->
+     <link rel="stylesheet" href="styles/dashboard.css">
     <!-- endbuild -->
   </head>
   <body ng-app="frontend2017App">
@@ -40,68 +45,28 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-     <!-- Top Nav-Bar -->
-      <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <div class="navbar-header">
-
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
-          <span class="sr-only ">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-       <a class="navbar-brand" href=""><img id="logo" src="../images/design-2/toolbarElements/logo.png ">
-        </a>
-      </div>
-
-      <div id="navbar1" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left" >
-       
-          <li><a class="con" href="#/about">ABOUT</a></li>
-          <li><a class="con" href="#/events">EVENTS</a></li>
-          <li><a class="con" href="#hospitality">HOSPITALITY</a></li>
-          <li><a class="con" href="#socialCampaign">SOCIAL WING</a></li>
-          <li><a class="con" href="#/summit">SUMMIT</a></li>
-          <li><a class="con" href="#spotlight">SPONSORS</a></li>
-          <li class="show-menu"  id="open-menu">
-      <a ng-click="showfull_menu=true" href="#menu">
-        &#9776; Menu
-      </a>
-    </li>
-           <li class="close-menu"  ng-click="showfull_menu=false" id="close-menu">
-      <a href="#menu-closed">
-        &#215; Collapse
-      </a>
-    </li>
-    
-        </ul>
-        <ul ng-hide="showfull_menu" class="nav navbar-nav navbar-right">
-         <li>
-         <!-- Search Bar -->
-    <div class="form"> <span class="toggle"></span>
-        <form role="search" method="get" id="searchform" action="">
-            <input type="text" placeholder="Search" id="s" name="s" value="">
-            </input>
-           
-            <input type="submit" value="" id="searchsubmit">
- <button class="close-icon" type="reset"></button>
-        </form>
-</div></li>
-          <li><a href="#/login">LOGIN</a></li>
-          <li><a href="#/register">REGISTER</a></li>
-        </ul>
-      </div>
-    </div>
-    </div>
-  </nav>
-    </div>
+    <div ng-include="'views/navbar.html'"></div>
 
    <div>
- 
+ <!-- <img id="logo" src="../images/design-2/toolbarElements/logo.png ">
+ <ul id="navbar">
+<li><img class="fonts" src="../images/design-2/toolbarElements/about.png"></li>
+<li><img class="fonts" src="/../images/design-2/toolbarElements/events.png "></li>
+<li><img class="fonts" src="../images/design-2/toolbarElements/hospitality.png "></li>
+<li><img class="socialWingFont" src="../images/design-2/toolbarElements/socialWing.png "></li>
+<li><img class="summitFonts" src="../images/design-2/toolbarElements/summit.png "></li>
+<li><img class="fonts" src="../images/design-2/toolbarElements/sponsors.png "></li>
+
+<li><img class="register" src="../images/design-2/toolbarElements/register.png "></li>
+<li><img class="login" src="../images/design-2/toolbarElements/login.png"></li>
+<li><img class="search" src="../images/design-2/toolbarElements/searchIcon.png "></li>
+
+
+</ul> -->
+
+
+
+
 
     <div class="no-container">
     <div ng-view=""></div>
@@ -154,6 +119,10 @@
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/event-lists.js"></script>
         <script src="scripts/controllers/events-details.js"></script>
+        <script src="scripts/services/auth.js"></script>
+        <script src="scripts/services/user.js"></script>
+        <script src="scripts/controllers/dashboard.js"></script>
+        <script src="scripts/controllers/navbar.js"></script>
         <!-- endbuild -->
 </body>
 </html>

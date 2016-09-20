@@ -1,5 +1,5 @@
 <update-title title="Dashboard | Shaastra 2016"></update-title>
-<update-meta property="og:title" content="Dashboard | Shaastra 2017"></update-meta>		
+<update-meta property="og:title" content="Dashboard | Shaastra 2017"></update-meta>	<center>	
 <div class="dashboard_css" ng-controller="DashboardCtrl as dashboard">
 			<img class="shaastra-logo-line" src='../images/design-2/shaastra_logo_line.png' style="width:29.8020527859vw; margin-right: 35.098973607vw; margin-left:35.098973607vw; padding-top: 100px;">
 		<div class="list_form">

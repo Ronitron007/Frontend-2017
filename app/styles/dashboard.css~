@@ -1,0 +1,13 @@
+.dashboard_css{
+ font-family: KeepCalm;
+    src: url(fonts/KeepCalm-Medium.ttf);
+background-color: #E5E5E5;
+overflow:hidden;
+
+}
+.list_form{
+width:50%;
+margin-left:30%;
+
+
+}
