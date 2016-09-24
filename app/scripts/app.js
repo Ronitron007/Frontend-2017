@@ -108,7 +108,7 @@ angular
     $rootScope.$on('$routeChangeStart', function (event, next) {
       Auth.isLoggedInAsync(function(loggedIn) {
         if (next.authenticate && !loggedIn) {
-          $location.url('/dashboard'); //change to "/login"
+          $location.url('/dashboard'); 
         }
       });
 
