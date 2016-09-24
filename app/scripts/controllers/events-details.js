@@ -12,13 +12,14 @@ angular.module('frontend2017App')
     skrollr.init().destroy();
 
     $scope.Details="";
-    $scope.eveDetails={};
+    $scope.eveDetails="";
     $http.get('http://shaastra.org:8001/api/events/showWeb/' + $routeParams.detailsId)
        .then(function (response) {
-         $scope.eveDetails=response.data;});
-
+         $scope.eveDetails=response.data;
+    $scope.Details=$scope.eveDetails.eventTabs[0].info;
+       });
     $scope.showInfo = function(index){
-        $scope.Details=eveDetails.eventTabs[index].info;
-
+        $scope.Details=$scope.eveDetails.eventTabs[index].info;
+console.log($scope.Detais);
     }
   });
