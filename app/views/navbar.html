@@ -23,7 +23,10 @@
           <li><a href="#hospitality">HOSPITALITY</a></li>
           <li><a href="#socialCampaign">SOCIAL WING</a></li>
           <li><a href="#/summit">SUMMIT</a></li>
-          <li><a href="#spotlight">SPOTLIGHT</a></li>
+          <li><a href="#shows">SHOWS</a></li>
+          <li><a href="">ENVISAGE</a></li>
+          <li><a href="">FELLOWSHIPS</a></li>
+          <li><a href="">CONTACT US</a></li>
           <li class="show-menu"  id="open-menu">
       <a ng-click="showfull_menu=true" href="#menu">
         &#9776; Menu
@@ -36,17 +39,6 @@
     </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-         <li>
-         <!-- Search Bar -->
-    <div class="form"> <span class="toggle"></span>
-        <form role="search" method="get" id="searchform" action="">
-            <input type="text" placeholder="Search" id="s" name="s" value="">
-            </input>
-           
-            <input type="submit" value="" id="searchsubmit">
- <button class="close-icon" type="reset"></button>
-        </form>
-</div></li>
           <li ng-hide="isLoggedIn()"><a href="#/login">LOGIN</a></li>
           <li ng-hide="isLoggedIn()"><a href="#/register">REGISTER</a></li>
           <li ng-show="isLoggedIn()" class="nav-item-new dropdown"><a class="ai dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }} <span class="glyphicon glyphicon-user user-icon"></span></a>

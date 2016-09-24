@@ -59,8 +59,95 @@ body {
 .marketing p + h4 {
   margin-top: 28px;
 }
-
-/* Responsive: Portrait tablets and up */
+.ev{
+  height: 50px;
+  width: 120px;
+  position: absolute;
+  left: 19.5%;
+  top: 46%;
+  opacity: 0;
+ }
+.sum{
+  height: 32px;
+  width: 75px;
+  position: absolute;
+  left: 27.2%;
+  top: 41%;
+  opacity: 0;
+ }
+ .soccamp{
+  height: 32px;
+  width: 167px;
+  position: absolute;
+  left: 32.4%;
+  top: 48.5%;
+  opacity: 0;
+ }
+.wshop{
+  height: 30px;
+  width: 150px;
+  position: absolute;
+  left: 37.6%;
+  top: 50%;
+  opacity: 0;
+ }
+.lecser{
+  height: 30px;
+  width: 275px;
+  position: absolute;
+  left: 42.8%;
+  top: 54.3%;
+  opacity: 0;
+ }
+ .sh{
+  height: 220px;
+  width: 50px;
+  position: absolute;
+  left: 50.3%;
+  top: 23%;
+  opacity: 0;
+ }
+ .ex{
+  height: 30px;
+  width: 145px;
+  position: absolute;
+  left: 55.3%;
+  top: 59.5%;
+  opacity: 0;
+ }
+ .hos{
+  height: 20px;
+  width: 100px;
+  position: absolute;
+  left: 77.53%;
+  top: 59%;
+  opacity: 0;
+ }
+ .sol{
+  height: 30px;
+  width: 236px;
+  position: absolute;
+  left: 90.8%;
+  top: 26%;
+  opacity: 0;
+ }
+  .out{
+  height: 30px;
+  width: 110px;
+  position: absolute;
+  left: 94.45%;
+  top: 49.5%;
+  opacity: 0;
+ }
+  .spon{
+  height: 30px;
+  width: 150px;
+  position: absolute;
+  left: 97%;
+  top: 33.5%;
+  opacity: 0;
+ }
+ /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
