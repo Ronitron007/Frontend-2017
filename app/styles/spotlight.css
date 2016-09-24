@@ -1,15 +1,12 @@
 #spotlight-banner{
-	height: 200px;
-	float: left;
-	clear: both;
-	margin-top: -275px;
-	margin-left: -15px;
-	
+	position:absolute;
+	height: 250px;
+	margin-top:-275px;
+
 }
 
 #spotlight-building{
-	height:300px;
-	
+ width:30%;
     float: right;
 
 }
@@ -18,7 +15,7 @@
 }
 
 #spotlight-placeholder{
-	height: 300px;
+	height: 400px;
 	float: left;
 	clear: both;
 }
@@ -27,7 +24,7 @@
   clear: right;
 }
 #spotlight-subtitle{
-	height: 200px;
+	height: 300px;
 	float: right;
 
 }
