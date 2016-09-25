@@ -31,9 +31,7 @@ float: left;
 input[type=password].input-login.ng-dirty{
     font-family: helvetica,arial,sans-serif;
 }
-
-
-.nav.navbar-nav li a {
+.nav.navbar-nav li .nav_elem {
     color: white;
     font-size: 0.9em;  
 }
@@ -219,4 +217,20 @@ background-color:white;
 
 .navbar #navbar1 .close-menu{display:none;}
 
-
+.dropdown-menu {
+    background-color: #0c0c0c;
+    font-color:white;
+    
+}
+.dropdown-menu li{
+  font-family: KeepCalm;
+   font-size:0.9em;
+}
+.dropdown-menu li a {
+    padding:8px;
+    color:white;
+    text-decoration:none;
+}
+.dropdown-menu a:hover {
+background-color: white;
+color:#0c0c0c;}
