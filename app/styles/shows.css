@@ -1,18 +1,17 @@
 #shows-banner{
-	height: 200px;
-	float: left;
-	clear: both;
-	margin-top: -275px;
-	margin-left: -15px;
-	
+	position:absolute;
+	height: 250px;
+	margin-top:-275px;
+
+
 }
 
 #shows-building{
-	height: 300px;
-	
+	width: 25%;
+
     float: right;
 
-	
+
 }
 
 .shows-container{
@@ -22,20 +21,20 @@
 
 #shows-subtitle{
 
-	height: 200px;
+	height: 300px;
 	float: right;
 
 
 }
 
 #shows-placeholder{
-	height: 300px;
+	height: 400px;
 	float:left;
 	clear: both;
 }
 
 .shows-container2{
-	
+
 clear: right;
-    
+
 }

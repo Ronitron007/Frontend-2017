@@ -1,3 +1,36 @@
-<p>This is the dashboard view.</p>
-<h1>Fadsads</h1>
-<h1>sdfsdfadf</h1>
+<update-title title="Dashboard | Shaastra 2016"></update-title>
+<update-meta property="og:title" content="Dashboard | Shaastra 2017"></update-meta>		
+<div class="dashboard_css" ng-controller="DashboardCtrl as dashboard">
+			<img class="shaastra-logo-line" src='../images/design-2/shaastra_logo_line.png' style="width:29.8020527859vw; margin-right: 35.098973607vw; margin-left:35.098973607vw; padding-top: 100px;">
+		<div class="list_form">
+<form method="post">
+<h4><b>User Details</b></h4>
+
+			  <h5 ><b>Name </b> {{ user.name }} {{ user.secondName }}</h3>
+			  <h5 ><b>Email ID </b> {{ user.email }}</h3>
+			  <h5 ><b>Shaastra ID </b> {{ user.festID }}</h3>
+			<br>
+		 <h4><b>Register for an Event or Workshop</b></h4>
+			  <div ng-class="{ 'has-success': form.event.$valid && submitted,
+	                                            'has-error': form.event.$invalid && submitted }">
+	        <select class="input-login" class="form-control" name="event" ng-model="eventSelected" ng-change="showTeamRequire()">
+	          <option  value="" selected disabled>----- Select the Event or Workshop -----</option>
+	          <option ng-repeat="event in all_events track by $index" value="{{ event }}">{{ event.name }}</option>
+	        </select>
+	          <span ng-show="form.event.$error.required && submitted">
+	            An event is required
+	          </span>
+	          </div>  
+		  
+		<br>
+ <h5><b>Team Requirement </b> </h5>
+			  <h5><b>Event Date </b>{{ eventDate | date:"mediumDate" }}</h5>
+			  
+		 <h5><b>Team Name </h5></b>
+<center>
+		  <input type="text" ng-model="teamName" class="input-login" placeholder="Enter Team Name"> 
+<br><br> 
+<input type="image" name="registersubmit" value="registersubmit" src="../images/design-2/login&RegisterElements/Register-Button.png" alt="Submit" onmouseover="this.src='../images/design-2/login&RegisterElements/Register-Button.png'" ng-disabled="disableRegisterEvent" ng-click="registerEvent()" style="max-width: 10.997067448vw;"></center>
+</form>
+		 </div>
+		  

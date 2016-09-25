@@ -1,10 +1,32 @@
     <link rel="stylesheet" href="styles/main.css">
+
+ <div style="position:fixed; margin-top:10%; margin-left:1%; z-index:1; width:70px; height:240px; background-color:black; border-radius:10px;">
+
+   <a href="https://www.facebook.com/Shaastra/"><img style="position:fixed; z-index:100; margin-top:8px; margin-left:8px; height:50px;" src="../images/Facebook-Logo-Flat-Line-r.png"></a><br><br><br>
+   <a href="https://twitter.com/ShaastraIITM/"><img style="position:fixed; z-index:1; height:50px; margin-left:10px;" src="../images/Twitter_Bird.png"></a><br><br><br>
+   <a href="https://www.youtube.com/user/iitmshaastra/"><img style="position:fixed; z-index:1; height:50px; margin-left:10px;" src="../images/YouTube-Logo-Flat-Line-r.png"></a><br><br><br>
+   <a href="https://www.instagram.com/shaastra_iitm/"><img style="position:fixed; z-index:1; height:50px; margin-left:10px;" src="../images/Instagram-Logo-Flat-Line.png"></a><br><br><br>
+
+ </div>
+
 <div id="skrollr-body">
 	<div id="Scene">
+
 		<div id="bg1" class="parallax-layer"
 			data-0="left:0px;"
 			data-850="left:0px;"
 			data-20850="left:-8680px;">
+			<a href="#/events"><div class="ev"></div></a>
+			<a href="#/summit"><div class="sum"></div></a>
+			<a href="#/socialCampaign"><div class="soccamp"></div></a>
+			<a href="#"><div class="wshop"></div></a>
+			<a href="#"><div class="lecser"></div></a>
+			<a href="#"><div class="sh"></div></a>
+			<a href="#"><div class="ex"></div></a>
+			<a href="#"><div class="hos"></div></a>
+			<a href="#"><div class="sol"></div></a>
+			<a href="#"><div class="out"></div></a>
+			<a href="#"><div class="spon"></div></a>
 			<!-- how the background moves -->
 		</div>
 		<div id="bg2" class="parallax-layer"
@@ -23,7 +45,6 @@
 	</div>
 </div>
 
-	
 
 	<script type="text/javascript">
 	var p = Math.random();
@@ -45,7 +66,7 @@ skrollr.init({
 				if (curFrm>=4){ curFrm=-1; }
 				man.css('background-position', pLocs[curFrm++] + 'px 0px');
 				lastStep = o.curTop;
-				} 
+				}
 			else if(o.curTop < lastStep - 50) {
 				if (curFrm<=-1){ curFrm=4; }
 				man.css('background-position', pLocs[curFrm--] + 'px 0px');
@@ -59,7 +80,7 @@ skrollr.init({
 				if (curFrm>=4){ curFrm=-1; }
 				man.css('background-position', pLocs[curFrm++] + 'px 0px');
 				lastStep = o.curTop;
-				} 
+				}
 			else if(o.curTop < lastStep - 50) {
 				if (curFrm<=-1){ curFrm=4; }
 				man.css('background-position', pLocs[curFrm--] + 'px 0px');
@@ -73,7 +94,7 @@ skrollr.init({
 				if (curFrm>=3){ curFrm=-1; }
 				man.css('background-position', pLocs[curFrm++] + 'px 0px');
 				lastStep = o.curTop;
-				} 
+				}
 			else if(o.curTop < lastStep - 50) {
 				if (curFrm<=-1){ curFrm=3; }
 				man.css('background-position', pLocs[curFrm--] + 'px 0px');

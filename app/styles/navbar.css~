@@ -1,62 +1,210 @@
 body{
         margin:0px;
     }
-    #bg{
-      background-color: rgb(6,8,8);
-      height:50px;
+ #logo{
+height:450px;
+margin-top: -200px;
+margin-left: -175px;
+float: left;
     }
-    #logo{
-        height:450px;
-        margin-top: -200px;
-        margin-left: -175px;
-        float: left;
-    }
-    .fonts{
 
-        height:450px;
-        margin-top: -200px;
-        margin-left: -350px;
-        float: left;
-    }
-    .socialWingFont {
+#dropdownElements{
+    color: black;
+    cursor: pointer;
+}
 
-        height:450px;
-        margin-top: -200px;
-        margin-left: -300px;
-        float: left;
-    }
-    .summitFonts   {
+#dropdownMenu1{
+    cursor: pointer;
+}
+   
+@font-face {
+    font-family: KeepCalm;
+    src: url(fonts/KeepCalm-Medium.ttf);
+}
+li,form input{
+ font-family:KeepCalm;
+ font-weight: bolder;
+}
 
-        height:450px;
-        margin-top: -200px;
-        margin-left: -285px;
-        float: left;
+.nav.navbar-nav li a {
+    color: white;
+    font-size: 0.9em;  
+}
+.navbar-inner{
+background-color:#0c0c0c;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color:white;
+    color: #0c0c0c;
+}
+
+.navbar-brand {
+  padding: 0px;
+  left:-22px;
+  position: relative;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+}
+.navbar-header{
+width:7%;
+position: relative;
+}
+#navbar1{
+    width: 100%;
+}
+
+
+.form {
+    margin: 0 auto;
+    position: relative;
+    top: 5px;
+    width: 300px;
+    z-index: 2;
+}
+
+ .toggle {
+    background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #333333;
+    background-size: 320px 300px;
+    border: medium none;
+    color: black;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    width: 50px;
+}
+#searchform {
+    float: right;
+    height: 40px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out 0s;
+    visibility: hidden;
+    width: 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+     transition-delay: 5s;
+}
+.form:hover #searchform {
+    display: block;
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    visibility: visible;
+    width: 250px;  
+     transition-delay: 0s;
+}
+ 
+#searchform #s {
+    background: none repeat scroll 0 0 #0000;
+    border: medium none;
+    color: black;
+    float: left;
+    outline: none;
+    font-family: helvetica, verdana, arial, sans-serif;
+    font-size: 15px;
+    height: 100%;
+    padding-left: 15px ;
+    padding-right:70px;
+    width: 100%;
     
-    }
-    .register{
-        height:450px;
-        margin-top: -450px;
-        margin-right:-150px;
-        clear: left;
-        float: right;
-    }
-   .login{
-        height:450px;
-        margin-top: -450px;
-        margin-right: -65px;
-        clear: left;
-        float: right;
-   }
-   .search{
-         height:450px;
-        margin-top: -450px;
-        margin-right: 10px;
-        clear:left;
-        float: right;
-   }
-    ul{
+}
 
-        margin-top: -15px;
-        list-style-type: none;
+#searchform #searchsubmit {
+    background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #c6473f;
+     background-size: 320px 300px;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    width: 50px;
+}
 
+@media only screen and (max-width: 767px) {
+.navbar-brand
+{
+    left:650%;
+    top:-48px;
+}
+.form
+{
+    top:15px;
+    left:100px;
+}
+.navbar-nav, .navbar-brand {
+    padding-top:0px !important; padding-bottom:0 !important;
+    height: 4px;
+}
+}
+.close-icon {
+    border:1px solid transparent;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+    content: "X";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute; 
+    z-index:1;
+    right: 55px;
+    top: 13px;
+    bottom: 0;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    cursor: pointer;
+}
+#s:not(:valid) ~ .close-icon {
+    display: none;
+}
+
+.navbar .close-menu,.navbar .show-menu{
+    display:none;
+}
+
+
+/*@media only screen and (max-width: 1200px) {
+    .navbar .show-menu{
+        display:inline-block;
     }
+}    */
+
+#navbar1>ul>li.close-menu{
+    display:none
+}
+#navbar1>ul>li.close-menu a{
+    color:#e18728
+}
+
+#navbar1>ul>li.con{
+    position: absolute;
+    z-index: 700;
+}
+#navbar1>ul>li.show-menu{
+    position:absolute;
+    z-index: 700;
+    padding-left:40px;
+    background:-webkit-linear-gradient(left, rgba(34,34,34,0) 0, #222 2em);
+    background:linear-gradient(to right, rgba(34,34,34,0) 0, #222 2em)
+}
+#navbar1>ul>li a{
+    display:block}
+
+.navbar #navbar1 .close-menu{display:none;}
+
+

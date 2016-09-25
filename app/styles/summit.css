@@ -1,18 +1,17 @@
 #summit-banner{
-	height: 200px;
-	float: left;
-	clear: both;
-	margin-top: -275px;
-	margin-left: -15px;
-	
+	position:absolute;
+	height: 250px;
+	margin-top:-275px;
+
 }
 
 #summit-building{
-	height: 300px;
-	
+	width: 30%;
+
     float: right;
 
-	
+
+
 }
 
 .summit-container{
@@ -22,20 +21,20 @@
 
 #summit-subtitle{
 
-	height: 200px;
+	height: 300px;
 	float: right;
 
 
 }
 
 #summit-placeholder{
-	height: 300px;
+	height: 400px;
 	float:left;
 	clear: both;
 }
 
 .summit-container2{
-	
+
 clear: right;
-    
+
 }

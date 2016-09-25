@@ -1,18 +1,15 @@
 #socialCampaign-banner{
-	height: 200px;
-	float: left;
-	clear: both;
-	margin-top: -275px;
-	margin-left: -15px;
-	
+	position:absolute;
+	height: 250px;
+	margin-top:-275px;
 }
 
 #socialCampaign-building{
-	height: 300px;
-	
+	width: 20%;
+
     float: right;
 
-	
+
 }
 
 .socialCampaign-container{
@@ -22,20 +19,20 @@
 
 #socialCampaign-subtitle{
 
-	height: 200px;
+	height: 300px;
 	float: right;
 
 
 }
 
 #socialCampaign-placeholder{
-	height: 300px;
+	height: 400px;
 	float:left;
 	clear: both;
 }
 
 .socialCampaign-container2{
-	
+
 clear: right;
-    
+
 }

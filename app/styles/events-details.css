@@ -28,3 +28,8 @@
 	background-color:white; 
 	height: 400px;
 }
+.det{
+	width: 90%;
+	position: absolute;
+	left: 5%;
+}

@@ -1,14 +1,16 @@
 body{
         margin:0px;
     }
+
  #logo{
-height:450px;
-margin-top: -200px;
-margin-left: -175px;
+height:70px;
+margin-left: 30px;
+margin-top: -10px;
 float: left;
     }
 
 #dropdownElements{
+
     color: black;
     cursor: pointer;
 }
@@ -21,18 +23,22 @@ float: left;
     font-family: KeepCalm;
     src: url(fonts/KeepCalm-Medium.ttf);
 }
-li,form input{
- font-family:KeepCalm;
- font-weight: bolder;
+
+.registersubmit,.numeric,.radioButtons,.checkBox,.input-login,.nav.navbar-nav li >a{
+ font-family: KeepCalm;
 }
+
+input[type=password].input-login.ng-dirty{
+    font-family: helvetica,arial,sans-serif;
+}
+
 
 .nav.navbar-nav li a {
     color: white;
+    font-size: 0.9em;  
 }
-
 .navbar-inner{
 background-color:#0c0c0c;
-
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color:white;
@@ -51,8 +57,11 @@ background-color:#0c0c0c;
 .navbar-header{
 width:7%;
 position: relative;
-
 }
+#navbar1{
+    width: 100%;
+}
+
 
 .form {
     margin: 0 auto;
@@ -60,9 +69,8 @@ position: relative;
     top: 5px;
     width: 300px;
     z-index: 2;
-    
-
 }
+
  .toggle {
     background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #333333;
     background-size: 320px 300px;
@@ -141,10 +149,8 @@ position: relative;
 }
 .navbar-nav, .navbar-brand {
     padding-top:0px !important; padding-bottom:0 !important;
-    height: 4px;
-
+    height: 2.5px;
 }
-
 }
 .close-icon {
     border:1px solid transparent;
@@ -173,4 +179,39 @@ position: relative;
 #s:not(:valid) ~ .close-icon {
     display: none;
 }
+
+.navbar .close-menu,.navbar .show-menu{
+    display:none;
+}
+
+
+/*@media only screen and (max-width: 1200px) {
+    .navbar .show-menu{
+        display:inline-block;
+    }
+}    */
+
+#navbar1>ul>li.close-menu{
+    display:none
+}
+#navbar1>ul>li.close-menu a{
+    color:#e18728
+}
+
+#navbar1>ul>li.con{
+    position: absolute;
+    z-index: 700;
+}
+#navbar1>ul>li.show-menu{
+    position:absolute;
+    z-index: 700;
+    padding-left:40px;
+    background:-webkit-linear-gradient(left, rgba(34,34,34,0) 0, #222 2em);
+    background:linear-gradient(to right, rgba(34,34,34,0) 0, #222 2em)
+}
+#navbar1>ul>li a{
+    display:block}
+
+.navbar #navbar1 .close-menu{display:none;}
+
 
