@@ -1,4 +1,3 @@
-
 'use strict';
 
 /**
@@ -51,6 +50,11 @@ angular
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl',
         controllerAs: 'contact'
+      })
+      .when('/sponsors', {
+        templateUrl: 'views/sponsors.html',
+        controller: 'SponsorsCtrl',
+        controllerAs: 'sponsors'
       })
       .when('/exhibitions', {
         templateUrl: 'views/exhibitions.html',

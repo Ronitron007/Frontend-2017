@@ -1,13 +1,14 @@
 #shows-banner{
 	position:absolute;
-	height: 250px;
-	margin-top:-275px;
+	height: 200px;
+	float: left;
+	top:-150px;
 
 
 }
 
 #shows-building{
-	width: 25%;
+	width: 100%;
 
     float: right;
 

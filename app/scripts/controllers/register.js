@@ -77,6 +77,7 @@ angular.module('frontend2017App')
 	  // var accomodation = document.getElementById('field15').value;
 
   });
+    }
 
 
 
