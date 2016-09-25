@@ -1,6 +1,7 @@
 body{
         margin:0px;
     }
+
  #logo{
 height:450px;
 margin-top: -200px;
@@ -22,10 +23,15 @@ float: left;
     font-family: KeepCalm;
     src: url(fonts/KeepCalm-Medium.ttf);
 }
-li,form input{
- font-family:KeepCalm;
- font-weight: bolder;
+
+.registersubmit,.numeric,.radioButtons,.checkBox,.input-login,.nav.navbar-nav li >a{
+ font-family: KeepCalm;
 }
+
+input[type=password].input-login.ng-dirty{
+    font-family: helvetica,arial,sans-serif;
+}
+
 
 .nav.navbar-nav li a {
     color: white;
