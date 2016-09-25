@@ -1,3 +1,4 @@
+
 'use strict';
 
 /**
@@ -81,6 +82,11 @@ angular
         controller: 'SocialcampaignCtrl',
         controllerAs: 'socialCampaign'
       })
+      .when('/fellowships', {
+        templateUrl: 'views/fellowships.html',
+        controller: 'FellowshipsCtrl',
+        controllerAs: 'fellowships'
+      })
       .when('/register', {
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl',
@@ -98,9 +104,12 @@ angular
         controllerAs: 'dashboard',
         authenticate: true
       })
-      .otherwise({
-        redirectTo: '/'
-      });
+      .when('/upload', {
+        templateUrl: 'views/upload.html',
+        controller: 'UploadCtrl',
+        controllerAs: 'upload'
+      })
+
   })
 
   .run(function ($rootScope, $location, Auth) {
@@ -108,7 +117,7 @@ angular
     $rootScope.$on('$routeChangeStart', function (event, next) {
       Auth.isLoggedInAsync(function(loggedIn) {
         if (next.authenticate && !loggedIn) {
-          $location.url('/login'); 
+          $location.url('/dashboard');
         }
       });
 
@@ -141,7 +150,7 @@ angular
       // Intercept 401s and redirect you to login
       responseError: function(response) {
         if(response.status === 401) {
-          $location.path('/');
+          $location.path('/dashboard');
           // remove any stale tokens
           $cookieStore.remove('token');
           return $q.reject(response);

@@ -117,7 +117,7 @@ angular
     $rootScope.$on('$routeChangeStart', function (event, next) {
       Auth.isLoggedInAsync(function(loggedIn) {
         if (next.authenticate && !loggedIn) {
-          $location.url('/dashboard'); 
+          $location.url('/dashboard');//change to'/login'
         }
       });
 
@@ -150,7 +150,7 @@ angular
       // Intercept 401s and redirect you to login
       responseError: function(response) {
         if(response.status === 401) {
-          $location.path('/');
+          $location.path('/dashboard'); //change to '/'
           // remove any stale tokens
           $cookieStore.remove('token');
           return $q.reject(response);
