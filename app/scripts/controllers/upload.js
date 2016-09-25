@@ -13,7 +13,7 @@ angular.module('frontend2017App')
             var file = $scope.myFile;
             console.log('file is ' );
             console.dir(file);
-            var uploadUrl = "http://localhost:8001/api/events/upload";
+            var uploadUrl = "http://localhost:8080/api/imgs/upload";
             fileUpload.uploadFileToUrl(file, uploadUrl);
     };
   });
