@@ -32,3 +32,8 @@ li{
 .img-click{
 	cursor: pointer;
 }
+
+body{
+  overflow-x: hidden;
+	
+}
