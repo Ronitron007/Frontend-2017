@@ -1,3 +1,4 @@
+
 'use strict';
 
 /**
@@ -81,6 +82,11 @@ angular
         controller: 'SocialcampaignCtrl',
         controllerAs: 'socialCampaign'
       })
+      .when('/fellowships', {
+        templateUrl: 'views/fellowships.html',
+        controller: 'FellowshipsCtrl',
+        controllerAs: 'fellowships'
+      })
       .when('/register', {
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl',
@@ -98,9 +104,12 @@ angular
         controllerAs: 'dashboard',
         authenticate: true
       })
-      .otherwise({
-        redirectTo: '/'
-      });
+      .when('/upload', {
+        templateUrl: 'views/upload.html',
+        controller: 'UploadCtrl',
+        controllerAs: 'upload'
+      })
+
   })
 
   .run(function ($rootScope, $location, Auth) {
