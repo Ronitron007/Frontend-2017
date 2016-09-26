@@ -31,5 +31,8 @@
 .det{
 	width: 90%;
 	position: absolute;
+	height: 350px;
 	left: 5%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }

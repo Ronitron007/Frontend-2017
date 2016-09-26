@@ -220,6 +220,7 @@ background-color:white;
 .dropdown-menu {
     background-color: #0c0c0c;
     font-color:white;
+    display: none;
     
 }
 .dropdown-menu li{
@@ -234,3 +235,8 @@ background-color:white;
 .dropdown-menu a:hover {
 background-color: white;
 color:#0c0c0c;}
+
+.events_open:hover .dropdown-menu {
+    display: block;
+}
+
