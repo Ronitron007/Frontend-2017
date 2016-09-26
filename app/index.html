@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <!-- dashboard..css -->
      <link rel="stylesheet" href="styles/dashboard.css">
+     <link rel="stylesheet" href="styles/about.css">
+      <link rel="stylesheet" href="styles/contact.css">
     <!-- endbuild -->
   </head>
   <body ng-app="frontend2017App">
@@ -45,9 +47,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-include="'views/navbar.html'"></div>
 
-   <div>
+ <div ng-include="'views/navbar.html'"></div>
+ 
  <!-- <img id="logo" src="../images/design-2/toolbarElements/logo.png ">
  <ul id="navbar">
 <li><img class="fonts" src="../images/design-2/toolbarElements/about.png"></li>
@@ -68,8 +70,9 @@
 
 
 
+
     <div class="no-container">
-    <div ng-view=""></div>
+    <div ng-view="" autoscroll></div>
     </div>
 
 
@@ -126,6 +129,9 @@
         <script src="scripts/controllers/upload.js"></script>
         <script src="scripts/directives/filemodel.js"></script>
         <script src="scripts/services/fileupload.js"></script>
+        <script src="scripts/controllers/fellowships.js"></script>
+        <script src="scripts/controllers/sponsors.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
 </body>
 </html>

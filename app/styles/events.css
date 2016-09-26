@@ -6,21 +6,21 @@
 }
 
 #events-building{
-	height: 300px;
-	
+	width:100%;
+
 	float: right;
-	
+
 }
 
 .events-buttons{
 	height: 200px;
 	width:160px;
 
-	
+
 }
 
 .text-align{
-	
+
 }
 ul{
 	list-style-type: none;
@@ -31,4 +31,9 @@ li{
 }
 .img-click{
 	cursor: pointer;
+}
+
+body{
+  overflow-x: hidden;
+	
 }

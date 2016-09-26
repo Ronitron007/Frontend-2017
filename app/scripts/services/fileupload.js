@@ -11,7 +11,7 @@ angular.module('frontend2017App')
   .service('fileUpload', ['$http', '$location', function ($http, $location) {
     this.uploadFileToUrl = function(file, uploadUrl){
         var fd = new FormData();
-        fd.append('file', file);
+        fd.append('file', file, "Minu.png");
         fd.append('test', 'test');
         console.log(fd);
         $http.post(uploadUrl, fd, {

@@ -1,18 +1,16 @@
 #hospitality-banner{
+  position:absolute;
 	height: 200px;
 	float: left;
-	clear: both;
-	margin-top: -275px;
-	margin-left: -15px;
-	
+	top:-150px;
 }
 
 #hospitality-building{
-	height: 300px;
-	
+	width: 100%;
+
     float: right;
 
-	
+
 }
 
 .hospitality-container{
@@ -22,20 +20,20 @@
 
 #hospitality-subtitle{
 
-	height: 200px;
+	height: 300px;
 	float: right;
 
 
 }
 
 #hospitality-placeholder{
-	height: 300px;
+	height: 400px;
 	float:left;
 	clear: both;
 }
 
 .hospitality-container2{
-	
+
 clear: right;
-    
+
 }

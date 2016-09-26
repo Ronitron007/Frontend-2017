@@ -1,10 +1,11 @@
 body{
         margin:0px;
     }
+
  #logo{
-height:450px;
-margin-top: -200px;
-margin-left: -175px;
+height:70px;
+margin-left: 30px;
+margin-top: -10px;
 float: left;
     }
 
@@ -22,12 +23,15 @@ float: left;
     font-family: KeepCalm;
     src: url(fonts/KeepCalm-Medium.ttf);
 }
-li,form input{
- font-family:KeepCalm;
- font-weight: bolder;
+
+.registersubmit,.numeric,.radioButtons,.checkBox,.input-login,.nav.navbar-nav li >a{
+ font-family: KeepCalm;
 }
 
-.nav.navbar-nav li a {
+input[type=password].input-login.ng-dirty{
+    font-family: helvetica,arial,sans-serif;
+}
+.nav.navbar-nav li .nav_elem {
     color: white;
     font-size: 0.9em;  
 }
@@ -129,6 +133,11 @@ position: relative;
     right: 0;
     width: 50px;
 }
+.navbar-toggle {
+position: relative;
+left:100%;
+background-color:white;
+}
 
 @media only screen and (max-width: 767px) {
 .navbar-brand
@@ -208,4 +217,26 @@ position: relative;
 
 .navbar #navbar1 .close-menu{display:none;}
 
+.dropdown-menu {
+    background-color: #0c0c0c;
+    font-color:white;
+    display: none;
+    
+}
+.dropdown-menu li{
+  font-family: KeepCalm;
+   font-size:0.9em;
+}
+.dropdown-menu li a {
+    padding:8px;
+    color:white;
+    text-decoration:none;
+}
+.dropdown-menu a:hover {
+background-color: white;
+color:#0c0c0c;}
+
+.events_open:hover .dropdown-menu {
+    display: block;
+}
 

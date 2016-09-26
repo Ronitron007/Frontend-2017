@@ -12,21 +12,33 @@
           <span class="icon-bar"></span>
         </button>
 
-       <a class="navbar-brand" href="#/"><img id="logo" src="../images/design-2/toolbarElements/logo.png ">
+       <a class="navbar-brand" href="#/"><img id="logo" src="../images/design-2/toolbarElements/logo-r.png ">
         </a>
       </div>
 
       <div id="navbar1" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#/about">ABOUT</a></li>
-          <li><a href="#/events">EVENTS</a></li>
-          <li><a href="#hospitality">HOSPITALITY</a></li>
-          <li><a href="#socialCampaign">SOCIAL WING</a></li>
-          <li><a href="#/summit">SUMMIT</a></li>
-          <li><a href="#shows">SHOWS</a></li>
-          <li><a href="">ENVISAGE</a></li>
-          <li><a href="">FELLOWSHIPS</a></li>
-          <li><a href="">CONTACT US</a></li>
+          <li><a class="nav_elem" href="#/about">ABOUT</a></li>
+          <li class="events_open"><a class="nav_elem" href="#/events" class="dropdown-toggle" data-toggle="dropdown">EVENTS</a>
+            <ul class="dropdown-menu">
+            <center>
+                <li><a href="#/eventLists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
+                <li><a href="#/eventLists/57cd0967a65edf661ac42f7c">B EVENTS</a></li>
+                <li><a href="#/eventLists/57c99e7ea65edf661ac429e3">CODING</a></li>
+                <li><a href="#/eventLists/57caba7aa65edf661ac42af8">DESIGN AND BUILD</a></li>
+                <li><a href="#/eventLists/57cd67faa65edf661ac43036">ELECTRONICS FEST</a></li>
+                <li><a href="#/eventLists/57e01ec4a65edf661ac45068">INTERNATIONAL EVENTS</a></li>
+                <li><a href="#/eventLists/57c52b90a65edf661ac42875">INVOLVE AND QUIZZING</a></li>
+                 <li><a href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
+                </center>
+              </ul> </li>
+          <li><a class="nav_elem" href="#hospitality">HOSPITALITY</a></li>
+          <li><a class="nav_elem" href="#socialCampaign">SOCIAL WING</a></li>
+          <li><a class="nav_elem" href="#/summit">SUMMIT</a></li>
+          <li><a class="nav_elem" href="#shows">SHOWS</a></li>
+          <li><a class="nav_elem" href="#fellowships">FELLOWSHIPS</a></li>
+          <li><a class="nav_elem" href="#sponsors">SPONSORS</a></li>
+          <li><a class="nav_elem" href="#contact">CONTACT US</a></li>
           <li class="show-menu"  id="open-menu">
       <a ng-click="showfull_menu=true" href="#menu">
         &#9776; Menu
@@ -39,8 +51,8 @@
     </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li ng-hide="isLoggedIn()"><a href="#/login">LOGIN</a></li>
-          <li ng-hide="isLoggedIn()"><a href="#/register">REGISTER</a></li>
+          <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/login">LOGIN</a></li>
+          <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/register">REGISTER</a></li>
           <li ng-show="isLoggedIn()" class="nav-item-new dropdown"><a class="ai dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }} <span class="glyphicon glyphicon-user user-icon"></span></a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a id="dropdownElements" href="#/dashboard"><span>Dashboard</span></a></li>
