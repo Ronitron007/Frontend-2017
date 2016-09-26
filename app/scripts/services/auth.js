@@ -76,6 +76,7 @@ angular.module('frontend2017App')
             });
           },
           function (err) {
+            console.log(err);
             this.logout();
             deferred.reject(err);
             return cb(err);
