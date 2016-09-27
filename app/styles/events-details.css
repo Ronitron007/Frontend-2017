@@ -33,6 +33,6 @@
 	position: absolute;
 	height: 350px;
 	left: 5%;
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
 }
