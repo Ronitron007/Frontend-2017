@@ -1,8 +1,9 @@
 #hospitality-banner{
-  position:absolute;
-	height: 200px;
+  	position:absolute;
+	height: 300px;
 	float: left;
-	top:-150px;
+	top:-190px;
+	left: 54px;
 }
 
 #hospitality-building{
