@@ -44,7 +44,7 @@ angular.module('frontend2017App')
 
 
     // $http.get('http://shaastra.org:8001/api/events')
-    $http.get('http://shaastra.org:8001/api/events')
+    $http.get('http://localhost:8001/api/events')
       .then(function (response) {
         var numEvents = response.data.length;
         for(var i=0; i<numEvents; i++) {
@@ -63,7 +63,7 @@ angular.module('frontend2017App')
         $scope.all_events = response.data;
       });
 
-		$http.get('http://shaastra.org:8001/api/teams')
+		$http.get('http://localhost:8001/api/teams')
       .then(function (response) {
         var numTeams = response.data.length;
         var numTeamEvents = 0;
@@ -101,23 +101,17 @@ angular.module('frontend2017App')
       			eventRegistered: currentEvent._id,
       			team: currentTeam._id
       		};
-      		$http.post('http://shaastra.org:8001/api/registrations', sendBody)
+          console.log(sendBody);
+      		$http.post('http://localhost:8001/api/teams/registerEvent', sendBody)
       			.then(function (response) {
-              if(response.status === 204) {
-                $scope.disableRegisterEvent = false;
-                $scope.eventRegisterMessage = '';
-                var numTeams = $scope.all_teams.length;
-                for(var i=0; i<numTeams; i++) {
-                  if($scope.all_teams[i]._id === currentTeam._id) {
-                    $scope.all_teams[i].eventsRegistered.push(currentEvent);
-                  }
-                } 
-      					$scope.eventSelected = '';
-      					$scope.teamSelected = '';
-                $scope.singleMember = false;
-                $scope.teamRequire = "";
-                $scope.eventDate = null;
+              if(response.status === 200) {
+                alert("You have successfully registered for this event");
+                $location.url("/");
       				}
+              else if(response.status === 204){
+                alert("You have already registered for this event");
+                $location.url("/");
+              }
       			});
       	} else {
           $scope.disableRegisterEvent = false;
@@ -130,21 +124,21 @@ angular.module('frontend2017App')
         var result = confirm("Are you sure you want to Unregister? Only team-leader can unregister to an event and this action cannot be undone!");
         if(result) {
           $scope.eventUnRegisterMessage = ' -- Working...';
-          $http.delete('http://shaastra.org:8001/api/registrations/' + team._id + '/' + event._id)
+          $http.delete('http://localhost:8001/api/teams/' + team._id + '/' + event._id)
             .then(function (response) {
-              if(response.status === 204) {
-                $scope.disableUnregisterEvent = false;
-                $scope.eventUnRegisterMessage = '';
-                $scope.all_teams[teamIndex].eventsRegistered.splice(eventIndex, 1);
+              if(response.status === 200) {
+                alert("Successfully unregistered for the event");
+                $location.url("/");
               } else {
-                $scope.disableUnregisterEvent = false;
-                $scope.eventUnRegisterMessage = 'Some error occurred';
+                alert("Some error occured. Please try again");
+                $location.url("/");
               }
             });
         }
       };
 
       $scope.showTeamRequire = function() {
+        $scope.sortedTeams = [];
       	$scope.showDate = true;
       	var currentEvent = JSON.parse($scope.eventSelected);
 
@@ -183,7 +177,7 @@ angular.module('frontend2017App')
         $scope.disableCreateTeam = true;
        if($scope.teamName !== '' && $scope.members_Added.length !== 0) {
     		$scope.teamCreateMessage = " -- Working...";
-    		$http.post('http://shaastra.org:8001/api/teams', {
+    		$http.post('http://localhost:8001/api/teams', {
     			teamMembers: $scope.members_Added,
     			teamName: $scope.teamName
     		})
@@ -213,7 +207,7 @@ angular.module('frontend2017App')
     if(result) {
   		$scope.teamBlockMessage = ' -- Working...';
   		var teamId = $scope.all_teams[index]._id;
-  		$http.post('http://shaastra.org:8001/api/teams/leave/'+ teamId)
+  		$http.post('http://localhost:8001/api/teams/leave/'+ teamId)
   		  .then(function (response) {
     			if(response.status === 200) {
             $scope.disableDeleteTeam = false;
@@ -233,15 +227,17 @@ angular.module('frontend2017App')
     if(result) {
       $scope.teamBlockMessage = ' -- Working...';
       var teamId = $scope.all_teams[index]._id;
-      $http.delete('http://shaastra.org:8001/api/teams/' + teamId)
+      $http.delete('http://localhost:8001/api/teams/' + teamId)
         .then(function (response) {
           if(response.status === 204) {
-            $scope.disableDeleteTeam = false;
-            $scope.teamBlockMessage = '';
-            $scope.all_teams.splice(index, 1);
-          } else {
-            $scope.disableDeleteTeam = false;
-            $scope.teamBlockMessage = 'Some error occurred';
+            alert("Successfully removed the team");
+            $location.url("/");
+          } else if(response.status === 403) {
+            alert("Only the team leader can remove the team");
+            $location.url("/");
+          } else{
+            alert("Some error occured while removing the team");
+            $location.url("/");
           }
         });
     }

@@ -106,7 +106,7 @@ angular
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard',
-        authenticate: false
+        authenticate: true
       })
       .when('/upload', {
         templateUrl: 'views/upload.html',
