@@ -84,12 +84,12 @@
 				<label for="sel1"><h4><b>Selected team details : {{ eventUnRegisterMessage }}</b></h4></label>
 				<div style="">
 					<span>{{all_teams[i].teamName}}</span>
-				</div>
+				</div><br>
 				<div>
-					<b>Events Registered : </b><p ng-if="(all_teams[i].eventsRegistered.length==0)">No events are registered with this team</p> <ul><li ng-repeat="event in all_teams[i].eventsRegistered track by $index"><p>{{ event.name }} - <button class="btn btn-danger" ng-if="(user._id===all_teams[i].teamLeader._id || user._id===all_teams[i].teamLeader)&&(event.startReg<=currentDate && event.endReg>=currentDate)" ng-disabled="disableUnregisterEvent" ng-click="unregisterEvent(all_teams[i], event, $index, i)">Unregister</button> </p></li></ul>
+					<b>Events Registered : </b><p ng-if="(all_teams[i].eventsRegistered.length==0)">No events are registered with this team</p> <ul><li ng-repeat="event in all_teams[i].eventsRegistered track by $index"><p>{{ event.name }} &nbsp <button class="btn btn-danger" ng-if="(user._id===all_teams[i].teamLeader._id || user._id===all_teams[i].teamLeader)&&(event.startReg<=currentDate && event.endReg>=currentDate)" ng-disabled="disableUnregisterEvent" ng-click="unregisterEvent(all_teams[i], event, $index, i)">Unregister</button> </p></li></ul>
 					<div>
-						<b>Team Members :</b> <ul style="margin-left:14%"><li ng-repeat="teammate in all_teams[i].teamMembers track by $index">{{ teammate.name }}<span ng-if="(teammate._id===all_teams[i].teamLeader._id || teammate._id===all_teams[i].teamLeader)"> (Team Leader)</span><br></li></ul>
-					</div>
+						<b>Team Members :</b> <ul style="margin-left:14%"><li ng-repeat="teammate in all_teams[i].teamMembers track by $index"> {{ teammate.name }} <span ng-if="(teammate._id===all_teams[i].teamLeader._id || teammate._id===all_teams[i].teamLeader)"> (Team Leader) </span><span ng-if="$index != all_teams[i].teamMembers.length-1"> , </span></li></ul>
+					</div><br><br><br>
 				</div>
 			
 		
