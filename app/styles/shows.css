@@ -1,8 +1,9 @@
 #shows-banner{
 	position:absolute;
-	height: 200px;
+	height: 300px;
 	float: left;
-	top:-150px;
+	top:-190px;
+	left: 10px;
 
 
 }
