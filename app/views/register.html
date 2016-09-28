@@ -19,18 +19,18 @@
 					<label class="help-block" ng-show="registerform.field3.$error.email &&submitted">
 					Enter valid email address.
 					</label>
-					<input type="password" class="input-login" placeholder="Password" id="field4" name="field4" value="" required ng-model="field4" ng-minlength="5" ng-change="checkPass()">
+					<input type="password" class="input-login" placeholder="Password" id="field4" name="field4"  required ng-model="field4" ng-minlength="5" ng-change="checkPass()">
 					<label class="help-block" ng-show="registerform.field4.$error.required &&submitted">
 					Password is required
 					</label>
 					<label class="help-block" ng-show="registerform.field4.$error.minlength &&submitted">
 					Password must have atleast 5 characters
 					</label>
-					<input type="password" class="input-login" placeholder="Confirm Password" id="field5" name="field5" ng-model="field5" value="" ng-change="checkPass()" required>
+					<input type="password" class="input-login" placeholder="Confirm Password" id="field5" name="field5" ng-model="field5"  ng-change="checkPass()" required>
 					<label class="help-block" ng-show="match && submitted">
 					Passwords do not match
 					</label>
-					<input type="number" class="input-login" class="numeric" placeholder="Phone Number" id="field6" name="field6" ng-model="field6" value="" required ng-minlength="10" ng-maxlength="10">
+					<input type="text" class="input-login" class="numeric" placeholder="Phone Number" id="field6" name="field6" ng-model="field6"  required ng-minlength="10" ng-maxlength="10">
 					<label class="help-block" ng-show="registerform.field6.$error.required &&submitted">
 				    Phone number is required
 					</label>
@@ -48,7 +48,6 @@
 					<div class="input-login" id="field9">
 						<span class="radioButtons"> Male</span><input name="Gender" value="Male" type="radio" required ng-model="field9">
 						<span class="radioButtons"> Female</span><input name="Gender" value="Female" type="radio" required ng-model="field9">
-						<span class="radioButtons">Other</span><input name="Gender" value="other" type="radio" required ng-model="field9">
 					</div>
 					<label class="help-block" ng-show="registerform.Gender.$error.required &&submitted">
 				    Select Gender
@@ -64,9 +63,9 @@
 						<span class="radioButtons">School/Work</span><input type="radio" name="occupation" required ng-model="field11" value="School/Work">
 					</div>
 					<label class="help-block" ng-show="registerform.occupation.$error.required &&submitted">
-				    Select occupation
+				    Select if school student or not
 					</label>
-					<select class="input-login" id="field12" name="field12" ng-model="field12" required>
+					<select class="input-login" id="field12" name="field12" ng-model="field12" required ng-if="college()">
 						<option value="Null">College</option>
 					</select>
 					<label class="help-block" ng-show="registerform.field12.$error.required &&submitted">
@@ -84,7 +83,7 @@
 					<label class="help-block" ng-show="registerform.field14.$error.required &&submitted">
 				    Select Degree
 					</label>
-					<span class="checkBox">Accomodation</span><input type="checkbox" name="accomodation" id="field15" name="field15" required ng-model="field15">
+					<span class="checkBox">Accomodation</span><input type="checkbox" name="accomodation" id="field15" name="field15" ng-model="field15">
 					<div class="registersubmit"><button type="submit" class="btn btn-primary btn-lg" style="max-width: 10.997067448vw;border-radius: 7px;border-width: 3px;border-color: black;border-style: solid;">REGISTER</button></div>
 				</form>
 			</div>

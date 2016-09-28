@@ -1,4 +1,3 @@
-
 'use strict';
 
 /**
@@ -52,6 +51,11 @@ angular
         controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
+      .when('/sponsors', {
+        templateUrl: 'views/sponsors.html',
+        controller: 'SponsorsCtrl',
+        controllerAs: 'sponsors'
+      })
       .when('/exhibitions', {
         templateUrl: 'views/exhibitions.html',
         controller: 'ExhibitionsCtrl',
@@ -102,12 +106,18 @@ angular
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard',
-        authenticate: true
+        authenticate: false
       })
       .when('/upload', {
         templateUrl: 'views/upload.html',
         controller: 'UploadCtrl',
         controllerAs: 'upload'
+      })
+	.when('/edit-profile', {
+        templateUrl: 'views/edit-profile.html',
+        controller: '',
+        controllerAs: '',
+    
       })
 
   })
@@ -117,7 +127,7 @@ angular
     $rootScope.$on('$routeChangeStart', function (event, next) {
       Auth.isLoggedInAsync(function(loggedIn) {
         if (next.authenticate && !loggedIn) {
-          $location.url('/dashboard'); //change to "/login"
+          $location.url('/login');
         }
       });
 
@@ -150,7 +160,7 @@ angular
       // Intercept 401s and redirect you to login
       responseError: function(response) {
         if(response.status === 401) {
-          $location.path('/');
+          $location.path('/dashboard'); //change to '/'
           // remove any stale tokens
           $cookieStore.remove('token');
           return $q.reject(response);

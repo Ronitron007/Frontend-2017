@@ -7,5 +7,48 @@ overflow:hidden;
 }
 .list_form{
 width:50%;
-margin-left:30%;
+margin-left:26%;
+}
+#input_ID{
+	width:87%;
+}
+hr.style5 {
+	background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
+}
+.create_team_button {
+  display: inline-block;
+  background-color:  #008CBA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1em;
+  padding: 2%;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.create_team_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.create_team_button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.create_team_button:hover span {
+  padding-right: 25px;
+}
+.create_team_button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

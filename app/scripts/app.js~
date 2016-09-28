@@ -51,6 +51,11 @@ angular
         controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
+      .when('/sponsors', {
+        templateUrl: 'views/sponsors.html',
+        controller: 'SponsorsCtrl',
+        controllerAs: 'sponsors'
+      })
       .when('/exhibitions', {
         templateUrl: 'views/exhibitions.html',
         controller: 'ExhibitionsCtrl',
@@ -81,6 +86,11 @@ angular
         controller: 'SocialcampaignCtrl',
         controllerAs: 'socialCampaign'
       })
+      .when('/fellowships', {
+        templateUrl: 'views/fellowships.html',
+        controller: 'FellowshipsCtrl',
+        controllerAs: 'fellowships'
+      })
       .when('/register', {
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl',
@@ -96,11 +106,20 @@ angular
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard',
-        authenticate: true
+        authenticate: false
       })
-      .otherwise({
-        redirectTo: '/'
-      });
+      .when('/upload', {
+        templateUrl: 'views/upload.html',
+        controller: 'UploadCtrl',
+        controllerAs: 'upload'
+      })
+	.when('/edit-profile', {
+        templateUrl: 'views/edit-profile.html',
+        controller: '',
+        controllerAs: '',
+    
+      })
+
   })
 
   .run(function ($rootScope, $location, Auth) {
@@ -108,7 +127,7 @@ angular
     $rootScope.$on('$routeChangeStart', function (event, next) {
       Auth.isLoggedInAsync(function(loggedIn) {
         if (next.authenticate && !loggedIn) {
-          $location.url('/dashboard');
+          $location.url('/login');
         }
       });
 
@@ -141,7 +160,7 @@ angular
       // Intercept 401s and redirect you to login
       responseError: function(response) {
         if(response.status === 401) {
-          $location.path('/');
+          $location.path('/dashboard'); //change to '/'
           // remove any stale tokens
           $cookieStore.remove('token');
           return $q.reject(response);
