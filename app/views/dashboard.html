@@ -7,7 +7,7 @@
 			<img class="shaastra-logo-line" src='../images/design-2/shaastra_logo_line.png' style="width:29.8020527859vw; margin-right: 35.098973607vw; margin-left:35.098973607vw; padding-top: 100px;">
 		<div class="list_form">
 <form method="post">
-<h4><b>User Details<span>&nbsp(Edit your details <a target="_blank" href="#/edit-profile">here..</a>)</span></b></h4>
+<h4><b>User Details</b></h4>
 
 			  <h5 ><b>Name : </b> {{ user.name }} {{ user.secondName }}</h3>
 			  <h5 ><b>Email ID : </b> {{ user.email }}</h3>
@@ -31,10 +31,10 @@
 		
 <div class="form-group" ng-class="{ 'has-success': form.team.$valid && submitted,
 	                                            'has-error': form.team.$invalid && submitted }">
-	            <h5><b>Choose Team Name :</b></h5>
+	            <h5 ng-hide="singleMember"><b>Choose Team Name :</b></h5>
 	        <select class="input-login" class="form-control" name="team" ng-model="teamSelected" ng-hide="singleMember">
 	          <option value="" selected disabled>----- Choose Team Name -----</option>
-	          <option  ng-repeat="team in sortedTeams" value="{{ team }}">{{ team.teamName }}</option>
+	          <option  ng-repeat="team in sortedTeams track by $index" value="{{ team }}">{{ team.teamName }}</option>
 	        </select>
 	          <span class="help-block" ng-show="form.team.$error.required && submitted">
 	            A team is required
@@ -84,12 +84,12 @@
 				<label for="sel1"><h4><b>Selected team details : {{ eventUnRegisterMessage }}</b></h4></label>
 				<div style="">
 					<span>{{all_teams[i].teamName}}</span>
-				</div>
+				</div><br>
 				<div>
-					<b>Events Registered : </b><p ng-if="(all_teams[i].eventsRegistered.length==0)">No events are registered with this team</p> <ul><li ng-repeat="event in all_teams[i].eventsRegistered track by $index"><p>{{ event.name }} - <button class="btn btn-danger" ng-if="(user._id===all_teams[i].teamLeader._id || user._id===all_teams[i].teamLeader)&&(event.startReg<=currentDate && event.endReg>=currentDate)" ng-disabled="disableUnregisterEvent" ng-click="unregisterEvent(all_teams[i], event, $index, i)">Unregister</button> </p></li></ul>
+					<b>Events Registered : </b><p ng-if="(all_teams[i].eventsRegistered.length==0)">No events are registered with this team</p> <ul><li ng-repeat="event in all_teams[i].eventsRegistered track by $index"><p>{{ event.name }} &nbsp <button class="btn btn-danger" ng-if="(user._id===all_teams[i].teamLeader._id || user._id===all_teams[i].teamLeader)&&(event.startReg<=currentDate && event.endReg>=currentDate)" ng-disabled="disableUnregisterEvent" ng-click="unregisterEvent(all_teams[i], event, $index, i)">Unregister</button> </p></li></ul>
 					<div>
-						<b>Team Members :</b> <ul style="margin-left:14%"><li ng-repeat="teammate in all_teams[i].teamMembers track by $index">{{ teammate.name }}<span ng-if="(teammate._id===all_teams[i].teamLeader._id || teammate._id===all_teams[i].teamLeader)"> (Team Leader)</span></li></ul>
-					</div>
+						<b>Team Members :</b> <ul style="margin-left:14%"><li ng-repeat="teammate in all_teams[i].teamMembers track by $index"> {{ teammate.name }} <span ng-if="(teammate._id===all_teams[i].teamLeader._id || teammate._id===all_teams[i].teamLeader)"> (Team Leader) </span><span ng-if="$index != all_teams[i].teamMembers.length-1"> , </span></li></ul>
+					</div><br><br><br>
 				</div>
 			
 		
