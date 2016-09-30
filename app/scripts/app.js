@@ -108,7 +108,7 @@ angular
         controllerAs: 'dashboard',
         authenticate: true
       })
-      .when('/upload', {
+      .when('/:eventId/:teamId/upload', {
         templateUrl: 'views/upload.html',
         controller: 'UploadCtrl',
         controllerAs: 'upload'
