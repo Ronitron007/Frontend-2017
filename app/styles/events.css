@@ -23,13 +23,13 @@
 .text-align{
 
 }
-ul{
+/*ul{
 	list-style-type: none;
     display:inline;
 }
 li{
 	display: inline;
-}
+}*/
 .img-click{
 	cursor: pointer;
 }
