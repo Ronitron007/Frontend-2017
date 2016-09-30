@@ -189,18 +189,19 @@ body {
   background-repeat: no-repeat;
   }
 #bg1{
-  background: url('/images/buildings3.png');
+  background: url('/images/full2.png');
+  top:75px;
   width: 10000px;
   height: 803px;
-  background-size: 100% 85%;
+  background-size: 100% 75%;
   background-repeat: no-repeat;
   }
   /*background*/
 #bg2{
-  background: url('/images/clouds.png');
+  background: url('/images/clouds2.png');
   width: 10000px;
   height: 400px;
-  background-size: 100% 70%;
+  background-size: 50% 160%;
   background-repeat: no-repeat;
   z-index:-10;
   }
