@@ -233,13 +233,7 @@ background-color:white;
     background-color: #0c0c0c;
     font-color:white;
     display: none;
-    visibility: hidden; /* hides sub-menu */
-  opacity: 0;
- 
-  transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-
+    
 
     
 }
