@@ -56,6 +56,12 @@ angular
         controller: 'SponsorsCtrl',
         controllerAs: 'sponsors'
       })
+      .when('/solutions', {
+        templateUrl: 'views/solutions.html',
+        controller: 'SolutionsCtrl',
+        controllerAs: 'solutions'
+      })
+
       .when('/exhibitions', {
         templateUrl: 'views/exhibitions.html',
         controller: 'ExhibitionsCtrl',
