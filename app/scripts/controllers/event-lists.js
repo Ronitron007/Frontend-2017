@@ -19,6 +19,7 @@ angular.module('frontend2017App')
     $http.get('http://shaastra.org:8001/api/eventLists/events/' + eventId)
   			.then(function (response) {
   				$scope.eventLists = response.data;
+          console.log(response.data);
 
           var num = response.data.events.length;
     				for(var i=0; i<num; i++) {
