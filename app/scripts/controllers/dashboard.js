@@ -78,6 +78,7 @@ angular.module('frontend2017App')
           }
         }
         $scope.all_teams = response.data;
+
       });
 
       
@@ -220,6 +221,11 @@ angular.module('frontend2017App')
     		});
     }
 	};
+
+  $scope.uploadTDP = function(eventId, teamId){
+    console.log(eventId + " " + teamId);
+    $location.url(eventId + "/" + teamId + "/upload");
+  }
 
   $scope.deleteTeam = function (index) {
     $scope.disableDeleteTeam = true;

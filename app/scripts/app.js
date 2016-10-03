@@ -56,6 +56,12 @@ angular
         controller: 'SponsorsCtrl',
         controllerAs: 'sponsors'
       })
+      .when('/solutions', {
+        templateUrl: 'views/solutions.html',
+        controller: 'SolutionsCtrl',
+        controllerAs: 'solutions'
+      })
+
       .when('/exhibitions', {
         templateUrl: 'views/exhibitions.html',
         controller: 'ExhibitionsCtrl',
@@ -108,7 +114,7 @@ angular
         controllerAs: 'dashboard',
         authenticate: true
       })
-      .when('/upload', {
+      .when('/:eventId/:teamId/upload', {
         templateUrl: 'views/upload.html',
         controller: 'UploadCtrl',
         controllerAs: 'upload'

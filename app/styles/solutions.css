@@ -1,0 +1,42 @@
+#shows-banner{
+	position:absolute;
+	height: 300px;
+	float: left;
+	top:-190px;
+	left: 10px;
+
+
+}
+
+#shows-building{
+	width: 100%;
+
+    float: right;
+
+
+}
+
+.shows-container{
+
+
+	}
+
+#shows-subtitle{
+
+	height: 300px;
+	float: right;
+
+
+}
+
+#shows-placeholder{
+	height: 400px;
+	float:left;
+	clear: both;
+}
+
+.shows-container2{
+
+clear: right;
+
+}
