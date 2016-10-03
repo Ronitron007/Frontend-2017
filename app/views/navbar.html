@@ -18,7 +18,7 @@
 
       <div id="navbar1" class="navbar-collapse collapse">
      
-        <ul id="menu-closed" class="nav navbar-nav">
+        <ul id="left_nav" class="nav navbar-nav">
           <li><a class="nav_elem" href="#/about">ABOUT</a></li>
           <li class="events_open"><a class="nav_elem" href="#/events" class="dropdown-toggle" data-toggle="dropdown">EVENTS</a>
             <ul class="dropdown-menu">
@@ -34,8 +34,8 @@
                  <li><a href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
                 </center>
               </ul> </li>
-          <li><a class="nav_elem" href="#hospitality">HOSPITALITY</a></li>
-          <li><a class="nav_elem" href="#socialCampaign">SOCIAL WING</a></li>
+          <li><a class="nav_elem" href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>      
+          <li><a class="nav_elem" href="#socialCampaign">SOCIAL CAMPAIGN</a></li>
           <li><a class="nav_elem" href="#/summit">SUMMIT</a></li>
           <li><a class="nav_elem" href="#shows">SHOWS</a></li>
           <li><a class="nav_elem" href="#fellowships">FELLOWSHIPS</a></li>
@@ -44,9 +44,11 @@
           <!-- <li><a href="#menu-closed">&#215; Close menu</a></li>
           <li><a href="#menu">&#9776; Menu</a></li-->
         
-       </ul>
-      
-        <ul class="nav navbar-nav navbar-right">
+       </ul>         
+          
+   
+
+        <ul id="right_nav" class="nav navbar-nav navbar-right">
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/login">LOGIN</a></li>
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/register">REGISTER</a></li>
           <li ng-show="isLoggedIn()" class="nav-item-new dropdown"><a class="ai dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }} <span class="glyphicon glyphicon-user user-icon"></span></a>

@@ -157,6 +157,23 @@ body {
     max-width: 730px;
   }
 
+  #bg1{
+  background: url('/images/full2.png');
+  top:75px;
+  width: 10000px;
+  height: 803px;
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  }
+  /*background*/
+#bg2{
+  background: url('/images/clouds2.png');
+  width: 10000px;
+  height: 400px;
+  background-size: 50% 160%;
+  background-repeat: no-repeat;
+  z-index:-10;
+  }
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -174,6 +191,19 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) and (min-width: 200px)
+{
+
+.socialTab{
+  display: none;
+}
+#bg1{
+  background:url('/images/static.png') !important;
+}
+#bg2{
+  background:none;
+}
+}
 /*custom*/
 
 #Scene{
@@ -188,22 +218,7 @@ body {
   height: 885px;
   background-repeat: no-repeat;
   }
-#bg1{
-  background: url('/images/buildings3.png');
-  width: 10000px;
-  height: 803px;
-  background-size: 100% 85%;
-  background-repeat: no-repeat;
-  }
-  /*background*/
-#bg2{
-  background: url('/images/clouds.png');
-  width: 10000px;
-  height: 400px;
-  background-size: 100% 70%;
-  background-repeat: no-repeat;
-  z-index:-10;
-  }
+
   /*cloud layer*/
   #man{
   height: 157px;
