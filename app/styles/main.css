@@ -159,7 +159,7 @@ body {
    #man{
   height: 157px;
   left:185px;
-  top:515px;
+  top: 500px;
   }
   .jetpack{
   width: 100px;
@@ -187,10 +187,10 @@ body {
   }
   /*background*/
 #bg2{
-  background: url('/images/clouds2.png');
+  background: url('/images/clouds6.png');
   width: 10000px;
-  height: 400px;
-  background-size: 50% 160%;
+  height: 1000px;
+  background-size: 50% 100%;
   background-repeat: no-repeat;
   z-index:-10;
   }
