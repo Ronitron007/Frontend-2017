@@ -159,7 +159,7 @@ body {
    #man{
   height: 157px;
   left:185px;
-  top:450px;
+  top: 500px;
   }
   .jetpack{
   width: 100px;
@@ -178,19 +178,19 @@ body {
 }
 
   #bg1{
-  background: url('/images/full2.png');
+  background: url('/images/buildings5.png');
   top:75px;
   width: 10000px;
   height: 803px;
-  background-size: 100% 75%;
+  background-size: 100% 85%;
   background-repeat: no-repeat;
   }
   /*background*/
 #bg2{
-  background: url('/images/clouds2.png');
+  background: url('/images/clouds6.png');
   width: 10000px;
-  height: 400px;
-  background-size: 50% 160%;
+  height: 1000px;
+  background-size: 50% 100%;
   background-repeat: no-repeat;
   z-index:-10;
   }

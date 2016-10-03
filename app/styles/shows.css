@@ -30,9 +30,12 @@
 }
 
 #shows-placeholder{
-	height: 400px;
+	width: 400px;
 	float:left;
 	clear: both;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
 }
 
 .shows-container2{
