@@ -14,11 +14,13 @@ angular.module('frontend2017App')
     var eventId = $routeParams.eventId;
     $scope.eventsJSON = [];
   	$scope.eventLists = [];
+    $scope.eventListContent = "";
 
 
     $http.get('http://shaastra.org:8001/api/eventLists/events/' + eventId)
   			.then(function (response) {
   				$scope.eventLists = response.data;
+          $scope.eventListContent = response.data.info;
 
           var num = response.data.events.length;
     				for(var i=0; i<num; i++) {
