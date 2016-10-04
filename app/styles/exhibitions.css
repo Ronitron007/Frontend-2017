@@ -2,7 +2,9 @@
 #exhibitions-banner{
 	position:absolute;
 	height: 250px;
-	margin-top:-275px;
+	top:-170px;
+	left: 40px;
+    
 
 }
 
