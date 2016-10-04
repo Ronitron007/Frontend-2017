@@ -1,5 +1,5 @@
 <div class="header" ng-controller="NavbarCtrl">
-<!-- Top Nav-Bar -->
+     <!-- Top Nav-Bar -->
       <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
   <div class="navbar-inner">
     <div class="container-fluid">
@@ -17,9 +17,8 @@
       </div>
 
       <div id="navbar1" class="navbar-collapse collapse">
- 
-        <ul id="menu" class="nav navbar-nav">
-         
+     
+        <ul id="left_nav" class="nav navbar-nav">
           <li class="alpha"><a  class="nav_elem" href="#/about">ABOUT</a></li>
           <li class="events_open"><a class="nav_elem" href="#/events" class="dropdown-toggle" data-toggle="dropdown">EVENTS</a>
             <ul class="dropdown-menu">
@@ -32,28 +31,24 @@
                 <li><a href="#/eventLists/57cd67faa65edf661ac43036">ELECTRONICS FEST</a></li>
                 <li><a href="#/eventLists/57e01ec4a65edf661ac45068">INTERNATIONAL EVENTS</a></li>
                 <li><a href="#/eventLists/57c52b90a65edf661ac42875">INVOLVE AND QUIZZING</a></li>
-                <li><a href="#fellowships">FELLOWSHIPS</a></li>
                  <li><a href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
-                
+                 <li><a href="#fellowships">FELLOWSHIPS</a></li>
                 </center>
               </ul> </li>
-          <li ><a class="nav_elem" href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>      
+          <li><a class="nav_elem" href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>      
           <li class="beta"><a class="nav_elem" href="#socialCampaign">SOCIAL CAMPAIGN</a></li>
-          <li class="beta"><a class="nav_elem" href="#/summit">SUMMIT</a></li>
-          <li class="alpha"><a class="nav_elem" href="#shows">SHOWS</a></li>
-           
+          <li class="beta2"><a class="nav_elem" href="#/summit">SUMMIT</a></li>
+          <li class="delta"><a class="nav_elem" href="#shows">SHOWS</a></li>
+          
           <li class="gamma"><a class="nav_elem" href="#sponsors">SPONSORS</a></li>
           <li class="gamma"><a class="nav_elem" href="#contact">CONTACT US</a></li>
-      
-  </ul>
-    
-      <!--   <li class="show-more"><a href="#">more +</a></li>
-      <li class="show-less"><a href="#">less -</a></li> -->
-     
-              
-    
+        <li class="show-more"><a href="#/">more+</a></li>
+      <li class="show-less"><a href="#/">less -</a></li>
+       </ul>         
+          
+  
+
         <ul id="right_nav" class="nav navbar-nav navbar-right">
-        <!-- <li><a class="more_elem" href="">MORE</a></li> -->
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/login">LOGIN</a></li>
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/register">REGISTER</a></li>
           <li ng-show="isLoggedIn()" class="nav-item-new dropdown"><a class="ai dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }} <span class="glyphicon glyphicon-user user-icon"></span></a>
@@ -67,9 +62,6 @@
     </div>
     </div>
   </nav> 
+  
+
     </div>
-</div>
-
-<script>
-
-</script>

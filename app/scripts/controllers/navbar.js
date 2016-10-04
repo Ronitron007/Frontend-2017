@@ -11,14 +11,14 @@ angular.module('frontend2017App')
   .controller('NavbarCtrl', function ($scope, Auth, $location,$anchorScroll) {
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.getCurrentUser = Auth.getCurrentUser;
-   /* $scope.showDown = true;
-    $scope.showUp = false;*/
+   $scope.showDown = true;
+    $scope.showUp = false;
     $scope.logout = function () {
       Auth.logout();
       $location.path('/login');
     };
 
-    /*$scope.gotoBottom = function() {
+    $scope.gotoBottom = function() {
       if( $scope.showDown == true)
       {
       $location.hash('d');
@@ -30,7 +30,7 @@ angular.module('frontend2017App')
       $anchorScroll();
       $scope.showDown = $scope.showDown ? false : true;
       $scope.showUp = $scope.showUp ? false : true;
-    };*/
+    };
      
 	  
 

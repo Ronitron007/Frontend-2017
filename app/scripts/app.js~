@@ -26,7 +26,7 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
+      .when('/menu', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
@@ -56,6 +56,12 @@ angular
         controller: 'SponsorsCtrl',
         controllerAs: 'sponsors'
       })
+      .when('/solutions', {
+        templateUrl: 'views/solutions.html',
+        controller: 'SolutionsCtrl',
+        controllerAs: 'solutions'
+      })
+
       .when('/exhibitions', {
         templateUrl: 'views/exhibitions.html',
         controller: 'ExhibitionsCtrl',
@@ -106,9 +112,9 @@ angular
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard',
-        authenticate: false
+        authenticate: true
       })
-      .when('/upload', {
+      .when('/:eventId/:teamId/upload', {
         templateUrl: 'views/upload.html',
         controller: 'UploadCtrl',
         controllerAs: 'upload'
@@ -119,6 +125,7 @@ angular
         controllerAs: '',
     
       })
+ 
 
   })
 
