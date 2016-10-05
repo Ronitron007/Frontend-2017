@@ -2,7 +2,7 @@
 	position: absolute;
 	height: 253px;
 	top: -166px;
-	left: 100%;
+	left: 0%;
 }
 
 #events-building{
@@ -15,7 +15,7 @@
 .events-buttons{
 	height: 200px;
 	width:160px;
-
+7
 
 }
 
