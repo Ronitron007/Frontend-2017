@@ -278,11 +278,11 @@ body{
 	width:34px; height:50px;
 	display:block;
 	border:5px solid #000;
-	position:absolute;
+	position:fixed;
 	z-index:700;
 	opacity:1;
-	top:75%;
-  left:90%;
+	top:85%;
+  left:50%;
 	-webkit-border-radius:35px;
 	-moz-border-radius:35px;
 	-o-border-radius:35px;
@@ -316,7 +316,7 @@ body{
 
 #mouse-icon:hover{
 	opacity:1;
-  border:5px solid #fff;
+  border:5px solid #000;
   cursor:pointer;
 }
 
