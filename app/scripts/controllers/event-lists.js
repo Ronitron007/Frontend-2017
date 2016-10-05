@@ -22,6 +22,9 @@ angular.module('frontend2017App')
   				$scope.eventLists = response.data;
           $scope.eventListContent = response.data.info;
 
+          
+          $scope.eventLists.title = $scope.eventLists.title.split(" ").join("-");
+
           var num = response.data.events.length;
     				for(var i=0; i<num; i++) {
     					if(response.data.events[i].acceptedByAdmin === false) {
