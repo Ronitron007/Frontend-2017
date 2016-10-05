@@ -2,7 +2,7 @@
 	position: absolute;
 	height: 253px;
 	top: -166px;
-	left: 120%;
+	left: 100%;
 }
 
 #events-building{

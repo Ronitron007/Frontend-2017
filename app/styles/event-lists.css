@@ -1,5 +1,7 @@
 .eventbox{
-	 width:80%;
+	 width:50%;
+	 display: block;
+	 margin-left: 25%;
 }
 .imgstyle{
 	width:100%;
@@ -7,5 +9,12 @@
 }
 .eventsname{
 	text-align: center;
+	padding: 15px;
+	font-weight: bolder;
+	font-family: KeepCalm;
 	vertical-align: center;
+	border: 3px solid black ;
+	background-color:#99ff99;
+	border-radius: 10px;
+	cursor: pointer;
 }

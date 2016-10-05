@@ -8,7 +8,7 @@
  * Controller of the frontend2017App
  */
 angular.module('frontend2017App')
-  .controller('ContactCtrl', function () {
+  .controller('ContactCtrl', function ($scope) {
     skrollr.init().destroy();
     this.contents=list;
 

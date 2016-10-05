@@ -1,3 +1,4 @@
+
 'use strict';
 
 /**
@@ -86,6 +87,26 @@ angular
         templateUrl: 'views/summit.html',
         controller: 'SummitCtrl',
         controllerAs: 'summit'
+      })
+      .when('/summit-partners', {
+        templateUrl: 'views/summit-partners.html',
+        controller: 'SummitPartnersCtrl',
+        controllerAs: 'summitPartners'
+      })
+      .when('/summit-past-versions', {
+        templateUrl: 'views/summit-past-versions.html',
+        controller: 'SummitPastVersionsCtrl',
+        controllerAs: 'summitPastVersions'
+      })
+      .when('/summit-registrations', {
+        templateUrl: 'views/summit-registrations.html',
+        controller: 'SummitRegistrationsCtrl',
+        controllerAs: 'summitRegistrations'
+      })
+      .when('/summit-events', {
+        templateUrl: 'views/summit-events.html',
+        controller: 'SummitEventsCtrl',
+        controllerAs: 'summitEvents'
       })
       .when('/socialCampaign', {
         templateUrl: 'views/socialcampaign.html',
