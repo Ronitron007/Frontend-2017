@@ -7,6 +7,14 @@
 		left: 95%;
 }
 
+#events-banner2{
+	position: absolute;
+	height: 253px;
+	float: left;
+	top: -166px;
+	left: 37px;
+}
+
 #events-building{
 	width:100%;
 
