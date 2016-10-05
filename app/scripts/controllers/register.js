@@ -8,8 +8,15 @@
  * Controller of the frontend2017App
  */
 angular.module('frontend2017App')
-  .controller('RegisterCtrl', function ($scope,Auth,$location) {
+  .controller('RegisterCtrl', function ($scope,Auth,$location, $http) {
     skrollr.init().destroy();
+
+    $http.get('http://shaastra.org:8001/api/colleges')
+        .then(function (response) {
+          $scope.allColleges = response.data;
+          
+        });
+
       $(function(){
   	$('.alphabetic').keydown(function (e){
   		if (e.shiftkey || e.ctrlKey || e.altKey) {
@@ -50,8 +57,50 @@ angular.module('frontend2017App')
               $scope.match=false;
         }
       };
-      
+      $scope.field12 = null;
       $scope.submitted=false;
+      $scope.field9 = "Male";
+      $scope.allStates = ["Andaman and Nicobar Islands", 
+  "Andhra Pradesh", 
+  "Arunachal Pradesh", 
+  "Assam", 
+  "Bihar", 
+  "Chandigarh", 
+  "Chhattisgarh", 
+  "Dadra and Nagar Haveli", 
+  "Daman and Diu", 
+  "Delhi", 
+  "Goa", 
+  "Gujarat", 
+  "Haryana", 
+  "Himachal Pradesh", 
+  "Jammu and Kashmir", 
+  "Jharkhand", 
+  "Karnataka", 
+  "Kerala", 
+  "Lakshadweep", 
+  "Madhya Pradesh", 
+  "Maharashtra", 
+  "Manipur", 
+  "Meghalaya", 
+  "Mizoram", 
+  "Nagaland", 
+  "Orissa", 
+  "Pondicherry", 
+  "Punjab", 
+  "Rajasthan", 
+  "Sikkim", 
+  "Tamil Nadu", 
+  "Telangana",
+  "Tripura", 
+  "Uttaranchal", 
+  "Uttar Pradesh", 
+  "West Bengal"];
+
+      $scope.printPlease = function(){
+        console.log($scope.field10);
+      }
+
       $scope.submit=function(form){
         $scope.submitted=true;
         var gender,school;
@@ -73,9 +122,7 @@ angular.module('frontend2017App')
           age:$scope.field8,
           gender:gender,
           state:$scope.field10,
-          schoolStudent:school,
-          stream:$scope.field13,
-          degree:$scope.field14,
+          college:$scope.field12,
           wantAccomodation:$scope.field15,
          }).then(function(){
         console.log('Successfully Submitted');

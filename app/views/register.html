@@ -52,22 +52,22 @@
 					<label class="help-block" ng-show="registerform.Gender.$error.required &&submitted">
 				    Select Gender
 					</label>
-					<select class="input-login" placeholder="State" id="field10" name="field10" required ng-model="field10">
-					  <option value="Null">State</option>
+					<select class="input-login" placeholder="State" id="field10" name="field10" required ng-model="field10" ng-change="printPlease()">
+						<option ng-repeat="state in allStates" value="{{state}}">{{state}}</option>
 					</select>
 					<label class="help-block" ng-show="registerform.field10.$error.required &&submitted">
 				    Select State
 					</label>
-					<div class="input-login" id="field11" name="field11">
+					<!-- <div class="input-login" id="field11" name="field11">
 						<span class="radioButtons">College</span><input type="radio" name="occupation" required ng-model="field11" value="College">
 						<span class="radioButtons">School/Work</span><input type="radio" name="occupation" required ng-model="field11" value="School/Work">
 					</div>
 					<label class="help-block" ng-show="registerform.occupation.$error.required &&submitted">
 				    Select if school student or not
-					</label>
-					<select class="input-login" id="field12" name="field12" ng-model="field12" required ng-if="college()">
-						<option value="Null">College</option>
-					</select>
+					</label> -->
+					<select class="input-login" id="field12" name="field12" ng-model="field12" required>
+						<option ng-repeat="college in allColleges" value="{{college._id}}">{{college.collegeName}}</option>					
+          			</select>
 					<label class="help-block" ng-show="registerform.field12.$error.required &&submitted">
 				    Select College
 					</label>
