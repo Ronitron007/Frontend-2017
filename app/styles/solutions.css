@@ -1,41 +1,50 @@
-#shows-banner{
+#solutions-banner{
 	position:absolute;
-	height: 300px;
+	height: 220px;
 	float: left;
-	top:-190px;
-	left: 10px;
-
-
+	top:-160px;
+	left: 40px;
 }
 
-#shows-building{
+#solutions-building{
 	width: 100%;
-
     float: right;
 
 
 }
 
-.shows-container{
-
-
+.solutions-container{
+   margin-right: 1%;
+   
 	}
 
-#shows-subtitle{
+.solutions-header{
+position: relative;
+text-align: left;
+font-weight: bolder;
+}
+
+#solutions-subtitle{
 
 	height: 300px;
 	float: right;
 
-
+}
+.table th, .table td,.table  {
+    border: 1px solid black;
+    border-collapse: separate;
 }
 
-#shows-placeholder{
-	height: 400px;
+#solutions-placeholder{
+	width: 400px;
 	float:left;
 	clear: both;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
 }
 
-.shows-container2{
+.solutions-container2{
 
 clear: right;
 
