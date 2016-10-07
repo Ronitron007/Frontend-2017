@@ -1,31 +1,36 @@
 <div class="eventdetails">
 <div ng-controller="EventsDetailsCtrl">
-<br /><br />
-<div class="row">
-<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-<div id="eventdet" class="col-xs-10 col-sm-3 col-md-3 col-lg-3">
-<br />
-<img class="evdetimg img-responsive" alt="Responsive image" ng-src="http://shaastra.org:8001/api/uploads/{{eve.imageid}}/{{eve.imagename}}">
-<h3 class="evnt_detail_heading"><b>{{eve.name}}</b></h3>
-</div>
+
+<!-- <img class="evdetimg img-responsive" alt="Responsive image" ng-src="http://shaastra.org:8001/api/uploads/{{eve.imageid}}/{{eve.imagename}}"> -->
+
+<img class="quadcopter_img" src="images/Quadcopter.png"/>
+<img class="quadcopter_img2" src="images/Quadcopter.png"/>
+<img class="cloud1" src="images/Clouds/Untitled-1.png">
+<img class="cloud2" src="images/Clouds/Untitled-2.png">
+<img class="cloud3" src="images/Clouds/Untitled-3.png">
+<img class="cloud4" src="images/Clouds/Untitled-4.png">
+<img class="cloud5" src="images/Clouds/Untitled-5.png">
+<img class="cloud6" src="images/Clouds/Untitled-6.png">
+<img class="cloud7" src="images/Clouds/Untitled-7.png">
+<img class="cloud8" src="images/Clouds/Untitled-7.png">
+<center>
+<h2 class="evnt_detail_heading"><b>{{eve.name}}</b></h2>
+
 <!-- add event name -->
-
-<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-<br/><br/>
-<div class="evdetcontent">
-
-	<div class="row">
+<div class="tabs_eventsdet">
 	  <button ng-repeat="tabs in eve.eventTabs" class="eventab" ng-click="showInfo($index)">{{tabs.name}}</button>
+</div>
 
-	</div>
-
+<div class="evdetcontent">
 	<div class="det">
 		<div v-html="input | marked" ng-bind-html="htmlContent"></div>
 	</div>
 
 </div>
-</div>
+<img class="bottom_building" src="images/Bottom-Buildings.png"/>
 </div>
 </div>
 
-</div>
+
+</center>
+

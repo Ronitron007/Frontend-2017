@@ -1,22 +1,21 @@
 .eventab{
   background-color:#99ff99;
-  height:30px;
+  height:5%;
+  padding: 0.9%;
   border:2px solid black;
-border-top:2px solid black;
+border-top:4px solid black;
 border-bottom:2px solid black;
   font-family: KeepCalm;
   position: relative;
-font-size:0.995em;
-  top: -31px;
-  right: -15px;
+margin-top: 0.2%;
+  z-index: 999;
+ 
 }
 
 .evnt_detail_heading{
 font-family: KeepCalm;
-position:relative;
-display: block;
-width: 30%;
-margin-top: 10%;
+margin-top: 3%;
+
 }
 
 .eventdetails{
@@ -34,10 +33,14 @@ margin-top: 10%;
 	 width: 180px;
 }
 .evdetcontent{
-	width:100%;
-	border:1px solid black;
+	width:65%;
+	border:4px solid black;
 	background-color:white; 
-	height: 400px;
+	display: block;
+	position: relative;
+	overflow-y: scroll;
+	z-index: 999;
+	height:50vh;
 }
 .det{
 	width: 90%;
@@ -50,4 +53,76 @@ margin-top: 10%;
 .eventab:hover{
 
 background-color:#7fff7f;
+}
+.bottom_building{
+	position: absolute;
+	z-index: 0;
+	bottom: 8%;
+	display: block;
+    width: 100%;
+}
+.quadcopter_img{
+	position: absolute;
+	z-index: 0;
+	width: 10%;
+	display: block;
+	top:20%;
+}
+.quadcopter_img2{
+	position: absolute;
+	z-index: 0;
+	width: 10%;
+	display: block;
+	left: 85%;
+	top:40%;
+}
+.tabs_eventsdet{
+width: 155%;
+right: 27.5%;
+position: relative;
+display: block;
+}
+.cloud1,.cloud2,.cloud3,.cloud4,.cloud5,.cloud6,.cloud7,.cloud8{
+position: absolute;
+	z-index: 0;
+width: 10%;
+	
+}
+.cloud1{
+
+	top: 15%;
+}
+.cloud2{
+	display: block;
+	top:50%;
+
+}
+.cloud3{
+	display: block;
+	top:10%;
+	left: 85%;}
+.cloud4{
+	display: block;
+	top:30%;
+	left: 8%;
+}
+.cloud5{
+	display: block;
+	top:30%;
+	left: 80%;
+}
+.cloud6{
+	display: block;
+	top:60%;
+	left: 90%;
+}
+.cloud7{
+	display: block;
+	top:60%;
+	left: 10%;
+}
+.cloud8{
+	display: block;
+	top:5%;
+	left: 10%;
 }

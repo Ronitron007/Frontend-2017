@@ -1,15 +1,17 @@
 body{
         margin:0px;
     }
+
  #logo{
-height:450px;
-margin-top: -200px;
-margin-left: -175px;
+height:70px;
+margin-left: 30px;
+margin-top: -10px;
 float: left;
     }
 
 #dropdownElements{
-    color: black;
+
+    color: white;
     cursor: pointer;
 }
 
@@ -21,14 +23,17 @@ float: left;
     font-family: KeepCalm;
     src: url(fonts/KeepCalm-Medium.ttf);
 }
-li,form input{
- font-family:KeepCalm;
- font-weight: bolder;
+
+.registersubmit,.numeric,.radioButtons,.checkBox,.input-login,.nav.navbar-nav li >a{
+ font-family: KeepCalm;
 }
 
-.nav.navbar-nav li a {
+input[type=password].input-login.ng-dirty{
+    font-family: helvetica,arial,sans-serif;
+}
+.nav.navbar-nav li .nav_elem {
     color: white;
-    font-size: 0.9em;  
+    font-size: 0.88em;  
 }
 .navbar-inner{
 background-color:#0c0c0c;
@@ -53,6 +58,8 @@ position: relative;
 }
 #navbar1{
     width: 100%;
+     height: 400px;
+}
 }
 
 
@@ -115,7 +122,18 @@ position: relative;
     width: 100%;
     
 }
-
+.navbar-default .navbar-toggle{
+    background-color: #0c0c0c;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+}
+.navbar-toggle:hover .icon-bar{
+ background-color: #0c0c0c;
+}
+.navbar-default .navbar-toggle:hover{
+    background-color: white;
+}
 #searchform #searchsubmit {
     background: url("../images/design-2/toolbarElements/searchIcon.png") no-repeat scroll center center #c6473f;
      background-size: 320px 300px;
@@ -128,12 +146,25 @@ position: relative;
     right: 0;
     width: 50px;
 }
+.navbar-toggle {
+position: relative;
+left:100%;
+background-color:white;
+}
 
 @media only screen and (max-width: 767px) {
+.extra{
+  visibility: hidden;
+}
+
 .navbar-brand
 {
-    left:650%;
+    left:580%;
     top:-48px;
+}
+#right_nav{
+    margin-top: 410px;
+     
 }
 .form
 {
@@ -142,7 +173,7 @@ position: relative;
 }
 .navbar-nav, .navbar-brand {
     padding-top:0px !important; padding-bottom:0 !important;
-    height: 4px;
+    height: 2.5px;
 }
 }
 .close-icon {
@@ -206,5 +237,49 @@ position: relative;
     display:block}
 
 .navbar #navbar1 .close-menu{display:none;}
+.events_open .dropdown-menu {
+  display: none;
+  z-index:9999;
+  position:absolute;
+}
+.dropdown-menu {
+    background-color: #0c0c0c;
+    font-color:white;
+    position: absolute;
+    display: none;
+    
+}
+.dropdown-menu li{
+  font-family: KeepCalm;
+   font-size:0.9em;
+}
+.dropdown-menu li a {
+    padding:8px;
+    color:white;
+    text-decoration:none;
+}
+.dropdown-menu a:hover {
+background-color: white;
+color:#0c0c0c;}
 
+.events_open:hover .dropdown-menu {
+    display: block;
 
+}
+
+@media only screen and (min-width: 767px) {
+#menu{
+  position: absolute;
+  width: 75%;
+  margin-left: 8%;
+  
+}}
+/*change breakpoint*/
+@media (max-width: 819px) {   
+}
+@media (min-width: 767px) and (max-width: 955px) {
+.gamma{
+  visibility: hidden;
+}
+}
+}
