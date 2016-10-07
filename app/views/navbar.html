@@ -21,19 +21,10 @@
         <ul id="menu" class="nav navbar-nav">
          
           <li class="alpha"><a  class="nav_elem" href="#/about">ABOUT</a></li>
-          <li class="events_open"><a class="nav_elem" href="#/events" class="dropdown-toggle" data-toggle="dropdown">EVENTS</a>
-            <ul class="dropdown-menu">
-            <center>
-                <li><a href="#/eventLists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
-                <li><a href="#/eventLists/57cd0967a65edf661ac42f7c">
-                B EVENTS</a></li>
-                <li><a href="#/eventLists/57c99e7ea65edf661ac429e3">CODING</a></li>
-                <li><a href="#/eventLists/57caba7aa65edf661ac42af8">DESIGN AND BUILD</a></li>
-                <li><a href="#/eventLists/57cd67faa65edf661ac43036">ELECTRONICS FEST</a></li>
-                <li><a href="#/eventLists/57e01ec4a65edf661ac45068">INTERNATIONAL EVENTS</a></li>
-                <li><a href="#/eventLists/57c52b90a65edf661ac42875">INVOLVE AND QUIZZING</a></li>
-                </center>
-              </ul> </li>    
+          
+          <li  ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" class="events_open"><a  class="nav_elem" href="#/events" class="dropdown-toggle" data-toggle="dropdown">EVENTS</a>
+             </li>  
+            
           <li><a class="nav_elem" href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
           <li><a class="nav_elem" href="#socialCampaign">SOCIAL CAMPAIGN</a></li>
           <li><a class="nav_elem" href="#exhibitions">EXHIBITIONS</a></li>
@@ -46,6 +37,18 @@
       
   </ul>
 
+  <ul ng-show="hoverEdit" class="dropdown-menu">
+            <center>
+                <li><a href="#/eventLists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
+                <li><a href="#/eventLists/57cd0967a65edf661ac42f7c">
+                B EVENTS</a></li>
+                <li><a href="#/eventLists/57c99e7ea65edf661ac429e3">CODING</a></li>
+                <li><a href="#/eventLists/57caba7aa65edf661ac42af8">DESIGN AND BUILD</a></li>
+                <li><a href="#/eventLists/57cd67faa65edf661ac43036">ELECTRONICS FEST</a></li>
+                <li><a href="#/eventLists/57e01ec4a65edf661ac45068">INTERNATIONAL EVENTS</a></li>
+                <li><a href="#/eventLists/57c52b90a65edf661ac42875">INVOLVE AND QUIZZING</a></li>
+                </center>
+              </ul>
     
       <!--   <li class="show-more"><a href="#">more +</a></li>
       <li class="show-less"><a href="#">less -</a></li> -->
@@ -70,8 +73,3 @@
     </div>
 </div>
 
-<script>
-$( document ).ready(function() {
-  $('ul.navbar-nav.nav').flexMenu();
-});
-</script>

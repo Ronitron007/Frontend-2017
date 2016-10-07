@@ -1,8 +1,18 @@
 #events-banner{
 	position: absolute;
+	height: 100px;
+	display: block;
+	width: 90%;
+	top: -80px;
+	left: 95%;
+}
+
+#events-banner2{
+	position: absolute;
 	height: 253px;
+	float: left;
 	top: -166px;
-	left: 0%;
+	left: 37px;
 }
 
 #events-building{

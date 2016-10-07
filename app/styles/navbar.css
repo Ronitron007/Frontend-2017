@@ -33,6 +33,7 @@ input[type=password].input-login.ng-dirty{
 }
 .nav.navbar-nav li .nav_elem {
     color: white;
+    display: inline-block;
     font-size: 0.88em;  
 }
 .navbar-inner{
@@ -237,45 +238,72 @@ background-color:white;
     display:block}
 
 .navbar #navbar1 .close-menu{display:none;}
-.events_open .dropdown-menu {
-  display: none;
+ .dropdown-menu {
+  display: block;
+  visibility: visible;
   z-index:9999;
+  left:18%;
   position:absolute;
-}
-.dropdown-menu {
     background-color: #0c0c0c;
-    font-color:white;
-    position: absolute;
-    display: none;
-    
+     
 }
 .dropdown-menu li{
   font-family: KeepCalm;
+   padding: 5%;
+   
    font-size:0.9em;
 }
 .dropdown-menu li a {
     padding:8px;
-    color:white;
+  color:white;
     text-decoration:none;
 }
-.dropdown-menu a:hover {
+.dropdown-menu li:hover {
 background-color: white;
-color:#0c0c0c;}
 
-.events_open:hover .dropdown-menu {
-    display: block;
+}
+ .dropdown-menu li:hover a{
+  color: black;
 
 }
 
+.dropdown-menu{
+    -webkit-transition: all linear 2s;
+    transition: all linear 2s;
+    opacity: 1;
+}
+
+.dropdown-menu.ng-hide-add,
+.dropdown-menu.ng-hide-remove {
+    display: inline-block !important;
+}
+.dropdown-menu.ng-hide {
+    opacity: 1;
+}
 @media only screen and (min-width: 767px) {
 #menu{
-  position: absolute;
-  width: 75%;
+  position: relative;
+  width: 64%;
+  height: 50px;
+  overflow-y:scroll;
   margin-left: 8%;
   
 }}
+#dropdown{
+ display: none;
+ 
+}
+#dropdown li a {
+  text-decoration: none;
+}
 /*change breakpoint*/
 @media (max-width: 819px) {   
+}
+@media (max-width: 767px) { 
+.dropdown-menu{
+  margin-top: -45%;
+  margin-left: 30%;
+}
 }
 @media (min-width: 767px) and (max-width: 955px) {
 .gamma{

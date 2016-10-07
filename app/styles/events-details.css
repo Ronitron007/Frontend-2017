@@ -1,13 +1,11 @@
 .eventab{
-  background-color:#99ff99;
+  background-color:#3462ad;
   height:5%;
   padding: 0.9%;
   border:2px solid black;
-border-top:4px solid black;
-border-bottom:2px solid black;
+  border-bottom:2px solid black;
   font-family: KeepCalm;
   position: relative;
-margin-top: 0.2%;
   z-index: 999;
  
 }
@@ -52,7 +50,7 @@ margin-top: 3%;
 }
 .eventab:hover{
 
-background-color:#7fff7f;
+background-color:#325fa8;
 }
 .bottom_building{
 	position: absolute;
@@ -78,10 +76,9 @@ background-color:#7fff7f;
 }
 @media only screen and (min-width: 684px){
 .tabs_eventsdet{
-width: 155%;
-right: 27.5%;
+width: 100%;
 position: relative;
-display: block;
+display: inline-block;
 }
 }
 .cloud1,.cloud2,.cloud3,.cloud4,.cloud5,.cloud6,.cloud7,.cloud8{
