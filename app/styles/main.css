@@ -321,13 +321,13 @@ p.speech:after {
 #mouse-icon{
 	width:34px; height:50px;
 	display:block;
-background-color:yellow;
+/*background-color:yellow;*/
 	border:5px solid #000;
 	position:fixed;
 	z-index:9999;
 	opacity:1;
 	top:85%;
-        left:5%;
+        left:50%;
 	-webkit-border-radius:35px;
 	-moz-border-radius:35px;
 	-o-border-radius:35px;
