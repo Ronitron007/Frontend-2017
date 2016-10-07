@@ -4,7 +4,7 @@ img#events-banner{
 	display: block;
 	width: auto;
 	top: -80px;
-left:30%;
+
 }
 
 #events-banner2{
