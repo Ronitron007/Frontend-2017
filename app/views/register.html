@@ -52,7 +52,8 @@
 					<label class="help-block" ng-show="registerform.Gender.$error.required &&submitted">
 				    Select Gender
 					</label>
-					<select class="input-login" placeholder="State" id="field10" name="field10" required ng-model="field10" ng-change="printPlease()">
+					<select class="input-login" placeholder="State" id="field10" name="field10" required ng-model="field10">
+						<option value="" disabled selected style="display: none;">State</option>
 						<option ng-repeat="state in allStates" value="{{state}}">{{state}}</option>
 					</select>
 					<label class="help-block" ng-show="registerform.field10.$error.required &&submitted">
@@ -66,6 +67,7 @@
 				    Select if school student or not
 					</label> -->
 					<select class="input-login" id="field12" name="field12" ng-model="field12" required>
+						<option value="" disabled selected style="display: none;">College</option>
 						<option ng-repeat="college in allColleges" value="{{college._id}}">{{college.collegeName}}</option>					
           			</select>
 					<label class="help-block" ng-show="registerform.field12.$error.required &&submitted">

@@ -15,6 +15,7 @@ angular.module('frontend2017App')
     $scope.eventsJSON = [];
   	$scope.eventLists = [];
     $scope.eventListContent = "";
+    $scope.normal = true;
 
 	this.links=list;
     $http.get('http://shaastra.org:8001/api/eventLists/events/' + eventId)
@@ -22,6 +23,13 @@ angular.module('frontend2017App')
   				$scope.eventLists = response.data;
           $scope.eventListContent = response.data.info;
 
+          if(((response.data.events.length)%2) === 0){
+            $scope.normal = true;
+          }
+
+          else{
+            $scope.normal = false;
+          }
           
           $scope.eventLists.title = $scope.eventLists.title.split(" ").join("-");
 
@@ -33,6 +41,8 @@ angular.module('frontend2017App')
     					}
     				}
     			});
+
+
 
           $scope.gotoEventDetails = function (index) {
       		$location.path('event/' + eventId + '/' + $scope.eventsJSON[index]._id);
