@@ -3,7 +3,7 @@ body{
 }
 img#events-banner{
 	position: relative;
-	height: 12vh;
+	height: 9vh;
 	display: block;
 	width: auto;
 	top: -80px;
@@ -11,7 +11,7 @@ img#events-banner{
 }
 img#events_image{
 	display: block;
-	width: 25%;
+	width: 35%;
 	margin-top:-5%;
 
 }
@@ -36,9 +36,10 @@ img#events_image{
 	font-size: 1.2em;
 	vertical-align: center;
 	border: 3px solid black ;
-	background-color:#3462ad;
+	background-color:#3E6B8F;
 	border-radius: 10px;
 	cursor: pointer;
+	color: black;
 }
 
 .eventsname:hover{

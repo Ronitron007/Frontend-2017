@@ -9,6 +9,7 @@
   height:5%;
   padding: 0.9%;
   border:1px solid black;
+  border-top: 2px solid black;
   font-family: KeepCalm;
   z-index: 999;
   float: left;
@@ -111,17 +112,18 @@ width: 10%;
 	-moz-animation: translateSlow 11s linear infinite;
 	-o-animation: translateSlow 11s linear infinite;
 	animation: translateSlow 11s linear infinite;
+	animation-delay: 3s;
 
 }
 .cloud3{
 	display: block;
-	top:10%;
+	top:12%;
 	left: 100%;
 	-webkit-animation: translateSlow 11s linear infinite;
 	-moz-animation: translateSlow 11s linear infinite;
 	-o-animation: translateSlow 11s linear infinite;
 	animation: translateSlow 11s linear infinite;
-	animation-delay: 8.5s;
+	animation-delay: 6s;
 }
 .cloud4{
 	display: block;
@@ -131,7 +133,7 @@ width: 10%;
 	-moz-animation: translateSlow 9s linear infinite;
 	-o-animation: translateSlow 9s linear infinite;
 	animation: translateSlow 9s linear infinite;
-	animation-delay: 0.8s;
+	animation-delay: 1s;
 }
 .cloud5{
 	display: block;
@@ -141,7 +143,7 @@ width: 10%;
 	-moz-animation: translateSlow 9s linear infinite;
 	-o-animation: translateSlow 9s linear infinite;
 	animation: translateSlow 9s linear infinite;
-	animation-delay: 8s;
+	animation-delay: 3s;
 }
 .cloud6{
 	display: block;
@@ -161,17 +163,17 @@ width: 10%;
 	-moz-animation: translateSlow 9s linear infinite;
 	-o-animation: translateSlow 9s linear infinite;
 	animation: translateSlow 9s linear infinite;
-	animation-delay: 1s;
+	animation-delay: 5s;
 }
 .cloud8{
 	display: block;
-	top:5%;
+	top:7%;
 	left: 100%;
 	-webkit-animation: translateSlow 9s linear infinite;
 	-moz-animation: translateSlow 9s linear infinite;
 	-o-animation: translateSlow 9s linear infinite;
 	animation: translateSlow 9s linear infinite;
-	animation-delay: 1s;
+	animation-delay: 7s;
 }
 
 @-webkit-keyframes translateSlow {
