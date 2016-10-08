@@ -28,6 +28,7 @@ angular.module('frontend2017App')
 	Person_Name3:"Bharath",
 	Email3:"ae15d019@smail.iitm.ac.in",
 	Phone3:"+91 9940579724",
+	Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 	Person_Name:"Adarsh",
@@ -44,6 +45,7 @@ angular.module('frontend2017App')
 	
 	Email3:"7rohitthakran@gmail.com",
 	Phone3:"+91 9958515422",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 	Person_Name:"M Aghamarshana",
@@ -60,6 +62,7 @@ angular.module('frontend2017App')
 	
 	Email3:"hitesh@shaastra.org",
 	Phone3:"+91 9677043890",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	}];
 var list2=[	{
 	Person_Name:"Ramprashanth",
@@ -69,6 +72,7 @@ var list2=[	{
 	Person_Name2:"Udith Krishna",
 	Email2:"udithkrishna@shaastra.org",
 	Phone2:"+91 9551113873",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 
 	{
@@ -80,6 +84,7 @@ var list2=[	{
 	
 	Email2:" omkarkvanjpe@gmail.com",
 	Phone2:"+91 7708173059",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 	Person_Name:"Krishi Tata",
@@ -90,6 +95,7 @@ var list2=[	{
 	
 	Email2:"saimanish@shaastra.org",
 	Phone2:"+91 7708481881",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 	Person_Name:"Raghul Manosh",
@@ -101,6 +107,7 @@ var list2=[	{
 	
 	Email2:"varun@shaastra.org",
 	Phone2:"+91 7358540260",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},{
 	Person_Name:"Mohit Kumar",
 	Team_Name:"Technical Operations",
@@ -111,6 +118,7 @@ var list2=[	{
 	
 	Email2:"minu@shaastra.org",
 	Phone2:"+91 9976448668",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},{
 	Person_Name:"Manish Dhariwal",
 	Team_Name:"QMS",
@@ -121,17 +129,20 @@ var list2=[	{
 	
 	Email2:"bmsw.gnp@gmail.com",
 	Phone2:"+91 7299559744",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	}];
 var list3=[{
 	Person_Name:"Nivedita Manepalli",
 	Team_Name:"Shows and Exhibitions",
 	Email:"nivedita.manepalli@shaastra.org",
 	Phone:"+91 9940557095",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 {
 	Person_Name:"Harshit Saxena",
 	Team_Name:"Facilities",
 	Email:"harshit@shaastra.org",
 	Phone:"+91 9789016167",
+Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	}
 	];
