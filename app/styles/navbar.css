@@ -242,7 +242,7 @@ background-color:white;
     display:block}
 
 .navbar #navbar1 .close-menu{display:none;}
-.events_open .dropdown-menu {
+.events_open .dropdown-menu ,.events_open2 .dropdown-menu {
   display: none;
   z-index:9999;
   position:absolute;
@@ -263,11 +263,11 @@ background-color:white;
     color:white;
     text-decoration:none;
 }
-.dropdown-menu a:hover {
+.events_open .dropdown-menu a:hover,.events_open2 .dropdown-menu a:hover {
 background-color: white;
 color:#0c0c0c;}
 
-.events_open:hover .dropdown-menu {
+.events_open:hover .dropdown-menu,.events_open2:hover .dropdown-menu {
     display: block;
 
 }
