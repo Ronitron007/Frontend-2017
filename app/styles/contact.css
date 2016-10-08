@@ -2,6 +2,7 @@
  font-family: KeepCalm;
     src: url(fonts/KeepCalm-Medium.ttf);
 overflow:hidden;
+margin-top: 2%;
 }
 .contact_heading{
 	padding: 0.4%;
@@ -21,4 +22,28 @@ overflow:hidden;
 }
 .contact-1{
 margin-top: -5%;
+}
+.contact_det{
+position: relative;
+display: block;
+width: 80%;
+}
+#events_imag{
+     height: 50vh;
+	position: relative;
+	display: block;
+}
+#dept_img{
+	height: 10vh;
+	width: auto;
+	position: relative;
+	display: block;
+}
+@media only screen and (max-width: 767px) {
+#dept_img{
+	height: 10vh;
+	width: 50vh;
+	position: relative;
+	display: block;
+}
 }
