@@ -15,7 +15,7 @@
 <br><br>
 <center>
 <img id="dept_img" ng-src="../images/verticals_image/{{contact1.Team_Name}}.png"></center><br>
-<p class="contact_det">{{contact1.Description}}</p>
+<p class="contact_det" ng-bind-html="contact1.Description"></p>
   <div class="col-sm-4">
 <h4><b>{{contact1.Person_Name}} </b></h4>
 <h4>{{contact1.Email}} </h4>
@@ -31,7 +31,7 @@
 <br><br>
 <center>
 <img id="dept_img" ng-src="../images/verticals_image/{{contact2.Team_Name}}.png"></center><br>
-<p class="contact_det">{{contact2.Description}}</p>
+<p class="contact_det" ng-bind-html="contact2.Description"></p>
   <div class="col-sm-6"><h4><b>{{contact2.Person_Name}} </b></h4>
 <h4>{{contact2.Email}} </h4>
 <h4>{{contact2.Phone}} </h4></div>
@@ -45,7 +45,7 @@
 <center>
 <img id="dept_img" ng-src="../images/verticals_image/{{contact3.Team_Name}}.png"></center>
 <br>
-<p class="contact_det">{{contact3.Description}}</p>
+<p class="contact_det" ng-bind-html="contact3.Description"></p>
   <div class="col-sm-12"><h4><b>{{contact3.Person_Name}} </b></h4>
 <h4>{{contact3.Email}} </h4>
 <h4>{{contact3.Phone}} </h4></div>
