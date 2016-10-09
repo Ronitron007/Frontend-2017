@@ -18,7 +18,7 @@ angular.module('frontend2017App')
   var list1=[
 	
 	{
-	Person_Name:"Pendse Neil Sanjay",
+	Person_Name:"Neil Pendse",
 	Team_Name:"Concept & Design",
 	Email:" neil@shaastra.org",
 	Phone:"+91 9176283794",
@@ -28,7 +28,7 @@ angular.module('frontend2017App')
 	Person_Name3:"Bharath",
 	Email3:"bharath@shaastra.org",
 	Phone3:"+91 9940579724",
-	Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	Description:"The department responsible for everything aesthetically appealing and creative on online and on-ground platforms, Concept and Design handles social media marketing, graphic design, photography, videography and video editing, and the ambience of the fest. To have a look at our work, do visit our <a href='https://www.facebook.com/Shaastra/'>Facebook</a> page and our <a href='https://www.youtube.com/user/iitmshaastra/'>YouTube</a> channel, and stay tuned for more exciting content!"
 	},
 	{
 	Person_Name:"Adarsh",
@@ -45,7 +45,7 @@ angular.module('frontend2017App')
 	
 	Email3:"rohit@shaastra.org",
 	Phone3:"+91 9958515422",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"From Aero events to Quizzes to Research, the Events & Workshops team handles the myriad of events and workshops of Shaastra. If you ever need help with something in the Problem Statement or  Event Format & other detail of events or workshops, please feel free to contact the respective event coordinators"
 	},
 	{
 	Person_Name:"M Aghamarshana",
@@ -62,7 +62,7 @@ Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed
 	
 	Email3:"hitesh@shaastra.org",
 	Phone3:"+91 9677043890",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"We are responsible for publicity of Shaastra across India, and our work is possibly what got you here. Media and Student Relations handles all outreach activities of Shaastra - Spark and Sampark. Hospitality of guests in Shaastra is another part of the JD and we do take our job very seriously. To see us in action, visit us at Shaastra or a Sampark near your city."
 	}];
 var list2=[	{
 	Person_Name:"Ramprashanth",
@@ -72,7 +72,7 @@ var list2=[	{
 	Person_Name2:"Udith Krishna",
 	Email2:"udithkrishna@shaastra.org",
 	Phone2:"+91 9551113873",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"Evolve handles 3 important verticals in Shaastra: Shaastra Spotlight a.k.a. Shaastra Lecture Series, the Accessibility Summit, and Shaastra Solutions. If you would like to give a talk at the Lecture series or the summit or would like to associate with Shaastra Solutions as a client or participant, please get in touch with us."
 	},
 
 	{
@@ -84,7 +84,7 @@ Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed
 	
 	Email2:" omkarkvanjpe@shaastra.org",
 	Phone2:"+91 7708173059",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"The Envisage team organises Shaastra's unique techno - entertainment show. Though completely organised by students of IIT Madras, it is one of the largest of its kind in India. This team is also responsible for Shaastra's Technical Ambience."
 	},
 	{
 	Person_Name:"Krishi Tata",
@@ -95,7 +95,7 @@ Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed
 	
 	Email2:"saimanish@shaastra.org",
 	Phone2:"+91 7708481881",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"The department caters to all financial requirements of Shaastra along with the T-shirts and merchandise sale at our fest. For any queries or suggestions, feel free to contact us."
 	},
 	{
 	Person_Name:"Raghul Manosh",
@@ -107,18 +107,18 @@ Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed
 	
 	Email2:"varun@shaastra.org",
 	Phone2:"+91 7358540260",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:""
 	},{
 	Person_Name:"Mohit Kumar",
 	Team_Name:"Technical Operations",
-	Email:"mhtkmr54@gmail.com",
+	Email:"mohit@shaastra.org",
 	Phone:"+91 9003120598",
 	
 	Person_Name2:"S.V.Minu Aswanth",
 	
 	Email2:"minu@shaastra.org",
 	Phone2:"+91 9976448668",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"Though our main work is hosted here at shaastra.org, the Technical Operations department manages all the techical nitty gritties of the festival, as the name suggests. Their work includes creating websites for the various wings of Shaastra, building mobile applications, augmented and virtual reality apps, ERPs and many more tools to assist Shaastra in its smooth functioning. "
 	},{
 	Person_Name:"Manish Dhariwal",
 	Team_Name:"QMS",
@@ -129,20 +129,20 @@ Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed
 	
 	Email2:"gunjan@shaastra.org",
 	Phone2:"+91 7299559744",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"This department takes care for online and on ground registration systems for Shaastra, passport distribution, quality control, feedback and suggestions. For queries related to the registration process, please get in touch with us. "
 	}];
 var list3=[{
 	Person_Name:"Nivedita Manepalli",
 	Team_Name:"Shows and Exhibitions",
 	Email:"nivedita.manepalli@shaastra.org",
 	Phone:"+91 9940557095",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"The ones behind the entertainment quotient of Shaastra, the Shows & Exhibitions department orchestrates the Professional Shows and the International & National Exhibitions.To exhibit your product at Shaastra, please feel free to get in touch with us."
 	},
 {
 	Person_Name:"Harshit Saxena",
 	Team_Name:"Facilities",
 	Email:"harshit@shaastra.org",
 	Phone:"+91 9789016167",
-Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Description:"This Department caters to all logistics and planning of Shaastra along with the catering and transportation facilities. For any queries or suggestions, feel free to contact us."
 	}
 	];

@@ -15,7 +15,7 @@
 <br><br>
 <center>
 <img id="dept_img" ng-src="../images/verticals_image/{{contact1.Team_Name}}.png"></center><br>
-<p class="contact_det">{{contact1.Description}}</p>
+<p class="contact_det" ng-bind-html="contact1.Description"></p>
   <div class="col-sm-4">
 <h4><b>{{contact1.Person_Name}} </b></h4>
 <h4>{{contact1.Email}} </h4>
