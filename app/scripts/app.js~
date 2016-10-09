@@ -1,3 +1,4 @@
+
 'use strict';
 
 /**
@@ -26,7 +27,7 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/menu', {
+      .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
@@ -87,6 +88,26 @@ angular
         controller: 'SummitCtrl',
         controllerAs: 'summit'
       })
+      .when('/summit-partners', {
+        templateUrl: 'views/summit-partners.html',
+        controller: 'SummitPartnersCtrl',
+        controllerAs: 'summitPartners'
+      })
+      .when('/summit-past-versions', {
+        templateUrl: 'views/summit-past-versions.html',
+        controller: 'SummitPastVersionsCtrl',
+        controllerAs: 'summitPastVersions'
+      })
+      .when('/summit-registrations', {
+        templateUrl: 'views/summit-registrations.html',
+        controller: 'SummitRegistrationsCtrl',
+        controllerAs: 'summitRegistrations'
+      })
+      .when('/summit-events', {
+        templateUrl: 'views/summit-events.html',
+        controller: 'SummitEventsCtrl',
+        controllerAs: 'summitEvents'
+      })
       .when('/socialCampaign', {
         templateUrl: 'views/socialcampaign.html',
         controller: 'SocialcampaignCtrl',
@@ -123,6 +144,12 @@ angular
         templateUrl: 'views/edit-profile.html',
         controller: '',
         controllerAs: '',
+    
+      })
+.when('/forgot-password', {
+        templateUrl: 'views/forgot-password.html',
+        controller: 'Forgot_Password',
+        controllerAs: 'forgot_psw',
     
       })
  

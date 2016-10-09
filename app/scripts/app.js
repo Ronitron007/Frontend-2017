@@ -146,6 +146,12 @@ angular
         controllerAs: '',
     
       })
+.when('/forgot-password', {
+        templateUrl: 'views/forgot-password.html',
+        controller: 'Forgot_PswdCtrl',
+        controllerAs: 'forgot_psw',
+    
+      })
  
 
   })
