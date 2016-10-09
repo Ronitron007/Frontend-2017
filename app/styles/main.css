@@ -1,4 +1,3 @@
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -145,6 +144,13 @@ body {
   left: 94.39%;
   top: 48.7%;
   }
+  .augment{
+    position: absolute;
+    left: 68.9%;
+    top:38%;
+    width: 400px;
+    height: 100px;
+  }
   .spon{
   height: 45px;
   width: 160px;
@@ -212,28 +218,23 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 200px)
-{
 
-body{
-  overflow-x: hidden;
+@media screen and (max-width: 767px) and (min-width: 200px){
+  body{
+    background: url('/images/static_final.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
+  .socialTab{
+   display: none;
+  }
+  
 }
 
-.socialTab{
-  display: none;
-}
-#bg1{
-  background:url('/images/static.png');
-  height: 100vh;
-  width: 100vw;
-  background-size:cover;
-  background-repeat: no-repeat;
-  z-index: -10; 
-}
-#bg2{
-  background:none;
-}
-}
+
 /*custom*/
 
 #Scene{
