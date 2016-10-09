@@ -1,3 +1,7 @@
+#envisageLookback{
+	text-align: center;
+}
+
 #shows-banner{
 	position:absolute;
 	height: 300px;
@@ -12,7 +16,8 @@
 	width: 100%;
 
     float: right;
-
+    position: absolute;
+    top:-100px;
 
 }
 
