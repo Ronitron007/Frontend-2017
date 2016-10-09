@@ -11,7 +11,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
        <a class="navbar-brand" href="#/"><img id="logo" src="../images/design-2/toolbarElements/logo-r.png ">
         </a>
       </div>
@@ -21,7 +20,7 @@
         <ul id="menu" class="nav navbar-nav">
          
           <li class="alpha"><a  class="nav_elem" href="#about">ABOUT</a></li>
-          <li class="events_open"><a class="nav_elem" href="#events" class="dropdown-toggle" data-toggle="dropdown">EVENTS</a>
+          <li class="events_open"><a class="nav_elem" href="#events" >EVENTS</a>
             <ul class="dropdown-menu">
             <center>
                 <li><a style="text-align: left" href="#/eventLists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
@@ -37,7 +36,7 @@
               </ul> </li>    
           <li><a class="nav_elem" href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
           <li><a class="nav_elem" href="#socialCampaign">SOCIAL CAMPAIGN</a></li>
-          <li class="events_open2" ><a class="nav_elem" href="#shows">SHOWS</a>
+          <li class="events_open2" ><a class="nav_elem" href="#shows" >SHOWS</a>
          <ul class="dropdown-menu">
             <li><a href="#shows">PRO SHOWS</a></li>
             <li><a href="#shows#envisage">ENVISAGE</a></li>
@@ -65,12 +64,23 @@
               <li><a  ng-click="logout()"><span>Logout</span></a></li>
             </ul></li>
           </li>
+
         </ul>
+        </div>
       </div>
     </div>
-    </div>
+
   </nav> 
     </div>
 </div>
+<!-- collapse on clicking links of navbar(small screen)-->
+<script type="text/javascript">
+  $(document).on('click','.navbar-collapse.in',function(e) {
 
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'events_open2' )&& ( $(e.target).attr('class') != 'user' ) && ( $(e.target).attr('class') != 'events_open' ) ) {
+        $(this).collapse('hide');
+    }
+
+});
+</script>
 

@@ -333,7 +333,10 @@ p.speech:after {
   border-color: #fff transparent transparent #fff;
 }
 
+.socialTab{
 
+position:fixed;display:block;  z-index:9999; width:280px; height:60px; background-color:black; border-radius:30px;
+}
 #mouse-icon{
 	width:34px; height:50px;
 	display:block;
