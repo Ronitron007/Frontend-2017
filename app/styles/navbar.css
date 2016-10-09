@@ -208,12 +208,15 @@ display: none;
   
 }}
 @media only screen and (max-width: 767px) {
-  .dropdown-menu{
+  /*.dropdown-menu{
 margin-left: 40%;
 top: -10%;
 
 }
 .events_open:hover .arrow_events,.events_open2:hover .arrow_events,.user:hover .arrow_events{
 display: inline-block;
+}*/
+.header{
+  display: none;
 }
 }

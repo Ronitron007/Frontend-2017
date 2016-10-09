@@ -72,7 +72,7 @@ var list2=[	{
 	Person_Name2:"Udith Krishna",
 	Email2:"udithkrishna@shaastra.org",
 	Phone2:"+91 9551113873",
-Description:"Evolve handles 3 important verticals in Shaastra: Shaastra Spotlight a.k.a. Shaastra Lecture Series, the Accessibility Summit, and Shaastra Solutions. If you would like to give a talk at the Lecture series or the summit or would like to associate with Shaastra Solutions as a client or participant, please get in touch with us."
+Description:"Evolve handles 3 important verticals in Shaastra: <a href='#spotlight'>Shaastra Spotlight</a> a.k.a. Shaastra Lecture Series, the <a href='#summit'>Accessibility Summit</a>, and <a href='#solutions'>Shaastra Solutions</a>. If you would like to give a talk at the Lecture series or the summit or would like to associate with Shaastra Solutions as a client or participant, please get in touch with us."
 	},
 
 	{
@@ -107,7 +107,7 @@ Description:"The department caters to all financial requirements of Shaastra alo
 	
 	Email2:"varun@shaastra.org",
 	Phone2:"+91 7358540260",
-Description:""
+Description:"The Sponsorship and Public Relations department serves as the bridge between an investor and Shaastra. These assosiciations include both in-kind and monetary deals. Moreover, the collaborations we make are also to foster support from media and patrons, thus generating PR . So do contact us for any collaboration which deems suitable, with doors open to any <a href='ebrochure.shaastra.org'>industry</a>, NGO, start-up; you name it. The department will also take care of Shaastra's attempt to give back to the society, breaking the norms of being just a technical festival. So do make sure you keep an eye out for <b>Shaastra Augment, 2017</b> and the department bringing it to life for you. "
 	},{
 	Person_Name:"Mohit Kumar",
 	Team_Name:"Technical Operations",
