@@ -9,9 +9,5 @@
  */
 angular.module('frontend2017App')
   .controller('SummitRegistrationsCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    skrollr.init().destroy();
   });
