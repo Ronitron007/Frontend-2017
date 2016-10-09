@@ -1,7 +1,7 @@
 .quadcopterdiv1{
   position:absolute;
   left:-10%;
-  width:5%;
+  width:10%;
 	top:20%;
   animation: translate 15s infinite linear;
 }
@@ -9,7 +9,7 @@
 .quadcopterdiv2{
   position:absolute;
   left:-10%;
-  width:5%;
+  width:10%;
 	top:40%;
   animation: translate 15s infinite linear;
   animation-delay: 5s;
