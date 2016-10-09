@@ -198,7 +198,7 @@ color:#0c0c0c;}
 }
 
 .arrow_events{
-  visibility: hidden;
+display: none;
 }
 @media only screen and (min-width: 767px) {
 #menu{
@@ -214,6 +214,6 @@ top: -10%;
 
 }
 .events_open:hover .arrow_events,.events_open2:hover .arrow_events,.user:hover .arrow_events{
-visibility: visible;
+display: inline-block;
 }
 }
