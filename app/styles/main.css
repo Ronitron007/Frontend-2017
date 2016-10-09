@@ -221,11 +221,12 @@ body {
 
 @media screen and (max-width: 767px) and (min-width: 200px){
   body{
-    background: url('/images/static_final.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    border-style: solid;
+    background: url('/images/coming_soon.png') no-repeat center center fixed;
+    -webkit-background-size: 90% auto;
+      -moz-background-size: 90% auto;
+      -o-background-size: 90% auto;
+      background-size: 90% auto;
       /*display: none;*/
   }
 
