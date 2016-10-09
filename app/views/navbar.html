@@ -20,7 +20,7 @@
         <ul id="menu" class="nav navbar-nav">
          
           <li class="alpha"><a  class="nav_elem" href="#about">ABOUT</a></li>
-          <li class="events_open"><a class="nav_elem" href="#events" >EVENTS</a>
+          <li class="events_open"><a class="nav_elem" href="#events" >EVENTS<span class="arrow_events"> &nbsp >></span></a>
             <ul class="dropdown-menu">
             <center>
                 <li><a style="text-align: left" href="#/eventLists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
@@ -36,7 +36,7 @@
               </ul> </li>    
           <li><a class="nav_elem" href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
           <li><a class="nav_elem" href="#socialCampaign">SOCIAL CAMPAIGN</a></li>
-          <li class="events_open2" ><a class="nav_elem" href="#shows" >SHOWS</a>
+          <li class="events_open2" ><a class="nav_elem" href="#shows" >SHOWS<span class="arrow_events"> &nbsp >></span></a>
          <ul class="dropdown-menu">
             <li><a href="#shows">PRO SHOWS</a></li>
             <li><a href="#shows#envisage">ENVISAGE</a></li>
@@ -58,7 +58,7 @@
         <!-- <li><a class="more_elem" href="">MORE</a></li> -->
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/login">LOGIN</a></li>
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/register">REGISTER</a></li>
-          <li  ng-show="isLoggedIn()" class="nav_elem user"><a class="nav_elem" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }}&nbsp &nbsp<span class="glyphicon glyphicon-user user-icon"></span></a>
+          <li  ng-show="isLoggedIn()" class="nav_elem user"><a class="nav_elem" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }}&nbsp &nbsp<span class="glyphicon glyphicon-user user-icon"></span><span class="arrow_events"> &nbsp >></span></a>
           <ul class="dropdown-menu" >
               <li><a  href="#/dashboard"><span>Dashboard</span></a></li>
               <li><a  ng-click="logout()"><span>Logout</span></a></li>
