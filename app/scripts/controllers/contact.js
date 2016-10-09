@@ -26,7 +26,7 @@ angular.module('frontend2017App')
 	Email2:" abhijit@shaastra.org",
 	Phone2:"+91 9940439339",
 	Person_Name3:"Bharath",
-	Email3:"ae15d019@smail.iitm.ac.in",
+	Email3:"bharath@shaastra.org",
 	Phone3:"+91 9940579724",
 	Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
@@ -43,7 +43,7 @@ angular.module('frontend2017App')
 	
 	Person_Name3:"Rohit Thakran",
 	
-	Email3:"7rohitthakran@gmail.com",
+	Email3:"rohit@shaastra.org",
 	Phone3:"+91 9958515422",
 Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
@@ -82,7 +82,7 @@ Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed
 	Phone:"+91 9962879064",
 	Person_Name2:"Omkar Vanjpe",
 	
-	Email2:" omkarkvanjpe@gmail.com",
+	Email2:" omkarkvanjpe@shaastra.org",
 	Phone2:"+91 7708173059",
 Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
@@ -127,7 +127,7 @@ Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed
 	
 	Person_Name2:"Gunjan",
 	
-	Email2:"bmsw.gnp@gmail.com",
+	Email2:"gunjan@shaastra.org",
 	Phone2:"+91 7299559744",
 Description:"Lorem ipsum asdfasdfasdf sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	}];

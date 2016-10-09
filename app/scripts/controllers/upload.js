@@ -10,7 +10,7 @@
 angular.module('frontend2017App')
   .controller('UploadCtrl', function ($scope, fileUpload, $routeParams, $http) {
 
-  	$http.get('http://localhost:8001/api/events/' + $routeParams.eventId)
+  	$http.get('http://shaastra.org:8001/api/events/' + $routeParams.eventId)
       .then(function (response) {
         console.log(response.data);
         $scope.eventDetails = response.data;
@@ -20,7 +20,7 @@ angular.module('frontend2017App')
             var file = $scope.myFile;
             console.log('file is ' );
             console.dir(file);
-            var uploadUrl = "http://localhost:8080/api/imgs/upload";
+            var uploadUrl = "http://shaastra.org:8080/api/imgs/upload";
             fileUpload.uploadFileToUrl(file, uploadUrl, $routeParams.eventId, $routeParams.teamId);
     };
   });

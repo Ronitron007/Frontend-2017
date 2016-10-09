@@ -9,7 +9,7 @@
  */
 angular.module('frontend2017App')
   .factory('User', function ($resource) {
-    return $resource('http://localhost:8001/api/users/:id/:controller', {
+    return $resource('http://shaastra.org:8001/api/users/:id/:controller', {
       id: '@_id'
     },
     {

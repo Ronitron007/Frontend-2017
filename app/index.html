@@ -1,6 +1,6 @@
 <!doctype html>
 <html id="more">
-  <head>
+  <head >
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -42,8 +42,38 @@
     <link rel="stylesheet" href="styles/solutions.css">
 
     <!-- endbuild -->
+
+    <style>
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/Preloader_3.gif) center no-repeat #fff;
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+    //paste this code under head tag or in a seperate js file.
+    // Wait for window load
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+</script>
+
   </head>
   <body  data-spy="scroll" data-target=".navbar" data-offset="70"  ng-app="frontend2017App">
+    <div class="se-pre-con"></div>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -138,7 +168,7 @@
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/solutions.js"></script>
 
-        <script src="scripts/controllers/summitdetails.js"></script>
+        <!-- // <script src="scripts/controllers/summitdetails.js"></script> -->
         <script src="scripts/controllers/summit-events.js"></script>
         <script src="scripts/controllers/summit-registrations.js"></script>
         <script src="scripts/controllers/summit-past-versions.js"></script>
