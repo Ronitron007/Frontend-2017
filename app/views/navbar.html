@@ -59,11 +59,11 @@
         <!-- <li><a class="more_elem" href="">MORE</a></li> -->
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/login">LOGIN</a></li>
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/register">REGISTER</a></li>
-          <li ng-show="isLoggedIn()" class="nav-item-new dropdown user"><a class="ai dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }} <span class="glyphicon glyphicon-user user-icon"></span></a>
-            <ul class="dropdown-menu" >
+          <li  ng-show="isLoggedIn()" class="nav_elem user"><a class="nav_elem" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }}&nbsp &nbsp<span class="glyphicon glyphicon-user user-icon"></span></a>
+          <ul class="dropdown-menu" >
               <li><a  href="#/dashboard"><span>Dashboard</span></a></li>
               <li><a  ng-click="logout()"><span>Logout</span></a></li>
-            </ul>
+            </ul></li>
           </li>
         </ul>
       </div>
