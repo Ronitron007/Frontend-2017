@@ -153,6 +153,12 @@ angular
         controllerAs: 'forgot_psw',
     
       })
+ .when('/reset-password', {
+        templateUrl: 'views/reset-password.html',
+        controller: 'Reset_PswdCtrl',
+        controllerAs: 'reset_psw',
+    
+      })
  
 
   })
