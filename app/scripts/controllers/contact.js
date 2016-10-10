@@ -45,7 +45,7 @@ angular.module('frontend2017App')
 	
 	Email3:"rohit@shaastra.org",
 	Phone3:"+91 9958515422",
-Description:"From Aero events to Quizzes to Research, the Events & Workshops team handles the myriad of events and workshops of Shaastra. If you ever need help with something in the Problem Statement or  Event Format & other detail of events or workshops, please feel free to contact the respective event coordinators"
+Description:"From Aero to Quizzes to Research events & Robotics to Coding workshops, the <a href='#events'>Events</a> & <a href='#/eventLists/57e29fa4a65edf661ac45204'>Workshops</a> team handles the myriad events and workshops conducted at Shaastra. If you ever need help with something in the Problem Statement or Event Format or any other detail of an event or workshop, please feel free to contact the respective event coordinators."
 	},
 	{
 	Person_Name:"M Aghamarshana",
