@@ -8,7 +8,7 @@
  * Controller of the frontend2017App
  */
 angular.module('frontend2017App')
-  .controller('RegisterCtrl', function ($scope,Auth,$location, $http) {
+  .controller('RegisterCtrl', function ($scope,Auth,$location, $http, vcRecaptchaService) {
     skrollr.init().destroy();
 
     $http.get('http://shaastra.org:8001/api/colleges')
@@ -101,8 +101,17 @@ angular.module('frontend2017App')
         console.log($scope.field10);
       }
 
+      var secretkeycaptcha = '';
       $scope.submit=function(form){
-        $scope.submitted=true;
+        if(vcRecaptchaService.getResponse() === ""){
+          alert("Please resolve the captcha and submit!");
+        }else{
+          // console.log(vcRecaptchaService.getResponse());
+
+        $http.post('https://www.google.com/recaptcha/api/siteverify?secret='+ secretkeycaptcha +'&response='+vcRecaptchaService.getResponse()).
+        success(function (data) {
+          if(data.success == true){
+                $scope.submitted=true;
         var gender,school;
         if($scope.field9=="Male")
             gender=true;
@@ -132,7 +141,18 @@ angular.module('frontend2017App')
             console.log('Error');
           })         ;
         }
-          };
+          }else{
+            alert("There seems to be a problem. Please try again");
+            $location.url('/');
+          }
+        }).
+        error(function (err) {
+          $location.url('/');
+        })
+        
+
+        }      
+      };
       
 
 	  // var firstname = document.getElementById('field1').value;
