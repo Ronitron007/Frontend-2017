@@ -35,6 +35,7 @@ module.exports = function(config) {
       'bower_components/angular-skrollr/dist/angular-skrollr.js',
       'bower_components/showdown/dist/showdown.js',
       'bower_components/ng-showdown/dist/ng-showdown.js',
+      'bower_components/angular-recaptcha/release/angular-recaptcha.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
