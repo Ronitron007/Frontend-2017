@@ -184,6 +184,22 @@ body {
   background-image: url('/images/wheelchair3.png');
 }
 
+.jetpack-reverse{
+  width: 100px;
+  background-image: url('/images/jetpack-r.png');
+}
+/*sets the jetpack sprite*/
+
+.blind-reverse{
+  width: 150px;
+  background-image: url('/images/blindman-r.png');
+}
+/*sets the blindman sprite*/
+.wheelchair-reverse{
+  width: 130px;
+  background-image: url('/images/wheelchair-r.png');
+}
+
   #bg1{
   background: url('/images/buildings6.png');
   top:75px;
