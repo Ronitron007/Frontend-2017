@@ -311,16 +311,16 @@ body {
 @media only screen and (min-width: 767px) {
 p.speech {
   position: relative;
-  width: 150px;
-  height: 70px;
+  width: 250px;
+  height: 100px;
+padding-top:10%;
   text-align: center;
   font-family:KeepCalm;
-  line-height: 60px;
   background-color: #fff;
   border: 5px solid #666;
   z-index:999;
-margin-left:30%;
-margin-top:-65%;
+left:45%;
+top:-70%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -335,7 +335,7 @@ p.speech:before {
   width: 0;
   height: 0;
   left: 30px;
-  top: 60px;
+  top: 89.5px;
   border: 20px solid;
   border-color: #666 transparent transparent #666;
 }
@@ -346,7 +346,7 @@ p.speech:after {
   width: 0;
   height: 0;
   left: 35px;
-  top: 60px;
+  top:  89.5px;
   border: 15px solid;
   border-color: #fff transparent transparent #fff;
 }
