@@ -41,7 +41,7 @@
   padding: 0.9%;
   border:1px solid black;
   border-top: 2px solid black;
-  font-family: KeepCalm;
+  font-family: Open Sans;
   z-index: 999;
   float: left;
 }
@@ -55,7 +55,7 @@
 }
 
 .evnt_detail_heading{
-font-family: KeepCalm;
+font-family: Open Sans;
 margin-top: 3%;
 z-index: 999;
 
@@ -85,6 +85,7 @@ z-index: 999;
 	overflow-y: auto;
 	z-index: 999;
 	height:50vh;
+	font-family: Open Sans;
 }
 .det{
 	width: 90%;
