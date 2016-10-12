@@ -45,7 +45,7 @@ angular.module('frontend2017App')
 	
 	Email3:"rohit@shaastra.org",
 	Phone3:"+91 9958515422",
-Description:"From Aero to Quizzes to Research events & Robotics to Coding workshops, the <a href='#events'>Events</a> & <a href='#/eventLists/57e29fa4a65edf661ac45204'>Workshops</a> team handles the myriad events and workshops conducted at Shaastra. If you ever need help with something in the Problem Statement or Event Format or any other detail of an event or workshop, please feel free to contact the respective event coordinators."
+Description:"From Aero to Quizzes to Research events & Robotics to Coding workshops, the <a href='#events'>Events</a> & <a href='#/event-lists/57e29fa4a65edf661ac45204'>Workshops</a> team handles the myriad events and workshops conducted at Shaastra. If you ever need help with something in the Problem Statement or Event Format or any other detail of an event or workshop, please feel free to contact the respective event coordinators."
 	},
 	{
 	Person_Name:"M Aghamarshana",
@@ -53,7 +53,7 @@ Description:"From Aero to Quizzes to Research events & Robotics to Coding worksh
 	Email:"aghamarshana@shaastra.org",
 	Phone:"+91 8122495355",
 	
-	Person_Name2:" R Rathna Kumar",
+	Person_Name2:"R Rathna Kumar",
 	
 	Email2:"rathnakumar@shaastra.org",
 	Phone2:"+91 9677081113",
@@ -107,18 +107,18 @@ Description:"The department caters to all financial requirements of Shaastra alo
 	
 	Email2:"varun@shaastra.org",
 	Phone2:"+91 7358540260",
-Description:"The Sponsorship and Public Relations department serves as the bridge between an investor and Shaastra. These assosiciations include both in-kind and monetary deals. Moreover, the collaborations we make are also to foster support from media and patrons, thus generating PR . So do contact us for any collaboration which deems suitable, with doors open to any <a href='ebrochure.shaastra.org'>industry</a>, NGO, start-up; you name it. The department will also take care of Shaastra's attempt to give back to the society, breaking the norms of being just a technical festival. So do make sure you keep an eye out for <b>Shaastra Augment, 2017</b> and the department bringing it to life for you. "
+Description:"The Sponsorship and Public Relations department serves as the bridge between an investor and Shaastra. These assosiciations include both in-kind and monetary deals. Moreover, the collaborations we make are also to foster support from media and patrons, thus generating PR . So do contact us for any collaboration which deems suitable, with doors open to any <a target='_blank' href='http://ebrochure.shaastra.org'>industry</a>, NGO, start-up; you name it. The department will also take care of Shaastra's attempt to give back to the society, breaking the norms of being just a technical festival. So do make sure you keep an eye out for <b>Shaastra Augment, 2017</b> and the department bringing it to life for you. "
 	},{
 	Person_Name:"Mohit Kumar",
 	Team_Name:"Technical Operations",
 	Email:"mohit@shaastra.org",
 	Phone:"+91 9003120598",
 	
-	Person_Name2:"S.V.Minu Aswanth",
+	Person_Name2:"S V Minu Aswanth",
 	
 	Email2:"minu@shaastra.org",
 	Phone2:"+91 9976448668",
-Description:"Though our main work is hosted here at shaastra.org, the Technical Operations department manages all the techical nitty gritties of the festival, as the name suggests. Their work includes creating websites for the various wings of Shaastra, building mobile applications, augmented and virtual reality apps, ERPs and many more tools to assist Shaastra in its smooth functioning. "
+Description:"Though their main work is hosted here at shaastra.org, the Technical Operations department manages all the techical nitty gritties of the festival, as the name suggests. Their work includes creating websites for the various wings of Shaastra, building mobile applications, augmented and virtual reality apps, ERPs and many more tools to assist Shaastra in its smooth functioning. "
 	},{
 	Person_Name:"Manish Dhariwal",
 	Team_Name:"QMS",

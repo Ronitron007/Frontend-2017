@@ -108,9 +108,9 @@ angular.module('frontend2017App')
         }else{
           // console.log(vcRecaptchaService.getResponse());
 
-        $http.post('https://www.google.com/recaptcha/api/siteverify?secret='+ secretkeycaptcha +'&response='+vcRecaptchaService.getResponse()).
-        success(function (data) {
-          if(data.success == true){
+        // $http.post('https://www.google.com/recaptcha/api/siteverify?secret='+ secretkeycaptcha +'&response='+vcRecaptchaService.getResponse()).
+        // success(function (data) {
+          // if(data.success == true){
                 $scope.submitted=true;
         var gender,school;
         if($scope.field9=="Male")
@@ -141,14 +141,14 @@ angular.module('frontend2017App')
             console.log('Error');
           })         ;
         }
-          }else{
-            alert("There seems to be a problem. Please try again");
-            $location.url('/');
-          }
-        }).
-        error(function (err) {
-          $location.url('/');
-        })
+        //   }else{
+        //     alert("There seems to be a problem. Please try again");
+        //     $location.url('/');
+        //   }
+        // }).
+        // error(function (err) {
+        //   $location.url('/');
+        // })
         
 
         }      

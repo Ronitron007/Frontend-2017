@@ -21,7 +21,7 @@ angular
     'ngTouch',
     'vcRecaptcha'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -38,7 +38,7 @@ angular
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
-      .when('/eventLists/:eventId', {
+      .when('/event-lists/:eventId', {
         templateUrl: 'views/event-lists.html',
         controller: 'EventListsCtrl',
         controllerAs: 'eventLists'
@@ -109,7 +109,7 @@ angular
         controller: 'SummitEventsCtrl',
         controllerAs: 'summitEvents'
       })
-      .when('/socialCampaign', {
+      .when('/social-campaign', {
         templateUrl: 'views/socialcampaign.html',
         controller: 'SocialcampaignCtrl',
         controllerAs: 'socialCampaign'
@@ -141,24 +141,26 @@ angular
         controller: 'UploadCtrl',
         controllerAs: 'upload'
       })
-	.when('/edit-profile', {
+	     .when('/edit-profile', {
         templateUrl: 'views/edit-profile.html',
         controller: '',
         controllerAs: '',
     
       })
-.when('/forgot-password', {
+      .when('/forgot-password', {
         templateUrl: 'views/forgot-password.html',
         controller: 'Forgot_PswdCtrl',
         controllerAs: 'forgot_psw',
     
       })
- .when('/reset-password/:token', {
+      .when('/reset-password/:token', {
         templateUrl: 'views/reset-password.html',
         controller: 'Reset_PswdCtrl',
         controllerAs: 'reset_psw',
     
       })
+      
+      $locationProvider.html5Mode(true);
  
 
   })

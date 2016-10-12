@@ -18,7 +18,7 @@ angular.module('frontend2017App')
      	$scope.eventList=response.data;
     });
       $scope.goto=function(index){
-      	$location.path('eventLists/'+$scope.eventList[index]._id);
+      	$location.path('event-lists/'+$scope.eventList[index]._id);
       }
 
   });
