@@ -19,6 +19,7 @@ img#events_image{
 	 width:85%;
 	 display: block;
 	 overflow: hidden;
+	 padding-bottom: 5%;
 }
 .eventbox2{
 	width: 100%;
