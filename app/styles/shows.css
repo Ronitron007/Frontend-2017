@@ -12,6 +12,11 @@
 
 }
 
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
 #shows-building{
 	width: 100%;
 
@@ -19,8 +24,12 @@
 
 }
 
-.shows-container{
+#envisage{
+	font-family: Open Sans;
+}
 
+.shows-container{
+font-family: Open Sans;
 
 	}
 
@@ -44,5 +53,6 @@
 .shows-container2{
 
 clear: right;
+font-family: Open Sans;
 
 }

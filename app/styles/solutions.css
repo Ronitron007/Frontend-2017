@@ -15,7 +15,7 @@
 
 .solutions-container{
    margin-right: 1%;
-   
+   font-family: Open Sans;
 	}
 
 .solutions-header{
@@ -24,28 +24,14 @@ text-align: left;
 font-weight: bolder;
 }
 
-#solutions-subtitle{
 
-	height: 300px;
-	float: right;
-
-}
 .table th, .table td,.table  {
     border: 1px solid black;
     border-collapse: separate;
 }
 
-#solutions-placeholder{
-	width: 400px;
-	float:left;
-	clear: both;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-bottom: 50px;
-}
 
-.solutions-container2{
-
-clear: right;
-
+.container{
+	margin-left: 0;
+	margin-right: 0;
 }

@@ -19,6 +19,7 @@ img#events_image{
 	 width:85%;
 	 display: block;
 	 overflow: hidden;
+	 padding-bottom: 5%;
 }
 .eventbox2{
 	width: 100%;
@@ -32,7 +33,7 @@ img#events_image{
 	text-align: center;
 	padding: 15px;
 	font-weight: bolder;
-	font-family: KeepCalm;
+	font-family: Open Sans;
 	font-size: 1.2em;
 	vertical-align: center;
 	border: 3px solid black ;

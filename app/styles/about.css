@@ -1,6 +1,7 @@
 .about_heading{width:15.8020527859vw;
  margin-top:-5%;}
  .about_content{
+ 	font-family: Open Sans;
  margin-top:-5%;
  width:80%;
  }
@@ -9,4 +10,5 @@
 .augment_heading{width:15.8020527859vw;
 }
  #theme{
+ 	font-family: Open Sans;
  }

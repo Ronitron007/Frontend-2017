@@ -107,7 +107,7 @@ Description:"The department caters to all financial requirements of Shaastra alo
 	
 	Email2:"varun@shaastra.org",
 	Phone2:"+91 7358540260",
-Description:"The Sponsorship and Public Relations department serves as the bridge between an investor and Shaastra. These assosiciations include both in-kind and monetary deals. Moreover, the collaborations we make are also to foster support from media and patrons, thus generating PR . So do contact us for any collaboration which deems suitable, with doors open to any <a target='_blank' href='http://ebrochure.shaastra.org'>industry</a>, NGO, start-up; you name it. The department will also take care of Shaastra's attempt to give back to the society, breaking the norms of being just a technical festival. So do make sure you keep an eye out for <b>Shaastra Augment, 2017</b> and the department bringing it to life for you. "
+Description:"The Sponsorship and Public Relations department serves as the bridge between an investor and Shaastra. These assosiciations include both in-kind and monetary deals. The collaborations are also to foster support from media and patrons, thus generating PR . So do contact us for any collaboration which deems suitable, with doors open to any <a target='_blank' href='http://ebrochure.shaastra.org'>industry</a>, NGO, start-up; you name it. Shaastra also look to give back to the society, along with putting the forefronts of technology on a pedestal. Also, make sure you keep an eye out for <b>Shaastra Augment, 2017</b> and the department bringing it to life for you. "
 	},{
 	Person_Name:"Mohit Kumar",
 	Team_Name:"Technical Operations",
