@@ -163,7 +163,7 @@ angular
         templateUrl: 'views/edit-profile.html',
         controller: 'edit-profile_PswdCtrl',
         controllerAs: 'edit-profile',
-    
+        authenticate: true
       })
       .otherwise({redirectTo: '/'})
       
