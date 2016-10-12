@@ -159,6 +159,7 @@ angular
         controllerAs: 'reset_psw',
     
       })
+      .otherwise({redirectTo: '/'})
       
       $locationProvider.html5Mode(true);
  
@@ -182,6 +183,20 @@ angular
       $rootScope.showBackgroundImage = (next.$$route.originalPath === '/');
 
     });
+
+    $rootScope.$on('$routeChangeStart', function (event, next) {
+      Auth.isLoggedInAsync(function(loggedIn) {
+        if (next.templateUrl == "views/login.html" && loggedIn) {
+          $location.url('/dashboard');
+        }
+
+        if (next.templateUrl == "views/register.html" && loggedIn) {
+          $location.url('/dashboard');
+        }
+      });
+
+    });
+
   })
 
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
