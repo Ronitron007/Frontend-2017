@@ -159,6 +159,12 @@ angular
         controllerAs: 'reset_psw',
     
       })
+     .when('/edit-profile', {
+        templateUrl: 'views/edit-profile.html',
+        controller: 'edit-profile_PswdCtrl',
+        controllerAs: 'edit-profile',
+    
+      })
       .otherwise({redirectTo: '/'})
       
       $locationProvider.html5Mode(true);

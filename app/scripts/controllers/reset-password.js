@@ -31,5 +31,4 @@ angular.module('frontend2017App')
         });
     };
 
-
   });
