@@ -1,12 +1,12 @@
-<div class="edit-profile" style="margin-top:80px;" ng-controller="edit-profile_PswdCtrl">
- <center> <h2><b>EDIT YOUR DETAILS :</b></h2>
+<div class="edit-profile" style="margin-top:80px;font-family:Open Sans" ng-controller="edit-profile_PswdCtrl">
+ <center> <h2><b>Edit Your Profile</b></h2><br>
 
  
         <form class="form" name="form" ng-submit="updateProfile(form)" novalidate>
 
           <div class="form-group" ng-class="{ 'has-success': form.name.$valid && submitted,
                                               'has-error': form.name.$invalid && submitted }">
-            <label>First name</label>
+            <!-- <label>First name</label> -->
 
             <input  class="input-login" type="text" name="name"  ng-model="user.name"
               required>
@@ -20,7 +20,7 @@
 
           <div class="form-group" ng-class="{ 'has-success': form.secondName.$valid && submitted,
                                               'has-error': form.secondName.$invalid && submitted }">
-            <label>Last name</label>
+            <!-- <label>Last name</label> -->
 
             <input type="text" name="secondName" class="input-login" ng-model="user.secondName"
               required>
@@ -34,7 +34,7 @@
 
           <div class="form-group" ng-class="{ 'has-success': form.email.$valid && submitted,
                                               'has-error': form.email.$invalid && submitted }">
-            <label>Email</label>
+            <!-- <label>Email</label> -->
 
             <input type="text" name="email" class="input-login" ng-model="user.email"
               required
@@ -49,12 +49,12 @@
 
           <div class="form-group" ng-class="{ 'has-success': form.phoneNumber.$valid && submitted,
                                               'has-error': form.phoneNumber.$invalid && submitted }">
-            <label>Mobile Number</label>
+            <!-- <label>Mobile Number</label> -->
 
             <input type="text" name="phoneNumber" class="input-login" ng-model="user.phoneNumber"
               ng-pattern="/^\d{10}$/"
               required>
-            <span class="help-block">Do not include 0 or +91 before your 10 digit number</span>
+            <!-- <span class="help-block">Do not include 0 or +91 before your 10 digit number</span> -->
             <span class="help-block" 
                ng-show="(form.phoneNumber.$error.pattern || form.phoneNumber.$error.required) && submitted">
               Phone Number must be of 10 digits
@@ -66,14 +66,14 @@
 
           <div class="form-group" ng-class="{ 'has-success': form.city.$valid && submitted,
                                                             'has-error': form.city.$invalid && submitted }">
-            <div class="input-group">
-             <label>City </label>
+            <!-- <div class="input-group"> -->
+             <!-- <label>City </label> -->
               <input class="input-login"  type="text" name="city" ng-model="user.city" placeholder="Enter your City" aria-describedby="sizing-addon2" required>
             </div>
             <span class="help-block" ng-show="form.city.$error.required && submitted">
               City is required
             </span>
-          </div>
+          <!-- </div> -->
 
           <div class="form-group" ng-class="{ 'has-success': form.state.$valid && submitted,
                                                             'has-error': form.state.$invalid && submitted }">
@@ -89,7 +89,7 @@
           <div class="form-group">
             <input type="checkbox" name="wantAccomodation" ng-model="user.wantAccomodation">
 
-            <label>Want Accommodation</label>
+            <label>Accommodation (Tick if required)</label>
           </div>
           
           <div>
