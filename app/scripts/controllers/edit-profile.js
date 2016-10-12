@@ -7,7 +7,7 @@
  * Controller of the frontend2017App
  */
 angular.module('frontend2017App')
-  .controller('edit-profile_PswdCtrl', function ($scope, $http, Auth) {
+  .controller('edit-profile_PswdCtrl', function ($scope, $http, Auth, $location) {
     
  $scope.pageClass = 'page-editProfile';
   $scope.message = '';
@@ -72,9 +72,13 @@ angular.module('frontend2017App')
           if(response.$resolved && response.$promise.$$state.status) {
             $scope.message = 'Success';
             $scope.submitted = false;
+            alert("Successfully changed");
+            $location.url("/dashboard");
           } else {
             $scope.message = 'Some error occurred! Please try again.';
-            $scope.submitted = false;            
+            $scope.submitted = false;
+            alert("Some error occurred! Please try again.");
+            $location.url("/dashboard");            
           }
         })
         .catch( function (err) {
