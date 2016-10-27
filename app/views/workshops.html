@@ -1,0 +1,29 @@
+
+<div class="bg_eventlist" style="margin-top:150px;" ng-controller="WorkshopsCtrl">
+  
+  <center>
+  <img id="events-banner" ng-src="../images/banners_new/WORKSHOP-Banner.png"><br><br>
+ <img id="events_image" ng-src="../images/verticals_image/WORKSHOP-button.png"><br><br>
+  <div class="row">
+  <div ng-repeat="category in workshopCategories track by $index">
+  <div class="col-sm-6 col-md-6 con-lg-6" ng-if="!$last">
+  	<div class="eventbox">
+  <div ng-click="gotoEventDetails($index)" class="eventsname">{{category}}</div>
+</div>
+</br>
+</div>
+
+<div class="col-sm-offset-3 col-sm-6 col-md-6 con-lg-6" ng-if="$last">
+  <div class="eventbox">
+  <div ng-click="gotoEventDetails($index)" class="eventsname">{{category}}</div>
+</div>
+</br>
+</div>
+
+</div>
+
+<div class="col-sm-1 col-md-1 col-lg-1"></div>
+</div>
+</div>
+ </center>
+</div>
