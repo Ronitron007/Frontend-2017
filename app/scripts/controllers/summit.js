@@ -17,7 +17,8 @@ angular.module('frontend2017App')
   					// {name:'speakers',img:imgURL+''},
   					{name:'registrations',img:imgURL+'REGISTRATION.png'},
   					{name:'partners',img:imgURL+'PARTNERS.png'},
-  					{name:'past-versions',img:imgURL+'PAST_VERSIONS.png'}
+  					{name:'past-versions',img:imgURL+'PAST_VERSIONS.png'},
+            {name:'faq',img:'../../images/elements/placeholder.png'},
   					];
     
                                

@@ -165,6 +165,11 @@ angular
         controllerAs: 'edit-profile',
         authenticate: true
       })
+      .when('/summit-faq', {
+        templateUrl: 'views/summit-faq.html',
+        controller: 'SummitFaqCtrl',
+        controllerAs: 'summitFaq'
+      })
       .otherwise({redirectTo: '/'})
       
       $locationProvider.html5Mode(true);
