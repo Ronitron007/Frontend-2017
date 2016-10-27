@@ -35,7 +35,12 @@
                 </center>
               </ul> </li>   
           <li><a class="nav_elem" href="/#/summit">SUMMIT</a></li> 
-          <li><a class="nav_elem" href="/#/social-campaign">SOCIAL CAMPAIGN</a></li>
+          <li class="events_open2"><a class="nav_elem" href="/#/social-campaign">SOCIAL CAMPAIGN</a>
+            <ul class="dropdown-menu">
+            <li><a href="/#/social-campaign#sync">SYNC</a></li>
+            <li><a href="/#/social-campaign#past_camp">PAST CAMPAIGNS</a></li>      
+          </ul>
+          </li>
           <li><a class="nav_elem" href="/#/event-lists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
           <li class="events_open2" ><a class="nav_elem" href="/#/shows" >SHOWS<span class="arrow_events"> &nbsp >></span></a>
          <ul class="dropdown-menu">
@@ -57,6 +62,8 @@
     
         <ul id="right_nav" class="nav navbar-nav navbar-right">
         <!-- <li><a class="more_elem" href="">MORE</a></li> -->
+          <li id="search"><img ng-click="showDiv = !showDiv" class="searchbar" src="../images/search_bar.png"/></li>
+
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/login">LOGIN</a></li>
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/register">REGISTER</a></li>
           <li  ng-show="isLoggedIn()" class="nav_elem user"><a class="nav_elem" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }}&nbsp &nbsp<span class="glyphicon glyphicon-user user-icon"></span><span class="arrow_events"> &nbsp >></span></a>
@@ -72,6 +79,7 @@
     </div>
 
   </nav> 
+  <div ng-show="showDiv" class="button_box2"><form class="form-wrapper-2 cf"><input type="text" placeholder="Search here..." required><button type="submit">Search</button></form></div>
     </div>
 </div>
 <!-- collapse on clicking links of navbar(small screen)-->
@@ -83,5 +91,5 @@
     }
 
 });
-</script>
 
+</script>
