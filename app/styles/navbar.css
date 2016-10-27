@@ -205,10 +205,12 @@ display: inline-block;
 }
 }
 .searchbar{
+
  width: 50px;
  position: relative;
  right:10%;
   z-index: 9999;
+
 }
 /* search box */
 
@@ -233,7 +235,6 @@ zoom:1;
 /*-------------------------------------*/
 
 .form-wrapper-2 {
-width: 334px;
 padding: 7px;
 background: #555;
 -moz-border-radius: 10px;

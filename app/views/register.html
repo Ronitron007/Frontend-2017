@@ -66,13 +66,19 @@
 					<label class="help-block" ng-show="registerform.occupation.$error.required &&submitted">
 				    Select if school student or not
 					</label> -->
-					<select class="input-login" id="field12" name="field12" ng-model="field12" required>
+					<select class="input-login" id="field12" name="field12" ng-model="field12" ng-change="printPlease()" required>
 						<option value="" disabled selected style="display: none;">College</option>
 						<option ng-repeat="college in allColleges" value="{{college._id}}">{{college.collegeName}}</option>					
           			</select>
 					<label class="help-block" ng-show="registerform.field12.$error.required &&submitted">
 				    Select College
 					</label>
+
+					<input ng-show="field12 == '57fa100ddc7040acadc7faa9'" type="text" class="input-login" placeholder="College Name" id="otherCollege" name="otherCollege" ng-model="otherCollege" ng-required="field12 == '57fa100ddc7040acadc7faa9'">
+					<label class="help-block" ng-show="registerform.otherCollege.$error.required &&submitted">
+				    College Name is required
+					</label>
+
 					<input type="checkbox" name="accomodation" id="field15" name="field15" ng-model="field15"><span class="checkBox">Accommodation (Tick if required)</span><br><br>
 
 					<div vc-recaptcha key="'6Lf1ktUSAAAAALOtemzm08LVwHmfku6yXXCdrMJn'"></div>
