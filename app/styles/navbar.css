@@ -206,7 +206,8 @@ display: inline-block;
 }
 }
 .searchbar{
- width: 16%;
+  top:7px;
+ width: 12%;
   position: relative;
   cursor: pointer;
   left:85%;
@@ -235,7 +236,6 @@ zoom:1;
 /*-------------------------------------*/
 
 .form-wrapper-2 {
-width: 334px;
 padding: 7px;
 background: #555;
 -moz-border-radius: 10px;
