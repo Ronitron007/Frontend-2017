@@ -1,0 +1,104 @@
+<div class="header" ng-controller="NavbarCtrl">
+ <!-- Top Nav-Bar -->
+       <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+   <div class="navbar-inner">
+     <div class="container-fluid">
+       <div class="navbar-header">
+ 
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+           <span class="sr-only ">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+        <a class="navbar-brand" href="/"><img id="logo" src="../images/design-2/toolbarElements/logo-r.png ">
+         </a>
+       </div>
+ 
+       <div id="navbar1" class="navbar-collapse collapse">
+  
+         <ul id="menu" class="nav navbar-nav">
+         
+           <li class="alpha"><a  class="nav_elem" href="/#/about">ABOUT</a></li>
+           <li class="events_open"><a class="nav_elem" href="/#/events" >EVENTS<span class="arrow_events"> &nbsp>></span></a>
+             <ul class="dropdown-menu">
+             <center>
+                 <li><a style="text-align: left" href="/#/event-lists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
+                 <li><a style="text-align: left" href="/#/event-lists/57cd0967a65edf661ac42f7c">
+                 B EVENTS</a></li>
+                 <li><a style="text-align: left" href="/#/event-lists/57c99e7ea65edf661ac429e3">CODING</a></li>
+                 <li><a style="text-align: left" href="/#/event-lists/57caba7aa65edf661ac42af8">DESIGN AND BUILD</a></li>
+                 <li><a style="text-align: left" href="/#/event-lists/57cd67faa65edf661ac43036">ELECTRONICS FEST</a></li>
+                 <li><a style="text-align: left" href="/#/event-lists/57e01ec4a65edf661ac45068">INTERNATIONAL EVENTS</a></li>
+                 <li><a style="text-align: left" href="/#/event-lists/57c52b90a65edf661ac42875">INVOLVE AND QUIZZING</a></li>
+                 <li><a style="text-align: left" href="/#/event-lists/57f36670718f8af21339dac4">RESEARCH EVENTS</a></li>
+                 </center>
+               </ul> </li>   
+           <li><a class="nav_elem" href="/#/summit">SUMMIT</a></li> 
+           <li class="events_open2"><a class="nav_elem" href="/#/social-campaign">SOCIAL CAMPAIGN</a>
+             <ul class="dropdown-menu">
+             <li><a href="/#/social-campaign#sync">SYNC</a></li>
+             <li><a href="/#/social-campaign#past_camp">PAST CAMPAIGNS</a></li>      
+           </ul>
+           </li>
+           <li><a class="nav_elem" href="/#/event-lists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
+           <li class="events_open2" ><a class="nav_elem" href="/#/shows" >SHOWS<span class="arrow_events"> &nbsp >></span></a>
+          <ul class="dropdown-menu">
+             <li><a href="/#/shows">PRO SHOWS</a></li>
+             <li><a href="/#/shows#envisage">ENVISAGE</a></li>
+                 <li><a href="/#/exhibitions">EXHIBITIONS</a></li>
+           </ul>
+           </li>
+            <li><a class="nav_elem" href="/#/solutions">SOLUTIONS</a></li>
+       
+   </ul>
+  
+     
+       <!--   <li class="show-more"><a href="#">more +</a></li>
+       <li class="show-less"><a href="#">less -</a></li> -->
+     
+         <ul id="right_nav" class="nav navbar-nav navbar-right">
+         <!-- <li><a class="more_elem" href="">MORE</a></li> -->
+           <li id="search" class="events_open2" style="left:-100px;">
+           <div>
+           <form class="form-wrapper-2 cf">
+             <input type="text" autocomplete="on" ng-model="searchText" placeholder="Search here..." required>
+           <!-- <ul class="dropdown-menu">
+             <li style="color: white;" ng-repeat="event in events | filter:searchText">{{event.name}}</li>
+           </ul> -->
+             <button disabled="true" style="cursor: default;">
+               <span class="glyphicon glyphicon-search"></span>
+             </button>
+           </form>
+           </div>
+           </li>
+ 
+           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/login">LOGIN</a></li>
+           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/register">REGISTER</a></li>
+           <li  ng-show="isLoggedIn()" class="nav_elem user"><a class="nav_elem" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }}&nbsp &nbsp<span class="glyphicon glyphicon-user user-icon"></span><span class="arrow_events"> &nbsp >></span></a>
+           <ul class="dropdown-menu" >
+               <li class="dashboard_menu"><a  href="/#/dashboard"><span>Dashboard</span></a></li>
+               <li class="logout_menu"><a  ng-click="logout()"><span>Logout</span></a></li>
+             </ul></li>
+           </li>
+ 
+         </ul>
+         </div>
+       </div>
+     </div>
+ 
+   </nav> 
+   
+     </div>
+ </div>
+ <!-- collapse on clicking links of navbar(small screen)-->
+ <script type="text/javascript">
+   $(document).on('click','.navbar-collapse.in',function(e) {
+ 
+     if( $(e.target).is('a') && ( $(e.target).attr('class') != 'events_open2' )&& ( $(e.target).attr('class') != 'dashboard_menu' ) && ( $(e.target).attr('class') != 'events_open' ) ) {
+         $(this).collapse('hide');
+     }
+ 
+ });
+ 
+ </script>
