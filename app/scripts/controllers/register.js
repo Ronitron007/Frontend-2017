@@ -57,6 +57,7 @@ angular.module('frontend2017App')
               $scope.match=false;
         }
       };
+      $scope.otherCollege = '';
       $scope.field12 = null;
       $scope.submitted=false;
       $scope.field9 = "Male";
@@ -98,7 +99,7 @@ angular.module('frontend2017App')
   "West Bengal"];
 
       $scope.printPlease = function(){
-        console.log($scope.field10);
+        console.log($scope.field12);
       }
 
       var secretkeycaptcha = '';
@@ -132,6 +133,7 @@ angular.module('frontend2017App')
           gender:gender,
           state:$scope.field10,
           college:$scope.field12,
+          otherCollege: $scope.otherCollege,
           wantAccomodation:$scope.field15,
          }).then(function(){
         console.log('Successfully Submitted');

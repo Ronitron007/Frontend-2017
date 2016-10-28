@@ -170,6 +170,16 @@ angular
         controller: 'SummitFaqCtrl',
         controllerAs: 'summitFaq'
       })
+      .when('/workshops', {
+        templateUrl: 'views/workshops.html',
+        controller: 'WorkshopsCtrl',
+        controllerAs: 'workshops'
+      })
+      .when('/workshops/:workshopCat', {
+        templateUrl: 'views/workshop-categories.html',
+        controller: 'WorkshopCategoriesCtrl',
+        controllerAs: 'workshopCategories'
+      })
       .otherwise({redirectTo: '/'})
       
       $locationProvider.html5Mode(true);
