@@ -49,7 +49,6 @@
                 <li><a href="/#/exhibitions">EXHIBITIONS</a></li>
           </ul>
           </li>
-          <li><a class="nav_elem" href="/#/contact">CONTACT</a></li>
            <li><a class="nav_elem" href="/#/solutions">SOLUTIONS</a></li>
       
   </ul>
@@ -62,7 +61,19 @@
     
         <ul id="right_nav" class="nav navbar-nav navbar-right">
         <!-- <li><a class="more_elem" href="">MORE</a></li> -->
-          <li id="search"><img ng-click="showDiv = !showDiv" class="searchbar" src="../images/search_bar.png"/></li>
+          <li id="search" class="events_open2">
+          <div>
+          <form class="form-wrapper-2 cf">
+            <input type="text" autocomplete="on" ng-model="searchText" placeholder="Search here..." required>
+          <!-- <ul class="dropdown-menu">
+            <li style="color: white;" ng-repeat="event in events | filter:searchText">{{event.name}}</li>
+          </ul> -->
+            <button disabled="true" style="cursor: default;">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </form>
+          </div>
+          </li>
 
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/login">LOGIN</a></li>
           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/register">REGISTER</a></li>
@@ -79,7 +90,7 @@
     </div>
 
   </nav> 
-  <div ng-show="showDiv" class="button_box2"><form class="form-wrapper-2 cf"><input type="text" placeholder="Search here..." required><button type="submit">Search</button></form></div>
+  
     </div>
 </div>
 <!-- collapse on clicking links of navbar(small screen)-->
