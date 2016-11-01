@@ -27,7 +27,12 @@ angular.module('frontend2017App')
 
     $http.get('http://shaastra.org:8001/api/events/forSearch')
     .then(function(response){
+      $scope.eventNames=[{name:String,index:Number}];
       $scope.events=response.data;
+      for (var i in $scope.events) {
+        $scope.eventNames.push({name:$scope.events[i].name,index:i});
+      console.log($scope.eventNames[i].name)
+      }
     })
     
      
