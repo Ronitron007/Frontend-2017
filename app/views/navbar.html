@@ -59,13 +59,13 @@
      
          <ul id="right_nav" class="nav navbar-nav navbar-right">
          <!-- <li><a class="more_elem" href="">MORE</a></li> -->
-           <!-- <li id="search" class="events_open2" style="left:-100px;">
+           <li id="search" class="events_open2" style="left:-100px;">
            <div>
            <form class="form-wrapper-2 cf">
              <input type="text" autocomplete="on" ng-model="searchText" placeholder="Search here..." required>
            <ul class="dropdown-menu">
              <li ng-repeat="event in eventNames | filter:searchText">
-             <a ng-href="events[event.index]._id">{{event.name}}</a>
+             <a ng-href="/event/{{eventId[event.index]}}" style="text-transform: capitalize;">{{event.name}}</a>
              </li>
            </ul>
              <button disabled="true" style="cursor: default;">
@@ -74,7 +74,7 @@
            </form>
            </div>
            </li>
-  -->
+ 
            <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/login">LOGIN</a></li>
            <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/register">REGISTER</a></li>
            <li  ng-show="isLoggedIn()" class="nav_elem user"><a class="nav_elem" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }}&nbsp &nbsp<span class="glyphicon glyphicon-user user-icon"></span><span class="arrow_events"> &nbsp >></span></a>
