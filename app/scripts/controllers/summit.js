@@ -14,7 +14,7 @@ angular.module('frontend2017App')
     var imgURL='../../images/elements/summit/';
   	$scope.eventList=[
   					{name:'events',img:imgURL+'EVENTS.png'},
-  					// {name:'speakers',img:imgURL+''},
+  					{name:'speakers',img:imgURL+'SPEAKERS.png'},
   					{name:'registrations',img:imgURL+'REGISTRATION.png'},
   					{name:'partners',img:imgURL+'PARTNERS.png'},
   					{name:'past-versions',img:imgURL+'PAST_VERSIONS.png'},
