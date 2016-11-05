@@ -64,8 +64,8 @@
            <form class="form-wrapper-2 cf">
              <input type="text" autocomplete="on" ng-model="searchText" placeholder="Search here..." required>
            <ul class="dropdown-menu">
-             <li ng-repeat="event in eventNames | filter:searchText">
-             <a ng-href="/event/{{eventId[event.index]}}" style="text-transform: capitalize;">{{event.name}}</a>
+             <li ng-repeat="event in eventNames | filter:searchText"> 
+             <a ng-href="/event/{{eventListIds[event.index]}}/{{eventIds[event.index]}}" style="text-transform: capitalize;">{{event.name}}</a>
              </li>
            </ul>
              <button disabled="true" style="cursor: default;">
