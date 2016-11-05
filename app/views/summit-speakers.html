@@ -11,18 +11,20 @@
   <div class="row">
   <div class="col-sm-1 col-md-1 col-lg-1"></div>
 <div class="col-sm-7 col-md-7 col-lg-7" style="font-family: Open Sans">
-<div class="" ng-repeat="speaker in speakersJson">
+<div ng-repeat="speaker in speakersJson">
 
-<table class="table">
+<table style="margin-bottom: 6%;">
+  <tr>
   <td>
-  <img style="border-radius: 100px;width: 200px;height:200px;float: left;" src="{{speaker.img}}">
-  <h3 style="text-align: center;">{{speaker.name}}</h3>
-  <h4 style="text-align: center;">{{speaker.description}}</h3>
-  <h4 style="text-align: center;">{{speaker.organisation}}</h3>
+  <img class="summit-logo" src="{{speaker.img}}">
+  <h3 class="summit-description">{{speaker.name}}</h3>
+  <h4 class="summit-description">{{speaker.description}}</h4>
+  <h4 style="text-align: center;">{{speaker.organisation}}</h4>
   </td>
-  <td style="justify-content:center; ">
-    <span style="">{{speaker.info}}</span>
+  <td style="padding-left: 4%;">
+    <span class="summit-info">{{speaker.info}}</span>
   </td>
+  </tr>
 </table>
 
 </div>
