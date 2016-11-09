@@ -18,7 +18,7 @@ angular.module('frontend2017App')
     	name:'Accessible India Campaign',
     	info:'A nation-wide campaign started by the Department of Empowerment of Persons with Disability (DEPwD), Government of India, aimed at achieving universal accessibility for Persons with Disabilities (PwDs). The campaign focusses on making physical environments accessible ranging from buildings to transport facilities provided by the government and making information and communication technology accessible for PwDs.',
     	link:'http://www.accessibleindia.gov.in/content',
-    	logo:imgUrl+'/Accessible_India_Campaign.jpg',
+    	logo:imgUrl+'/AccessibleCampaign.jpg',
     },
     {
     	name:'Deque Systems Inc',
@@ -31,19 +31,19 @@ angular.module('frontend2017App')
     	name:'Centre for Internet and Society (CIS)',
     	info:'The Centre for Internet and Society (CIS) is a non-profit organization that undertakes interdisciplinary research on the internet and digital technologies from policy and academic perspectives. Their areas of focus include digital accessibility for persons with diverse abilities and access to knowledge focusing on research and development in digital accessibility and access to information.',
     	link:'http://www.cis-india.org',
-    	logo:imgUrl+'/Centre for Internet and Society.png',
+    	logo:imgUrl+'/centre for internet.png',
     },
     {
     	name:'EnAble India',
 		info:'EnAble India focuses on empowerment of persons with disability and creating employment opportunities for PwDs. EnAble India trains and counsels PwDs and is working towards making PwDs a part of every corporate hiring plan. It focusses on providing supplementary education, extensive training and assistive aids to increase the employability of PwDs.',    	
     	link:'http://www.enable-india.org',
-    	logo:imgUrl+'/Enable India.jpg',
+    	logo:imgUrl+'/Enable india.jpg',
     },
     {
     	name:'Ability Foundation',
     	info:'Established in 1995, Ability Foundation works for the empowerment, integration and rights of people with disabilities. With mainstreaming and inclusion as its constant theme, the Foundation has initiated a slew of innovative programmes that aim at the total inclusion of people with disabilities. Ability Foundation works to enable PwDs and provide equal opportunities to suit their varied talents.',
     	link:'http://www.abilityfoundation.org',
-    	logo:imgUrl+'/AbilityFoundation.png',
+    	logo:imgUrl+'/AbilityFoundation.jpg',
     },
     {
     	name:'Vidhi Centre for Legal Policy',
@@ -55,7 +55,7 @@ angular.module('frontend2017App')
     	name:'Vidya Sagar',
 		info:'Vidya Sagar is a non-government organisation started in 1985 to help bring inclusivity in the society for PwDs. In 2 decades, Vidya Sagar has developed into an institution offering programs that focus on holistic development and education for children and adults with special needs; demystification of disability; empowering persons with special needs and their families with knowledge and skills, while strongly advocating on issues of inclusion. Vidya Sagar today runs several programmes reaching out to over 3800 individuals with disabilities. ',
     	link:'http://www.vidyasagar.co.in',
-    	logo:imgUrl+'/Vidya Sagar.png',
+    	logo:imgUrl+'/vidya sagar.png',
     },
 
     ];

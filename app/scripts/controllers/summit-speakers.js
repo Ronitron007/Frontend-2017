@@ -16,7 +16,7 @@ angular.module('frontend2017App')
    	name:'Suranga Nanayakkara',
     description:'Lecture - Technical',
     organisation:'Singapore University of Technology and Design',
-    img:imgUrl+'/Suranga_Nanayakkara.jpg',
+    img:imgUrl+'/Suranga Nanyakara.jpg',
     info:'Suranga Nanayakkara is an Assistant Professor from the Engineering Product Development Pillar at Singapore University of Technology and Design (SUTD). Before joining SUTD, Suranga was a Postdoctoral Associate at the Fluid Interfaces group, MIT Media Lab. In 2011, he founded the "Augmented Human Lab" to explore ways of creating ‘enabling’ human-computer interfaces as natural extensions of our body, mind and behaviour. Suranga is among that rare breed of engineers that has a sense of “humanity” in technology. This ranges from practical behavioral issues, understanding real-life contexts in which technologies function, and understanding where technologies can be not just exciting or novel, but have a meaningful impact on the way people live. For the totality and breadth of achievements, he has won many awards including been recognized as a young inventor under 35 (TR35 award) in the Asia Pacific region by MIT TechReview, Outstanding Young Persons of Sri Lanka (TOYP), and INK Fellow. His work is most important to the people whose lives it most directly impacts: those who face challenged to function in the world due to sensory deficits in hearing or vision.'
    },
    {
@@ -30,7 +30,7 @@ angular.module('frontend2017App')
    	name:'Meenu Bhambhani',
     description:'Panelist',
     organisation:'MphasiS, Bangalore',
-    img:imgUrl+'/Meenu Bhambhani.JPG',
+    img:imgUrl+'/Meenu Bhambhani.jpg',
     info:'Dr. Meenu Bhambhani is the Associate Vice-President and Head – Global Corporate Social Responsibility at MphasiS, Bangalore. She is a a professional in the area of disability and human development with more than fifteen years of experience, specialised in disability studies and social policy, a researcher on disability issues in India, and an ally of local and transnational disability rights movements. Having engaged with the development sector in he current role at Mphasis, Ms. Bhambhani has instituted processes to transform policy into action, has extensively trained employees across locations in disability issues and ensured that MphsiS’s systems, including infrastructure, became significantly disabled-friendly. Her efforts have resulted in the company not only becoming a positive recruiter of disabled persons, but also a role model for other corporates. She was felicitated with the prestigious NCPEDP - Shell Helen Keller Award in 2009. Because of her efforts, Mphasis was oneof the winners of the Natioanl Award for the Empowerment of People with Disabilities in 2008.'
    },
    {
