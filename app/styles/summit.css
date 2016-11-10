@@ -1,3 +1,10 @@
+@media screen and (max-width: 767px) and (min-width: 200px){
+  #summitTeaser{
+  	display: none;
+  }
+  
+}
+
 #summit-banner{
 	position:absolute;
 	height: 300px;

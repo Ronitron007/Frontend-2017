@@ -22,7 +22,7 @@ The <strong>Accessibility Summit of Shaastra 2017</strong>, IIT Madras, a 4 day-
 </p>
 To know more about Accessibility Summit, please watch the teaser.
 <br><br>
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShaastra%2Fvideos%2F1198834450162266%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<iframe id="summitTeaser" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShaastra%2Fvideos%2F1198834450162266%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 <br>
 
 </div>
@@ -36,7 +36,7 @@ To know more about Accessibility Summit, please watch the teaser.
   <div class="row" style="margin-left:10%; ">
   <div class="col-sm-10 col-md-10 col-lg-10">
   <div ng-repeat="events in eventList">
-  <div class="col-sm-2 col-md-2 col-lg-2">
+  <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
   <div class="eventbox2">
   <img class="img-thumbnail img-click imgstyle" alt="Summit" ng-src="{{events.img}}" ng-click="goto($index)">
 </div>

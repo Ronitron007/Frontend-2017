@@ -12,3 +12,10 @@
  #theme{
  	font-family: Open Sans;
  }
+
+ @media screen and (max-width: 767px) and (min-width: 200px){
+  #themeVideo{
+  	display: none;
+  }
+  
+}
