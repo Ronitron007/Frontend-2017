@@ -9,14 +9,14 @@
 			}
 
 			.form {
-				width: 25%;
+			    
 				margin: auto;
 			}
 
 			.registersubmit {
+				
 				width: 100%;
-				padding-left: 25%;
-				padding-top: 10%;
+				padding-top: 5%;
 				border-radius: 5px;
 				border-width: 3px;
 				border-color: black;
@@ -28,13 +28,17 @@
 			}
 			.radioButtons{
 				margin-right: 3%;
-				margin-left:7%; 
+				margin-left:6%; 
 			}
 			.radioButtons:first-child{
-				margin-left: -4%;
+				margin-left: -0.5%;
 			}
 			.checkBox{
 				margin-right: 4%;
+			}
+			.btn-large{
+				width: 10%;
+				
 			}
 
 			input[type=number]::-webkit-outer-spin-button,
@@ -47,3 +51,10 @@
             -moz-appearance:textfield;
 			}
 
+@media only screen and (max-width: 767px)
+{
+	.btn-large{
+		width:50%;
+		height: 30%; 
+	}
+}
