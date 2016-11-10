@@ -2,7 +2,8 @@
 		
 		<div class="content">
 			<img class="shaastra-logo-line" src='../images/design-2/shaastra_logo_line.png' style="width:29.8020527859vw; margin-right: 35.098973607vw; margin-left:35.098973607vw; padding-top: 100px;">
-			<div class="form">
+			<div class="col-lg-1 col-xs-1 col-md-1"></div>
+			<div class="col-lg-10 col-xs-10 col-md-10">
 				<form method="post" id="register" name="registerform" novalidate ng-submit="submit(registerform)">
 					<input type="text" class="input-login" placeholder="First Name" id="field1" name="field1" value="" required class="alphabetic" ng-model="field1">
 					<label class="help-block" ng-show="registerform.field1.$error.required &&submitted">
@@ -70,6 +71,7 @@
 						<option value="" disabled selected style="display: none;">College</option>
 						<option ng-repeat="college in allColleges" value="{{college._id}}">{{college.collegeName}}</option>					
           			</select>
+
 					<label class="help-block" ng-show="registerform.field12.$error.required &&submitted">
 				    Select College
 					</label>
@@ -78,13 +80,17 @@
 					<label class="help-block" ng-show="registerform.otherCollege.$error.required &&submitted">
 				    College Name is required
 					</label>
-
+                    <br><br>
 					<input type="checkbox" name="accomodation" id="field15" name="field15" ng-model="field15"><span class="checkBox">Accommodation (Tick if required)</span><br><br>
 
 					<div vc-recaptcha key="'6Lf1ktUSAAAAALOtemzm08LVwHmfku6yXXCdrMJn'"></div>
 
-					<div class="registersubmit"><button type="submit" class="btn btn-primary btn-lg" style="max-width: 10.997067448vw;border-radius: 7px;border-width: 3px;border-color: black;border-style: solid;">REGISTER</button></div><br>
-					<center> <a href="/#/register">Already registered? Click here to login</a></center><br><br>
+					<div class="registersubmit">
+                    <center>
+					<button type="submit" class="btn btn-primary btn-large"  style=" border-radius: 7px;border-width: 3px;border-color: black;border-style: solid;">REGISTER</button>
+					</center>
+					</div><br>
+					<center> <a href="/#/login">Already registered? Click here to login</a></center><br><br>
 				</form>
 			</div>
 		</div>

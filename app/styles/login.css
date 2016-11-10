@@ -13,6 +13,15 @@
 			}*/
 
 			.loginsubmit {
-				width: 100%;
-				margin-left: 25%;
+				
+				width: 10%;
+				height: 10%;
 			}
+
+@media only screen and (max-width: 767px)
+{
+	.loginsubmit{
+		width:50%;
+		height: 30%; 
+	}
+}
