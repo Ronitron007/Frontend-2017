@@ -83,7 +83,12 @@
 	var man = $('#man'),
 	curFrm = 0,
 	lastStep=0;
-skrollr.init({
+	winW = $(window).width();
+	console.log(winW);
+
+	if( winW >= 768) {
+ 
+       skrollr.init({
 	beforerender: function(o){
 		// If the user has scrolled 50 pixels down
 		// since the last time we shifted the background image,
@@ -145,4 +150,19 @@ skrollr.init({
 			}
 		}
 });
+ 
+    } else {
+ 
+        // Init Skrollr
+        var s = skrollr.init();
+        s.destroy();
+    }
+
+    if(Modernizr.touch) {
+ 
+        // Init Skrollr
+        var s = skrollr.init();
+        s.destroy();
+    }
+
 	</script>
