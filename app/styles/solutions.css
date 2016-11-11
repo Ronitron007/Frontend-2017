@@ -1,3 +1,17 @@
+@media only screen and (max-width: 767px) and (min-width: 200px){
+  
+  #solutions-banner{
+  	position:absolute;
+  	top: -190px;
+  	margin-left: -95px;
+    -ms-transform: scale(0.5, 0.5); /* IE 9 */
+    -webkit-transform: scale(0.5, 0.5); /* Safari,Chrome */
+    -moz-transform: scale(0.5, 0.5);/* Mozilla */
+    transform: scale(0.5, 0.5);
+
+  }
+  
+}
 #solutions-banner{
 	position:absolute;
 	height: 220px;
@@ -15,6 +29,7 @@
 
 .solutions-container{
    margin-right: 1%;
+   margin-left: 2%;
    font-family: Open Sans;
 	}
 

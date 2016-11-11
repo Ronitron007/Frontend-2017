@@ -6,6 +6,9 @@
 				margin: 5px 0px 5px 0px;
 
 			}
+			.loginLogo{
+				padding-top: 11%;
+			}
 
 			/*.form {
 				width: 16%;
@@ -18,10 +21,13 @@
 				max-height: 30%;
 			}
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 767px) and (min-width: 200px )
 {
 	.loginsubmit{
 		width:50%;
 		height: 30%; 
+	}
+	.loginLogo{
+		padding-top: 20%;
 	}
 }

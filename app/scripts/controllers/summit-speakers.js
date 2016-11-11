@@ -16,7 +16,7 @@ angular.module('frontend2017App')
    	name:'Suranga Nanayakkara',
     description:'Lecture - Technical',
     organisation:'Singapore University of Technology and Design',
-    img:imgUrl+'/Suranga Nanyakara.jpg',
+    img:imgUrl+'/Suranga_Nanyakara.jpg',
     info:'Suranga Nanayakkara is an Assistant Professor from the Engineering Product Development Pillar at Singapore University of Technology and Design (SUTD). Before joining SUTD, Suranga was a Postdoctoral Associate at the Fluid Interfaces group, MIT Media Lab. In 2011, he founded the "Augmented Human Lab" to explore ways of creating ‘enabling’ human-computer interfaces as natural extensions of our body, mind and behaviour. Suranga is among that rare breed of engineers that has a sense of “humanity” in technology. This ranges from practical behavioral issues, understanding real-life contexts in which technologies function, and understanding where technologies can be not just exciting or novel, but have a meaningful impact on the way people live. For the totality and breadth of achievements, he has won many awards including been recognized as a young inventor under 35 (TR35 award) in the Asia Pacific region by MIT TechReview, Outstanding Young Persons of Sri Lanka (TOYP), and INK Fellow. His work is most important to the people whose lives it most directly impacts: those who face challenged to function in the world due to sensory deficits in hearing or vision.'
    },
    {
