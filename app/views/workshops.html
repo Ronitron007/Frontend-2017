@@ -4,6 +4,31 @@
   <center>
   <img id="events-banner" ng-src="../images/banners_new/WORKSHOP-Banner.png"><br><br>
  <img id="events_image" ng-src="../images/verticals_image/WORKSHOP-button.png"><br><br>
+ 
+ <div style="text-align:left;margin-left:50px;">
+ <h3>Registrations:</h3>
+ <ul>
+ 	<li>People who are interested in attending workshops are requested to register for the corresponding workshops in the <a href="/dashboard">registration page</a>.</li>
+ 	<li>Robotics Workshops - Hand controlled Bot, Paired robotics, Object Tracking Bot and SPAD accepts registrations only in teams of 5 people at maximum.</li>
+ 	<li>For all the other workshops, registrations should  be done individually or in teams of maximum 3 people.</li>
+ </ul>
+ <h3>After Registration :</h3>
+ <ul>
+ 	<li>Following registrations, a questionnaire for each workshop is to be filled.</li>
+ 	<li>In case of team registrations, ALL the team members are required to fill the questionnaire and upload their submissions in one doc.</li>
+ 	<li>Submissions are to be uploaded in the registration page by clicking on ‘Upload Questionnaire’ for workshops.</li>
+ 	<li>Registrants who are selected for the workshop will get confirmation mails.</li>
+ 	<li>Confirmed registrants are requested to pay for the workshop passport + kit charge(if it is a kit workshop) to confirm their participation.</li>
+ </ul>
+ <h3>Note:</h3>
+ <ul>
+ 	<li>Workshop passport is necessary for all workshops.</li>
+ 	<li>In case of getting confirmed for multiple workshops, paying once for workshop passport is enough.</li>
+ 	<li>Refunds will not be entertained in case of wrong payments.</li>
+ </ul>
+ </div>
+ <br><br>
+
   <div class="row">
   <div ng-repeat="category in workshopCategories track by $index">
   <div class="col-sm-6 col-md-6 con-lg-6" ng-if="!$last">
@@ -12,7 +37,6 @@
 </div>
 </br>
 </div>
-
 <div class="col-sm-offset-3 col-sm-6 col-md-6 con-lg-6" ng-if="$last">
   <div class="eventbox">
   <div ng-click="gotoEventDetails($index)" class="eventsname">{{category}}</div>
