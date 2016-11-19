@@ -37,7 +37,7 @@ angular.module('frontend2017App')
     	name:'EnAble India',
 		info:'EnAble India focuses on empowerment of persons with disability and creating employment opportunities for PwDs. EnAble India trains and counsels PwDs and is working towards making PwDs a part of every corporate hiring plan. It focusses on providing supplementary education, extensive training and assistive aids to increase the employability of PwDs.',    	
     	link:'http://www.enable-india.org',
-    	logo:imgUrl+'/Enable india.jpg',
+    	logo:imgUrl+'/Enable india.png',
     },
     {
     	name:'Ability Foundation',
@@ -49,7 +49,7 @@ angular.module('frontend2017App')
     	name:'Vidhi Centre for Legal Policy',
     	info:'The Vidhi Centre for Legal Policy is a not for profit, independent think tank doing legal research and assisting the government in making better laws. Vidhi is committed to making legal research with the aim of informing public debate and contributing to improved governance. Vidhi works with various ministries of the Government of India and State governments, as well as other public institutions providing legal research.  ',
     	link:'http://www.vidhilegalpolicy.in', 
-    	logo:imgUrl+'/Vidhi.jpg',
+    	logo:imgUrl+'/vidhi.png',
     },
     {
     	name:'Vidya Sagar',
