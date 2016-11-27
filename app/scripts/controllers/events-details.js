@@ -16,6 +16,7 @@ angular.module('frontend2017App')
       return converter.makeHtml(b);
     };
 
+    var notifs = [];
     $scope.htmlContent = "";
 
     $http.get('http://shaastra.org:8001/api/events/showWeb/' + $routeParams.detailsId)
@@ -26,6 +27,21 @@ angular.module('frontend2017App')
           if(a.tabNumber > b.tabNumber) { return 1; }
           return 0;
         });
+
+
+        //marquee
+        $scope.marquee = '';
+        var numNotifs = response.data.marqueeNotifs.length;
+        for(var i=0; i<numNotifs; i++) {
+          notifs.push(response.data.marqueeNotifs[i].info);
+        }
+        var notifHtml = notifs.join(' &emsp; | <span class="dot"></span>&emsp;');
+        notifHtml = '<span class="dot"></span>&emsp;' + notifHtml;
+        if(numNotifs > 0) {
+          $scope.marquee = notifHtml;
+        }
+        console.log($scope.marquee);
+        //end marquee
 
         $scope.eve = response.data;
         $scope.markdownContent = $scope.eve.eventTabs[0].info;
