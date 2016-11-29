@@ -1,6 +1,12 @@
+@media screen and (max-width: 767px) and (min-width: 200px){
+  #aboutNavbar{
+    display: none;
+  }
+}
+
 body{
         margin:0px;
-position: relative;
+/*position: relative;*/
     }
 
 .shows_view{
@@ -9,7 +15,7 @@ position: relative;
  #logo{
 
 height:70px;
-margin-left: 30px;
+
 margin-top: -10px;
 float: left;
     }
@@ -159,22 +165,13 @@ color: white;
 background-color: white;
 color:#0c0c0c;}
 
-.user:hover .dropdown-menu,.events_open:hover .dropdown-menu,.events_open2:hover .dropdown-menu {
-    display: block;
 
-}
 
 .arrow_events{
 display: none;
 }
-@media only screen and (min-width: 767px) {
-#menu{
-  position: absolute;
-  width: 75%;
-  margin-left: 8%;
-  
-}}
-@media only screen and (min-width: 767px) and  (max-width: 848px){
+
+@media only screen and (min-width: 767px) and  (max-width: 950px){
 
 #menu{
   position: absolute;
@@ -190,19 +187,22 @@ display: none;
     color: white;
     font-size: 0.78em;  
 }
+#solutionsNavbar{
+    opacity: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
-  /*.dropdown-menu{
+  .dropdown-menu{
 margin-left: 40%;
 top: -10%;
 
 }
 .events_open:hover .arrow_events,.events_open2:hover .arrow_events,.user:hover .arrow_events{
 display: inline-block;
-}*/
-.header{
-  display: none;
 }
+/*.header{
+  display: none;
+}*/
 }
 .searchbar{
 
@@ -318,3 +318,15 @@ border-right-color: #d1832a;
 border: 0;
 padding: 0;
 }
+
+@media only screen and (min-width: 767px) {
+#menu{
+  position: absolute;
+  width: 75%;
+  margin-left: 8%;
+  
+}
+.user:hover .dropdown-menu,.events_open:hover .dropdown-menu,.events_open2:hover .dropdown-menu {
+    display: block;
+
+}}

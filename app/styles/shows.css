@@ -1,3 +1,25 @@
+@media screen and (max-width: 767px) and (min-width: 200px){
+  #showsVideo{
+  	display: none;
+  }
+
+  #envisageLookback{
+  	display: none;
+  }
+
+   #shows-banner{
+  	position:absolute;
+  	top: -190px;
+  	margin-left: -75px;
+    -ms-transform: scale(0.7, 0.7); /* IE 9 */
+    -webkit-transform: scale(0.7, 0.7); /* Safari,Chrome */
+    -moz-transform: scale(0.7, 0.7);/* Mozilla */
+    transform: scale(0.7, 0.7);
+
+  }
+  
+}
+
 #envisageLookback{
 	text-align: center;
 }
@@ -26,11 +48,12 @@
 
 #envisage{
 	font-family: Open Sans;
+	margin-left: 3%;
 }
 
 .shows-container{
 font-family: Open Sans;
-
+margin-left: 3%;
 	}
 
 #shows-subtitle{

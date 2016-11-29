@@ -104,9 +104,9 @@ angular.module('frontend2017App')
 
       var secretkeycaptcha = '';
       $scope.submit=function(form){
-        if(vcRecaptchaService.getResponse() === ""){
-          alert("Please resolve the captcha and submit!");
-        }else{
+        // if(vcRecaptchaService.getResponse() === ""){
+        //   alert("Please resolve the captcha and submit!");
+        // }else{
           // console.log(vcRecaptchaService.getResponse());
 
         // $http.post('https://www.google.com/recaptcha/api/siteverify?secret='+ secretkeycaptcha +'&response='+vcRecaptchaService.getResponse()).
@@ -153,7 +153,7 @@ angular.module('frontend2017App')
         // })
         
 
-        }      
+        // }      
       };
       
 

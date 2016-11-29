@@ -180,6 +180,11 @@ angular
         controller: 'WorkshopCategoriesCtrl',
         controllerAs: 'workshopCategories'
       })
+      .when('/summit-speakers', {
+        templateUrl: 'views/summit-speakers.html',
+        controller: 'SummitSpeakersCtrl',
+        controllerAs: 'summitSpeakers'
+      })
       .otherwise({redirectTo: '/'})
       
       $locationProvider.html5Mode(true);

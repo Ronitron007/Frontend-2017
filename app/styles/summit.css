@@ -1,3 +1,20 @@
+@media only screen and (max-width: 767px) and (min-width: 200px){
+  .summitTeaser{
+  	display: none;
+  }
+  #summit-banner{
+  	position:absolute;
+  	top: -190px;
+  	margin-left: -102px;
+    -ms-transform: scale(0.5, 0.5); /* IE 9 */
+    -webkit-transform: scale(0.5, 0.5); /* Safari,Chrome */
+    -moz-transform: scale(0.5, 0.5);/* Mozilla */
+    transform: scale(0.5, 0.5);
+
+  }
+  
+}
+
 #summit-banner{
 	position:absolute;
 	height: 300px;
@@ -39,4 +56,39 @@ font-family: Open Sans;
 
 clear: right;
 
+}
+.summit-logo
+{
+border-radius: 100px;
+width: 200px;
+height:200px;
+float: left;
+margin-bottom:1vh;
+margin-top:15vh;
+}
+.summit-description
+{
+	
+	text-align: center;
+	margin-bottom:1.75vh
+}
+.summit-info
+{   
+	font-size: 17px;
+}
+
+.summit-logo-partner
+{
+border-radius: 20px;
+width:200px;
+height:200px;
+float: left;
+margin-bottom:1vh;
+margin-top:10vh;
+}
+
+.summit-info-partner
+{   
+	font-weight: bolder;
+	font-size: 17px;
 }

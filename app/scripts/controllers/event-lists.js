@@ -11,7 +11,8 @@ angular.module('frontend2017App')
   .controller('EventListsCtrl', function ($scope,$http,$routeParams,$location) {
     skrollr.init().destroy();
     
-    var eventId = $routeParams.eventId;
+    
+    var eventId= $routeParams.eventId;
     $scope.eventsJSON = [];
   	$scope.eventLists = [];
     $scope.eventListContent = "";

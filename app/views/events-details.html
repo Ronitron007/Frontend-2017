@@ -16,6 +16,7 @@
 <center>
 <h2 class="evnt_detail_heading"><b>{{eve.name}}</b></h2><br>
 
+<div id="marqueeNotif"><marquee id="markin" v-html="input | marked" ng-bind-html="marquee"></marquee></div>
 <!-- add event name -->
 <div class="tabs_eventsdet">
 	  <button ng-repeat="tabs in eve.eventTabs" class="eventab" ng-class="{'last':$last, 'first': $first}" ng-click="showInfo($index)">{{tabs.name}}</button>
