@@ -1,0 +1,250 @@
+<!-- Top Nav-Bar -->
+      <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+          <span class="sr-only ">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+       <a class="navbar-brand" href="#/"><img id="logo" src="../images/design-2/toolbarElements/logo-r.png ">
+        </a>
+      </div>
+
+      <div id="navbar1" class="navbar-collapse collapse">
+    <nav id="menu">
+        <ul id="menu-closed" class="nav navbar-nav">
+         
+          <li class="alpha"><a  class="nav_elem" href="#/about">ABOUT</a></li>
+          <li class="events_open"><a class="nav_elem" href="#/events" class="dropdown-toggle" data-toggle="dropdown">EVENTS</a>
+            <ul class="dropdown-menu">
+            <center>
+                <li><a href="#/eventLists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
+                <li><a href="#/eventLists/57cd0967a65edf661ac42f7c">
+                B EVENTS</a></li>
+                <li><a href="#/eventLists/57c99e7ea65edf661ac429e3">CODING</a></li>
+                <li><a href="#/eventLists/57caba7aa65edf661ac42af8">DESIGN AND BUILD</a></li>
+                <li><a href="#/eventLists/57cd67faa65edf661ac43036">ELECTRONICS FEST</a></li>
+                <li><a href="#/eventLists/57e01ec4a65edf661ac45068">INTERNATIONAL EVENTS</a></li>
+                <li><a href="#/eventLists/57c52b90a65edf661ac42875">INVOLVE AND QUIZZING</a></li>
+                 <li><a href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>
+                <li><a href="#fellowships">FELLOWSHIPS</a></li>
+                </center>
+              </ul> </li>
+          <li ><a class="nav_elem" href="#/eventLists/57e29fa4a65edf661ac45204">WORKSHOPS</a></li>      
+          <li class="beta"><a class="nav_elem" href="#socialCampaign">SOCIAL CAMPAIGN</a></li>
+          <li class="beta"><a class="nav_elem" href="#/summit">SUMMIT</a></li>
+          <li class="alpha"><a class="nav_elem" href="#shows">SHOWS</a></li>
+           
+          <li class="gamma"><a class="nav_elem" href="#sponsors">SPONSORS</a></li>
+          <li class="gamma"><a class="nav_elem" href="#contact">CONTACT US</a></li>
+            <li><a  href="#menu-closed">&#215; Close menu</a></li>
+    <li><a href="#menu">&#9776; Menu</a></li>
+      <!--   <li class="show-more"><a href="#">more +</a></li>
+      <li class="show-less"><a href="#">less -</a></li> -->
+     
+       </ul>         
+     </nav>
+        <ul id="right_nav" class="nav navbar-nav navbar-right">
+          <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/login">LOGIN</a></li>
+          <li ng-hide="isLoggedIn()"><a class="nav_elem" href="#/register">REGISTER</a></li>
+          <li ng-show="isLoggedIn()" class="nav-item-new dropdown"><a class="ai dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }} <span class="glyphicon glyphicon-user user-icon"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a id="dropdownElements" href="#/dashboard"><span>Dashboard</span></a></li>
+              <li><a id="dropdownElements" ng-click="logout()"><span>Logout</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav> 
+    </div>
+
+
+    body{
+        margin:0px;
+    }
+
+ #logo{
+height:70px;
+margin-left: 30px;
+margin-top: -10px;
+float: left;
+    }
+#dropdownElements{
+
+    color: black;
+    cursor: pointer;
+}
+
+#dropdownMenu1{
+    cursor: pointer;
+}
+   
+@font-face {
+    font-family: KeepCalm;
+    src: url(fonts/KeepCalm-Medium.ttf);
+}
+
+.registersubmit,.numeric,.radioButtons,.checkBox,.input-login,.nav.navbar-nav li >a{
+ font-family: KeepCalm;
+}
+
+input[type=password].input-login.ng-dirty{
+    font-family: helvetica,arial,sans-serif;
+}
+.nav.navbar-nav li .nav_elem {
+    color: white;
+    font-size: 0.9em;  
+
+}
+.navbar-inner{
+background-color:#0c0c0c;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color:white;
+    color: #0c0c0c;
+}
+
+.navbar-brand {
+  padding: 0px;
+  left:-22px;
+  position: relative;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+}
+.navbar-header
+{
+width:7%;
+position: relative;
+}
+div#navbar1
+{
+    width: 100%;  
+    height: 400px;
+}
+?
+
+#navbar1>ul>li.close-menu{
+    display:none
+}
+#navbar1>ul>li.close-menu a{
+    color:#e18728
+}
+
+#navbar1>ul>li.con{
+    position: absolute;
+    z-index: 700;
+}
+#navbar1>ul>li.show-menu{
+    position:absolute;
+    z-index: 700;
+    padding-left:40px;
+    background:-webkit-linear-gradient(left, rgba(34,34,34,0) 0, #222 2em);
+    background:linear-gradient(to right, rgba(34,34,34,0) 0, #222 2em)
+}
+#navbar1>ul>li a{
+    display:block}
+
+.navbar #navbar1 .close-menu{display:none;}
+
+.dropdown-menu {
+    background-color: #0c0c0c;
+    font-color:white;
+    display: none;}
+.dropdown-menu li{
+  font-family: KeepCalm;
+   font-size:0.9em;
+   
+
+}
+.dropdown-menu li a {
+    padding:8px;
+    color:white;
+    text-decoration:none;
+}
+.dropdown-menu a:hover {
+background-color: white;
+color:#0c0c0c;}
+
+.events_open:hover .dropdown-menu{
+    display: block;
+   
+}
+#right_nav{
+    margin-top: -50px;
+    height: 50px;  
+    
+}
+#menu{
+    width:75%;
+height: 50px;
+    overflow: hidden; 
+}
+#menu #menu-closed{
+    
+    position: relative; /* Position the menu button relative to this item */
+}
+#menu  li {
+    display: inline-block;
+}
+#menu #menu-closed li:last-child { /* The menu button */
+    position: absolute; /* Move the menu button out of flow */
+    right: 0;
+    bottom: 0; /* Move upwards, the same distance as the menu height */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 3em);
+    padding-left: 3em;
+}
+
+#menu li:nth-last-child(2) { /* The close button */
+    display: none;
+}
+
+#menu:target {
+    height: auto;
+    padding: 0;
+}
+
+#menu:target ul {
+    max-height: none;
+}
+
+#menu:target li {
+    display: block;
+}
+
+#menu:target a {
+    display: block;
+    padding: 0 2em;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#menu:target a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+#menu:target li:not(:first-child) {
+    margin-top: 2px;
+}
+
+#menu:target li:last-child {
+    display: none;
+}
+
+#menu:target li:nth-last-child(2) {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border-left: 2px solid rgb(19, 51, 61);
+}
+
+
