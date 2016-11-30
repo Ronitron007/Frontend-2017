@@ -22,7 +22,7 @@ angular.module('frontend2017App')
    {
     name:'Amba Salelkar',
     description:'Lecture - Policy',
-    organisation:'Inclusive Planet Centre for Disability Law and Policy',
+    organisation:'Equals Centre for Promotion of Social Justice',
     img:imgUrl+'/Amba Salelkar.jpg',
   info:'Amba Salelkar is a lawyer who specializes in law and policy research focused on the inclusion of persons with disabilities. In 2012, she joined the Inclusive Planet Centre for Disability Law and Policy, Chennai, where she began work on advocating for legal harmonization with the UN Convention on the Rights of Persons with Disabilities. In 2014, she was awarded the Chevening Gurukul Fellowship Programme for Leadership and Excellence. She now works with the Equals Centre for Promotion of Social Justice, an organization that focuses on effective law and policy interventions towards the inclusion of persons with disabilities with a focus on stakeholder participation, which was founded in 2014, and is based in Chennai.'  
     },
