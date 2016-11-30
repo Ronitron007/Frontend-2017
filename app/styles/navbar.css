@@ -165,21 +165,12 @@ color: white;
 background-color: white;
 color:#0c0c0c;}
 
-.user:hover .dropdown-menu,.events_open:hover .dropdown-menu,.events_open2:hover .dropdown-menu {
-    display: block;
 
-}
 
 .arrow_events{
 display: none;
 }
-@media only screen and (min-width: 767px) {
-#menu{
-  position: absolute;
-  width: 75%;
-  margin-left: 8%;
-  
-}}
+
 @media only screen and (min-width: 767px) and  (max-width: 950px){
 
 #menu{
@@ -327,3 +318,15 @@ border-right-color: #d1832a;
 border: 0;
 padding: 0;
 }
+
+@media only screen and (min-width: 767px) {
+#menu{
+  position: absolute;
+  width: 75%;
+  margin-left: 8%;
+  
+}
+.user:hover .dropdown-menu,.events_open:hover .dropdown-menu,.events_open2:hover .dropdown-menu {
+    display: block;
+
+}}
