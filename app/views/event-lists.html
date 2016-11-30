@@ -2,8 +2,8 @@
 <div class="bg_eventlist" style="margin-top:150px;" ng-controller="EventListsCtrl">
   
   <center>
-  <img id="events-banner" ng-src="../images/banners_new/{{eventLists.title}}-Banner.png"><br><br>
- <img id="events_image" ng-src="../images/verticals_image/{{eventLists.title}}-button.png"><br><br>
+  <img id="events-banner" ng-src="http://res.cloudinary.com/shaastra-org/image/upload/v1480441330/shaastra-2017/banners/{{eventLists.title}}-Banner.png"><br><br>
+ <img id="events_image" ng-src="http://res.cloudinary.com/shaastra-org/image/upload/v1480441330/shaastra-2017/verticals_image_and_departments/{{eventLists.title}}-button.png"><br><br>
   <div class="row">
   <div ng-repeat="eventLists in eventsJSON">
   <div class="col-sm-6 col-md-6 con-lg-6" ng-if="!$last || normal">

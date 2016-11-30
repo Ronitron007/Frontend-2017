@@ -11,7 +11,7 @@
 angular.module('frontend2017App')
   .controller('SummitCtrl', function ($scope,$http,$location) {
     skrollr.init().destroy();
-    var imgURL='../../images/elements/summit/';
+    var imgURL='http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/summit/';
   	$scope.eventList=[
   					{name:'events',img:imgURL+'EVENTS.png'},
   					{name:'speakers',img:imgURL+'SPEAKERS.png'},

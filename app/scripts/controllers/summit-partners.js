@@ -11,7 +11,7 @@ angular.module('frontend2017App')
   .controller('SummitPartnersCtrl', function ($scope) {
     skrollr.init().destroy();
     
-    var imgUrl='../../images/elements/summit/partners';
+    var imgUrl='http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/summit/partners';
 
     $scope.partnersJson=[
     {
@@ -31,13 +31,13 @@ angular.module('frontend2017App')
     	name:'Centre for Internet and Society (CIS)',
     	info:'The Centre for Internet and Society (CIS) is a non-profit organization that undertakes interdisciplinary research on the internet and digital technologies from policy and academic perspectives. Their areas of focus include digital accessibility for persons with diverse abilities and access to knowledge focusing on research and development in digital accessibility and access to information.',
     	link:'http://www.cis-india.org',
-    	logo:imgUrl+'/centre for internet.png',
+    	logo:imgUrl+'/centre_for_internet.png',
     },
     {
     	name:'EnAble India',
 		info:'EnAble India focuses on empowerment of persons with disability and creating employment opportunities for PwDs. EnAble India trains and counsels PwDs and is working towards making PwDs a part of every corporate hiring plan. It focusses on providing supplementary education, extensive training and assistive aids to increase the employability of PwDs.',    	
     	link:'http://www.enable-india.org',
-    	logo:imgUrl+'/Enable india.png',
+    	logo:imgUrl+'/Enable_india.png',
     },
     {
     	name:'Ability Foundation',
@@ -55,7 +55,7 @@ angular.module('frontend2017App')
     	name:'Vidya Sagar',
 		info:'Vidya Sagar is a non-government organisation started in 1985 to help bring inclusivity in the society for PwDs. In 2 decades, Vidya Sagar has developed into an institution offering programs that focus on holistic development and education for children and adults with special needs; demystification of disability; empowering persons with special needs and their families with knowledge and skills, while strongly advocating on issues of inclusion. Vidya Sagar today runs several programmes reaching out to over 3800 individuals with disabilities. ',
     	link:'http://www.vidyasagar.co.in',
-    	logo:imgUrl+'/vidya sagar.png',
+    	logo:imgUrl+'/vidya_sagar.png',
     },
 
     ];

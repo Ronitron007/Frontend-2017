@@ -9,6 +9,7 @@
  */
 angular.module('frontend2017App')
   .controller('WorkshopsCtrl', function ($scope, $location) {
+  	skrollr.init().destroy();
     $scope.workshopCategories = ["Robotics", "Coding", "Design", "Mechanical", "Miscellaneous"];
 
 

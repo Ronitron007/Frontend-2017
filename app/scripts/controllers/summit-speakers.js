@@ -10,7 +10,7 @@
 angular.module('frontend2017App')
   .controller('SummitSpeakersCtrl', function ($scope) {
     skrollr.init().destroy();
-   var imgUrl='../../images/elements/summit/speakers';
+   var imgUrl='http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/summit/speakers';
    $scope.speakersJson=[
    {
    	name:'Suranga Nanayakkara',
@@ -23,35 +23,35 @@ angular.module('frontend2017App')
     name:'Amba Salelkar',
     description:'Lecture - Policy',
     organisation:'Inclusive Planet Centre for Disability Law and Policy',
-    img:imgUrl+'/Amba Salelkar.jpg',
+    img:imgUrl+'/Amba_Salelkar.jpg',
   info:'Amba Salelkar is a lawyer who specializes in law and policy research focused on the inclusion of persons with disabilities. In 2012, she joined the Inclusive Planet Centre for Disability Law and Policy, Chennai, where she began work on advocating for legal harmonization with the UN Convention on the Rights of Persons with Disabilities. In 2014, she was awarded the Chevening Gurukul Fellowship Programme for Leadership and Excellence. She now works with the Equals Centre for Promotion of Social Justice, an organization that focuses on effective law and policy interventions towards the inclusion of persons with disabilities with a focus on stakeholder participation, which was founded in 2014, and is based in Chennai.'  
     },
     {
     name:'George Abraham',
     description:'Lecture - “My Journey”',
     organisation:'Score Foundation',
-    img:imgUrl+'/george abraham.jpg',
+    img:imgUrl+'/george_abraham.jpg',
     info:'George Abraham, an Ashoka Fellow since 2001, is a social Entrepreneur, inspirational speaker and a master communicator. After completing his post-graduate in Operations Research and graduating in Mathematics from St Stephen’s College, University of Delhi between 1976-81, he worked in Advertising & Sales Promotion at Ogilvy Benson and Mather between 1982-89. He is the Founding Chairman of WBCC (World Blind Cricket Council), who pioneered and organized the first ever World Cup of cricket for the blind at New Delhi 1998, which led him to launch competitive blind cricket in India 1990. He has also co-authored a book on Inclusive Education which was published by Sage Publications. His entrepreneurship journey started when he launched Project Eyeway, a single stop knowledge resource on life with blindness which aimed at bringing together information as well as organisations working with the blind onto a single platform. He was also accredited of conceiving and producing the 13 part TV serial Nazar Ya Nazariya. He has been a recipient of several awards such as Limca Book of Records People of the year 2007, CF Andrews Distinguished Alumni Award (St Stephen’s College) in 2015 and the Sanskriti Award in 1994. He has also had the honour of being the Olympic Torch Relay runner in 1996, being part of Discovery People series on Discovery Channel in 1998 and being a part of Aviva Forward Thinkers Campaign in 2008. He has also given a TedX Talk in 2012 at Bangalore.'
     },
    {
    	name:'Dipendra Manocha',
     description:'Panelist',
     organisation:'DAISY Consortium',
-    img:imgUrl+'/Dipendra Manocha.jpg',
+    img:imgUrl+'/Dipendra_Manocha.jpg',
     info:'Dipendra Manocha is the lead of training and technical support at DAISY Consortium. He is the president of the DAISY Forum of India, a network of more than 130 organisations in India serving persons with blindness and low vision, and National Association for the Blind (Delhi branch). An Ashoka fellow (2005) and a Natinal Award winner (2007), he has managed or coordinated several technological development or implementation projects. Some of these include Development of Braille transcriptions and screen reading softwares in Indian languages, Accessible content creation projects and establishment of digital library for persons with blindness, and ICT literacy for persons with blindness and application of technology for work place solution for opening new venues of employment and education for persons with blindness. He worked as a consultant for Delhi University for establishing a resource centre for persons with disability, and as a resource person in a series of workshops on accessible built environment conducted by the Chief Commissioner Disabilities, Govt. of India.'
    },
     {
    	name:'Meenu Bhambhani',
     description:'Panelist',
     organisation:'MphasiS, Bangalore',
-    img:imgUrl+'/Meenu Bhambhani.jpg',
+    img:imgUrl+'/Meenu_Bhambhani.jpg',
     info:'Dr. Meenu Bhambhani is the Associate Vice-President and Head – Global Corporate Social Responsibility at MphasiS, Bangalore. She is a a professional in the area of disability and human development with more than fifteen years of experience, specialised in disability studies and social policy, a researcher on disability issues in India, and an ally of local and transnational disability rights movements. Having engaged with the development sector in he current role at Mphasis, Ms. Bhambhani has instituted processes to transform policy into action, has extensively trained employees across locations in disability issues and ensured that MphsiS’s systems, including infrastructure, became significantly disabled-friendly. Her efforts have resulted in the company not only becoming a positive recruiter of disabled persons, but also a role model for other corporates. She was felicitated with the prestigious NCPEDP - Shell Helen Keller Award in 2009. Because of her efforts, Mphasis was oneof the winners of the Natioanl Award for the Empowerment of People with Disabilities in 2008.'
    },
     {
    	name:'Rama Chari',
     description:'Panelist',
     organisation:'Diversity and Equal Opportunnities Centre',
-    img:imgUrl+'/Rama Chari.jpg',
+    img:imgUrl+'/Rama_Chari.jpg',
 	info:'Rama Chari has more than two decades of work experience in the field of disability inclusion and equality, and is the founder-director of Diversity and Equal Opportunity Centre. She has specialised in the area of disability policy and has undertaken several studies on the UN Convention on the Rights of Persons with Disabilities and its application in various aspects. She has developed the disability inclusion framework for employment in the corporate sector which has been recognised nationally and internationally. Ms. Chari led the development of HR Manual, called Values Route to Business Success - The why and How of Employing people with Disabilities in 2007, which was published by Confederation of Indian Industry (CII).  She has developed training modules and conducted several trainings in the area of disability for different stakeholder groups, and is a trusted advisor to many organisations and diversity professionals.'
 	   },
     {
@@ -66,7 +66,7 @@ angular.module('frontend2017App')
    	name:'Nirmita Narasimhan',
     description:'Panel Moderator',
     organisation:'Centre for Internet and Society',
-    img:imgUrl+'/Nirmita Narasimhan.jpg',
+    img:imgUrl+'/Nirmita_Narasimhan.jpg',
     info:'Dr. Nirmita Narasimhan is a Policy Director at CIS and heads the Accessibility and Inclusion Programme. She specialises in policy research and advocacy related to technology access for persons with disabilities and has authored several reports on accessibility used by policymakers worldwide. Apart from her degrees in Law and German, Nirmita is also a PhD holder in classical music. In recognition of her work, she was awarded the National Award for Empowerment of Persons with Disabilities by the President of India in December 2010. She has presented papers on ICT and Accessibility at several international forums like the IGF. Nirmita also serves as the Director, Global Reports, for G3ict.'
 	},
 	
