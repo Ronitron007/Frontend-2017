@@ -40,7 +40,6 @@ angular.module('frontend2017App')
         if(numNotifs > 0) {
           $scope.marquee = notifHtml;
         }
-        console.log($scope.marquee);
         //end marquee
 
         $scope.eve = response.data;

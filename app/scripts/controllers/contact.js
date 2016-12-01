@@ -19,7 +19,7 @@ angular.module('frontend2017App')
 	
 	{
 	Person_Name:"Neil Pendse",
-	Team_Name:"Concept & Design",
+	Team_Name:"Concept_Design",
 	Email:" neil@shaastra.org",
 	Phone:"+91 9176283794",
 	Person_Name2:"Abhijit S Gupta",
@@ -49,7 +49,7 @@ Description:"From Aero to Quizzes to Research events & Robotics to Coding worksh
 	},
 	{
 	Person_Name:"M Aghamarshana",
-	Team_Name:"Media & Student Relations",
+	Team_Name:"Media_Student_Relations",
 	Email:"aghamarshana@shaastra.org",
 	Phone:"+91 8122495355",
 	
@@ -99,7 +99,7 @@ Description:"The department caters to all financial requirements of Shaastra alo
 	},
 	{
 	Person_Name:"Raghul Manosh",
-	Team_Name:"Sponsorship & PR",
+	Team_Name:"Sponsorship_PR",
 	Email:"raghul@shaastra.org",
 	Phone:"+91 9940246479",
 	
@@ -110,7 +110,7 @@ Description:"The department caters to all financial requirements of Shaastra alo
 Description:"The Sponsorship and Public Relations department serves as the bridge between an investor and Shaastra. These assosiciations include both in-kind and monetary deals. The collaborations are also to foster support from media and patrons, thus generating PR . So do contact us for any collaboration which deems suitable, with doors open to any <a target='_blank' href='http://ebrochure.shaastra.org'>industry</a>, NGO, start-up; you name it. Shaastra also look to give back to the society, along with putting the forefronts of technology on a pedestal. Also, make sure you keep an eye out for <b>Shaastra Augment, 2017</b> and the department bringing it to life for you. "
 	},{
 	Person_Name:"Mohit Kumar",
-	Team_Name:"Technical Operations",
+	Team_Name:"Technical_Operations",
 	Email:"mohit@shaastra.org",
 	Phone:"+91 9003120598",
 	
@@ -133,7 +133,7 @@ Description:"This department takes care for online and on ground registration sy
 	}];
 var list3=[{
 	Person_Name:"Nivedita Manepalli",
-	Team_Name:"Shows and Exhibitions",
+	Team_Name:"Shows_and_Exhibitions",
 	Email:"nivedita.manepalli@shaastra.org",
 	Phone:"+91 9940557095",
 Description:"The ones behind the entertainment quotient of Shaastra, the Shows & Exhibitions department orchestrates the Professional Shows and the International & National Exhibitions.To exhibit your product at Shaastra, please feel free to get in touch with us."
