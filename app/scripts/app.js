@@ -19,8 +19,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'vcRecaptcha',
-    'cgNotify'
+    'vcRecaptcha'
   ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider

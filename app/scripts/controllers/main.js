@@ -8,7 +8,7 @@
  * Controller of the frontend2017App
  */
 angular.module('frontend2017App')
-  .controller('MainCtrl', function ($scope, $interval, notify) {
+  .controller('MainCtrl', function ($scope, $interval) {
 
     //Notifications ready, use when needed
   	// notify.config({startTop: 60, maximumOpen: 1})
