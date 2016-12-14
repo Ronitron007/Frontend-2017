@@ -8,15 +8,18 @@
  * Controller of the frontend2017App
  */
 angular.module('frontend2017App')
-  .controller('DashboardCtrl', function ($scope, $http, Auth, $location) {
+  .controller('DashboardCtrl', function ($scope, $http, Auth, $location, $sce) {
     skrollr.init().destroy();
 		$scope.i = 0;
+    $scope.payingAmount = 1;
 		$scope.data = function (ch) {
     	$scope.i = ch;
     };
 
     Auth.isLoggedInAsync(function (loggedIn) {
     	$scope.user = Auth.getCurrentUser();
+      $scope.paymentHistory = $scope.user.paymentDetails;
+      console.log($scope.paymentHistory);
     });
 
     $scope.currentDate = new Date(Date.now());
@@ -42,6 +45,25 @@ angular.module('frontend2017App')
     $scope.disableCreateTeam = false;
     $scope.disableUnregisterEvent = false;
 
+    
+    //paytm credentials
+    $scope.payAmount = function(){
+      $scope.paytmCredentials = {
+        ORDER_ID: "" + Math.round((new Date()).getTime() / 1000) + "" + Math.random().toString(36).substring(7),
+        CUST_ID: $scope.user.festID,
+        TXN_AMOUNT: $scope.payingAmount
+      };
+
+      $http.post("http://shaastra.org:8001/api/colleges/generateCheckSum/" + $scope.user._id, $scope.paytmCredentials).then(function(response){
+        console.log(response);
+        $scope.htmlRendered = $sce.trustAsHtml(response.data);
+        // $location.url('/paymentPage');
+        // $http.post("https://pguat.paytm.com/oltp-web/processTransaction", response).then(function(response1){
+        //   console.log(response1);
+        // });
+      });
+
+    }
 
     // $http.get('http://shaastra.org:8001/api/events')
     $http.get('http://shaastra.org:8001/api/events')

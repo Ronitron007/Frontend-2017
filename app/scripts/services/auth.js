@@ -77,6 +77,8 @@ angular.module('frontend2017App')
             });
           },
           function (err) {
+            alert("This email is already registered");
+            $location.path("/");
             console.log(err);
             this.logout();
             deferred.reject(err);
