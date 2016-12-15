@@ -45,7 +45,7 @@ font-family: Open Sans
 @media screen and (min-width: 768px) {  
   #modal1 .modal-dialog  {width : 40%;}
 }
-.modal .modal-dialog  {width: 40%; }
+.modal .modal-dialog  {width: 40%; height: 70%; text-align: center;}
 .modal-header
 {
   background-color: #d6d6d6;
@@ -54,6 +54,7 @@ font-family: Open Sans
 .modal-content 
 {
 	background-color: #e1e1e1;
+
 }
 
 .speaker
