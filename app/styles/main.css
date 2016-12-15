@@ -179,38 +179,38 @@ body {
   }
   .jetpack{
   width: 100px;
-  background-image: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/jetpack3.png');
+  background-image: url('../images/home_and_events/jetpack3.png');
 }
 /*sets the jetpack sprite*/
 
 .blind{
   width: 150px;
-  background-image: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/blindman3.png');
+  background-image: url('../images/home_and_events/blindman3.png');
 }
 /*sets the blindman sprite*/
 .wheelchair{
   width: 130px;
-  background-image: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/wheelchair3.png');
+  background-image: url('../images/home_and_events/wheelchair3.png');
 }
 
 .jetpack-reverse{
   width: 100px;
-  background-image: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/jetpack-r.png');
+  background-image: url('../images/home_and_events/jetpack-r.png');
 }
 /*sets the jetpack sprite*/
 
 .blind-reverse{
   width: 150px;
-  background-image: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/blindman-r.png');
+  background-image: url('../images/home_and_events/blindman-r.png');
 }
 /*sets the blindman sprite*/
 .wheelchair-reverse{
   width: 130px;
-  background-image: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/wheelchair-r.png');
+  background-image: url('../images/home_and_events/wheelchair-r.png');
 }
 
   #bg1{
-  background: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/buildings6.png');
+  background: url('../images/home_and_events/buildings6.png');
   top:75px;
   width: 10000px;
   height: 803px;
@@ -219,7 +219,7 @@ body {
   }
   /*background*/
 #bg2{
-  background: url('http://res.cloudinary.com/shaastra-org/image/upload/v1480440521/shaastra-2017/home_and_events/clouds6.png');
+  background: url('../images/home_and_events/clouds6.png');
   width: 10000px;
   height: 1000px;
   background-size: 50% 100%;

@@ -2,8 +2,9 @@
 <update-meta property="og:title" content="Dashboard | Shaastra 2017"></update-meta>		
 
 
-
 <div class="dashboard_css" ng-controller="DashboardCtrl as dashboard">
+	<div ng-bind-html="htmlRendered"></div>
+
 			<img class="shaastra-logo-line" src='http://res.cloudinary.com/shaastra-org/image/upload/v1480441330/shaastra-2017/misc/shaastra_logo_line.png' style="width:29.8020527859vw; margin-right: 35.098973607vw; margin-left:35.098973607vw; padding-top: 100px;">
 		<div class="list_form">
 <form method="post">
@@ -44,7 +45,7 @@
 	          </div> 
 
 	          <center>
-<input type="image" name="registersubmit" value="registersubmit" src="../images/design-2/login&RegisterElements/Dashboard_create.png" alt="Submit" onmouseover="this.src='../images/design-2/login&RegisterElements/Dashboard_create.png'" ng-disabled="disableRegisterEvent" ng-click="registerEvent()" style="max-width: 10.997067448vw;">
+<input type="image" name="registersubmit" value="registersubmit" src="http://res.cloudinary.com/shaastra-org/image/upload/v1480441319/shaastra-2017/misc/Dashboard_create.png" alt="Submit" onmouseover="this.src='http://res.cloudinary.com/shaastra-org/image/upload/v1480441319/shaastra-2017/misc/Dashboard_create.png'" ng-disabled="disableRegisterEvent" ng-click="registerEvent()" style="max-width: 10.997067448vw;">
 </form></center>
 <h4><b>Want to create your own Team ?</b></h4>
 	          <button data-toggle="collapse" data-target="#create_team" class="create_team_button"><span>Click to Create Team</span></button>
@@ -94,8 +95,37 @@
 					<button class="btn btn-danger" ng-if="(user._id===all_teams[i].teamLeader._id || user._id===all_teams[i].teamLeader)&&(event.startReg<=currentDate && event.endReg>=currentDate)" ng-disabled="disableUnregisterEvent" ng-click="unregisterEvent(all_teams[i], event, $index, i)">Unregister</button> </p></li></ul>
 					<div>
 						<b>Team Members :</b> <ul style="margin-left:14%"><li ng-repeat="teammate in all_teams[i].teamMembers track by $index"> {{ teammate.name }} <span ng-if="(teammate._id===all_teams[i].teamLeader._id || teammate._id===all_teams[i].teamLeader)"> (Team Leader) </span><span ng-if="$index != all_teams[i].teamMembers.length-1"> , </span></li></ul>
-					</div><br><br><br>
+					</div>
+				</div><br>
+
+				<div>
+					<h3>Payment section</h3>
+					Enter amount (in INR): <input class="input-login" type="text" ng-model="payingAmount"><br><br>
+					<center><button class="btn btn-primary btn-large"  style=" border-radius: 7px;border-width: 3px;border-color: black;border-style: solid;" ng-click="payAmount()">Pay now</button></center>
+				</div><br>
+
+				<div>
+					<h3>Payment History</h3>
+					<table style="width:100%; font-family: arial, sans-serif; border-collapse: collapse;" id="table1">
+      					<thead>
+					        <tr>
+						        <th>No.</th>
+          						<th>Amount</th>
+          						<th>Transaction ID</th>
+						        <th>Date and time</th>
+        					</tr>
+      					</thead>
+      					<tbody>
+        					<tr ng-repeat="payment in paymentHistory track by $index">
+          						<td>{{ $index + 1 }}</td>
+          						<td>{{ payment.split('_')[0] }}</td>
+          						<td>{{ payment.split('_')[1] }}</td>
+          						<td>{{ payment.split('_')[2] }}</td>
+					        </tr>
+				      	</tbody>
+    				</table>
 				</div>
+				<br><br><br>
 			
 		
 
