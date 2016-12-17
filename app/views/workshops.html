@@ -14,11 +14,8 @@
  </ol>
  <h3><b>After Registration:</b></h3>
  <ol start="4">
- 	<li>Following registrations, a <b>questionnaire</b> for each workshop is to be filled.</li>
- 	<li>In case of team registrations, ALL the team members are required to fill the questionnaire and upload their submissions in one doc.</li>
- 	<li>Submissions are to be uploaded in the registration page by clicking on <b>‘Upload Questionnaire’</b> for workshops.</li>
- 	<li>Registrants who are selected for the workshop will get confirmation mails.</li>
- 	<li>Confirmed registrants are requested to pay for the workshop stamp (INR 300) + kit charge(if it is a kit workshop) to confirm their participation.</li>
+ 	<li>Registrants  will get a confirmation mail.</li>
+ 	<li>Registrants are requested to pay for the workshop stamp(INR 300) and Kit(if it is a kit workshop) to confirm their  participation.</li>
  </ol>
  <h3><b>Note:</b></h3>
  <ul>
@@ -26,7 +23,7 @@
  	<li><b>In case of getting confirmed for multiple workshops, paying once for workshop stamp is enough.</b></li>
  	<li><b>Refunds will not be entertained in case of wrong payments.</b></li>
  </ul>
- <p style="font-size:150%"><b>Click <a href="../images/ws_schedule.pdf" target="_blank">here </a>for the workshop schedule</b></p>
+ <p style="font-size:150%"><b>Click <a href="../images/Workshop_schedule.pdf" target="_blank">here </a>for the workshop schedule</b></p>
  <p>For any doubts or queries, please contact : <br>
 	Ashmon - 9087864376 <br>
 	Karthik Vijay - 9445401255 <br>
@@ -37,17 +34,17 @@
 
   <div class="row">
   <div ng-repeat="category in workshopCategories track by $index">
-  <div class="col-sm-6 col-md-6 con-lg-6" ng-if="!$last">
+  <div class="col-sm-6 col-md-6 con-lg-6">
   	<div class="eventbox">
   <div ng-click="gotoEventDetails($index)" class="eventsname">{{category}}</div>
 </div>
 </br>
 </div>
-<div class="col-sm-offset-3 col-sm-6 col-md-6 con-lg-6" ng-if="$last">
+<!-- <div class="col-sm-offset-3 col-sm-6 col-md-6 con-lg-6" ng-if="$last">
   <div class="eventbox">
   <div ng-click="gotoEventDetails($index)" class="eventsname">{{category}}</div>
-</div>
-</br>
+</div> -->
+<!-- </br> -->
 </div>
 
 </div>
