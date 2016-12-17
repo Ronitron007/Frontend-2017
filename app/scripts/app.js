@@ -186,6 +186,11 @@ angular
         controller: 'SummitSpeakersCtrl',
         controllerAs: 'summitSpeakers'
       })
+      .when('/payment', {
+        templateUrl: 'views/payment.html',
+        controller: 'PaymentCtrl',
+        controllerAs: 'payment'
+      })
       .otherwise({redirectTo: '/'})
       
       $locationProvider.html5Mode(true);
