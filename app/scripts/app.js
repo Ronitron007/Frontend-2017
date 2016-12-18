@@ -191,6 +191,11 @@ angular
         controller: 'PaymentCtrl',
         controllerAs: 'payment'
       })
+      .when('/funzone', {
+        templateUrl: 'views/funzone.html',
+        controller: 'FunzoneCtrl',
+        controllerAs: 'funzone'
+      })
       .otherwise({redirectTo: '/'})
       
       $locationProvider.html5Mode(true);
