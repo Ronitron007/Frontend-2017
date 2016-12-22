@@ -1,3 +1,9 @@
+.toast-top-left {
+top: 60px;
+margin: 0 auto;
+}
+
+
 #homeMobileContainer{
     display: none;
 }

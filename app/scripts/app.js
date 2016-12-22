@@ -19,8 +19,41 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'vcRecaptcha'
+    'vcRecaptcha',
+    'toastr'
   ])
+  .config(function (toastrConfig) {
+    angular.extend(toastrConfig, {
+      // container config
+      autoDismiss: true,
+      containterId: 'toast-container',
+      maxOpened: 1,
+      newestOnTop: true,
+      positionClass: 'toast-top-left',
+      preventDuplicates: false,
+      preventOpenDuplicates: false,
+      target: 'body',
+      // toast config
+      allowHtml: true,
+      closeButton: true,
+      extendedTimeOut: 0,
+      iconClasses: {
+        error: 'toast-error',
+        info: 'toast-info',
+        success: 'toast-success',
+        warning: 'toast-warning'
+      },
+      messageClass: 'toast-message',
+      onHidden: null,
+      onShow: null,
+      onTap: null,
+      progressBar: true,
+      tapToDismiss: false,
+      // timeOut: 5000,
+      titleClass: 'toast-title',
+      toastClass: 'toast'
+    });
+  })
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
