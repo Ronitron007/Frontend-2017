@@ -19,7 +19,7 @@ angular.module('frontend2017App')
       },
       {
         title: "Shaastra Schedule",
-        desc: "Click <a style='color:blue' target='_blank' href='../images/schedule2017-2.pdf'>here</a> to see the schedule for Shaastra 2017",
+        desc: "Click <a style='color:blue' target='_blank' href='../images/schedule2017-3.pdf'>here</a> to see the schedule for Shaastra 2017",
         type: "success"
       },
       {
