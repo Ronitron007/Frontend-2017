@@ -13,8 +13,18 @@ angular.module('frontend2017App')
     toastr.info("Shaastra 2017 will take place from December 31st to January 3rd", "Welcome to Shaastra 2017");
     var homepageNotifs = [
       {
+        title: "Technorigami",
+        desc: "Be there on December 25th at 6:30AM at Elliot’s beach to build and take home your own VR headset",
+        type: "success"
+      },
+      {
+        title: "Robotics Workshops",
+        desc: "Registrations for spad(simple plastic aircraft design) and object tracking bot are open",
+        type: "info"
+      },
+      {
         title: "Workshop Payment Deadline",
-        desc: "Deadline for <a href='/payment'>workshop payment</a> is extended to 23rd December 11:59pm",
+        desc: "Deadline for <a href='/payment'>workshop payment</a> is extended to 26th December 11:59pm",
         type: "info"
       },
       {
