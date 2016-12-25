@@ -66,7 +66,7 @@ angular.module('frontend2017App')
     {
         name:'Vision-Aid',
         info:' Vision-Aid provides rehabilitation for the visually impaired. Their world-class computer training programs, which are benchmarked with the programs of leading institutions, empower blind and low vision students to reach great heights. Students with vision impairment are provided with one-on-one assessment , training and devices. Helping the vividly impaired live with independence and dignity, is one of the principles they live by. Vision-Aid conducts many programs, including low vision screening programs, and online courses in English and Python programming. Vision-Aid programs have won 6 national and international awards in its 10+ years of existence.',
-        link:'http://www.visionaid.org',
+        link:'http://www.vision-aid.org',
         logo:imgUrl+'/vision_aid.png',
     },
 
