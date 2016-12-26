@@ -57,6 +57,18 @@ angular.module('frontend2017App')
     	link:'http://www.vidyasagar.co.in',
     	logo:imgUrl+'/vidya_sagar.png',
     },
+    {
+        name:'Youth ki Awaaz',
+        info:' Youth ki Awaaz is a media platform for our generation to address some of the world’s most pressing issues – through thoughtful opinions and reportage. Completely crowd-sourced, YKA’s approach to media is founded on a simple idea: Public opinion is the new superpower. And that the media can do more to engage this generation, and enable them to change the world, if only they heard what the people themselves had to say. It has been a platform for the youth of this country to voice their woes and has won many laurels for the same including the World Summit Youth Award.',
+        link:'http://www.youthkiawaaz.com/',
+        logo:imgUrl+'/yka.png',
+    },
+    {
+        name:'Vision-Aid',
+        info:' Vision-Aid provides rehabilitation for the visually impaired. Their world-class computer training programs, which are benchmarked with the programs of leading institutions, empower blind and low vision students to reach great heights. Students with vision impairment are provided with one-on-one assessment , training and devices. Helping the vividly impaired live with independence and dignity, is one of the principles they live by. Vision-Aid conducts many programs, including low vision screening programs, and online courses in English and Python programming. Vision-Aid programs have won 6 national and international awards in its 10+ years of existence.',
+        link:'http://www.vision-aid.org',
+        logo:imgUrl+'/vision_aid.png',
+    },
 
     ];
   });
