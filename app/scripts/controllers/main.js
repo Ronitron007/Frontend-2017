@@ -18,8 +18,8 @@ angular.module('frontend2017App')
         type: "info"
       },
       {
-        title: "Workshop Payment Deadline",
-        desc: "Deadline for <a href='/payment'>workshop payment</a> is extended to 26th December 11:59pm",
+        title: "Shaastra Spotlight",
+        desc: "Grab a Shaastra certificate by attending 6 or more Spotlight lectures! Get a chance to win exclusive signed goodies from the speakers!",
         type: "info"
       },
       {
