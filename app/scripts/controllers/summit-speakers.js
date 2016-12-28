@@ -70,11 +70,11 @@ angular.module('frontend2017App')
     info:'Dr. Nirmita Narasimhan is a Policy Director at CIS and heads the Accessibility and Inclusion Programme. She specialises in policy research and advocacy related to technology access for persons with disabilities and has authored several reports on accessibility used by policymakers worldwide. Apart from her degrees in Law and German, Nirmita is also a PhD holder in classical music. In recognition of her work, she was awarded the National Award for Empowerment of Persons with Disabilities by the President of India in December 2010. She has presented papers on ICT and Accessibility at several international forums like the IGF. Nirmita also serves as the Director, Global Reports, for G3ict.'
 	},
 	{
-    name:'Sujasree Kurapati',
+    name:'Aparna Pasi',
     description:'Panelist',
     organisation:'Deque Software Private Limited(India)',
-    img:imgUrl+'/Sujasree_Kurapati.jpg',
-    info:'Sujasree Kurapati, Managing Director at Deque Software Private Limited (India), has been working in digital accessibility space for 8 years. As a person with a minor physical disability, she herself experiences and sees the impact of inaccessible physical environments. As a professional with experience in Digital Accessibility, she does know the impact and power of accessible digital space that enables the persons with disabilities to live independently. With the blend of both physical and digital accessibility pragmatics, she dreams for an Accessible India and would like to contribute to the same going forward. She does truly enjoy and is passionate about Accessibility as it is very close to her heart.'
+    img:imgUrl+'/Aparna_Pasi.jpg',
+    info:'Aparna Pasi is a Senior Accessibility Consultant at Deque (India). She has a total 9 years of experience in Web Usability and Accessibility space. She worked for Tiksis Technologies, Lappeenranta University of Technology, Nokia, MADA, Carnegie Mellon Qatar and Cognizant Technology solutions in different roles but all related to digital accessibility. As a professional with experience in Digital accessibility, she does understand the impact and power of accessible digital space that enables the persons with disabilities to lead an independent and respectful life. She wants to see an Accessible India with both digital and physical aspects of it being addressed and she would like to do everything that she can to achieve that.'
   }
   
 
