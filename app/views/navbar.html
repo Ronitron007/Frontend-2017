@@ -22,41 +22,8 @@
          <ul id="menu" class="nav navbar-nav">
          
            <li id="aboutNavbar" class="alpha"><a  class="nav_elem" href="/#/about">ABOUT</a></li>
-           <li class="events_open"><a class="nav_elem" href="/#/events" >EVENTS<span class="arrow_events"> &nbsp>></span></a>
-             <ul class="dropdown-menu">
-             <center>
-                 <li><a style="text-align: left" href="/#/event-lists/57ceccc4a65edf661ac430e4">AEROFEST</a></li>
-                 <li><a style="text-align: left" href="/#/event-lists/57cd0967a65edf661ac42f7c">
-                 B EVENTS</a></li>
-                 <li><a style="text-align: left" href="/#/event-lists/57c99e7ea65edf661ac429e3">CODING</a></li>
-                 <li><a style="text-align: left" href="/#/event-lists/57caba7aa65edf661ac42af8">DESIGN AND BUILD</a></li>
-                 <li><a style="text-align: left" href="/#/event-lists/57cd67faa65edf661ac43036">ELECTRONICS FEST</a></li>
-                 <li><a style="text-align: left" href="/#/event-lists/57e01ec4a65edf661ac45068">INTERNATIONAL EVENTS</a></li>
-                 <li><a style="text-align: left" href="/#/event-lists/57c52b90a65edf661ac42875">INVOLVE AND QUIZZING</a></li>
-                 <li><a style="text-align: left" href="/#/event-lists/57f36670718f8af21339dac4">RESEARCH EVENTS</a></li>
-                 </center>
-               </ul> </li>   
-           <li class="events_open2"><a class="nav_elem" href="/#/summit">
-           SUMMIT<span class="arrow_events"> &nbsp >></span></a>
-           <ul class="dropdown-menu">
-             
-             <li><a href="/#/summit-events">EVENTS</a></li>
-             <li><a href="/#/summit-speakers">SPEAKERS</a></li>      
-             <li><a href="/#/summit-registrations">REGISTRATION</a></li>      
-             <li><a href="/#/summit-partners">PARTNERS</a></li>
-             <li><a href="/#/summit-past-versions">PAST VERSIONS</a></li>      
-             <li><a href="/#/summit-faq">FAQ</a></li>      
-
-
-           </ul>
-           </li> 
-           <li class="events_open2"><a class="nav_elem" href="/#/social-campaign">SOCIAL CAMPAIGN<span class="arrow_events"> &nbsp >></span></a>
-             <ul class="dropdown-menu">
-             <li><a href="/#/social-campaign#sync">SYNK</a></li>
-             <li><a href="/#/social-campaign#past_camp">PAST CAMPAIGNS</a></li>      
-           </ul>
-           </li>
-           <li><a class="nav_elem" href="/#/workshops">WORKSHOPS</a></li>
+               <li><a class="nav_elem" href="/#/spotlight">SPOTLIGHT</a></li>
+               <li><a class="nav_elem" href="/#/hospitality">HOSPITALITY</a></li>
            <li class="events_open2" ><a class="nav_elem" href="/#/shows" >SHOWS<span class="arrow_events"> &nbsp >></span></a>
           <ul class="dropdown-menu">
              <li><a href="/#/shows">PRO SHOWS</a></li>
@@ -64,12 +31,15 @@
                  <li><a href="/#/exhibitions">EXHIBITIONS</a></li>
            </ul>
            </li>
+           <li><a class="nav_elem" href="/#/summit">SUMMIT</a></li>
+           <li><a class="nav_elem" href="/#/contact">CONTACT</a></li>
             <li class="events_open2" ><a class="nav_elem" href="#">MORE<span class="arrow_events"> &nbsp >></span></a>
           <ul class="dropdown-menu">
-             <li><a href="/#/contact">CONTACT</a></li>
              <li><a href="/#/solutions">SOLUTIONS</a></li>
-                 <li><a href="/#/hospitality">HOSPITALITY</a></li>
-                 <li><a href="/#/spotlight">SPOTLIGHT</a></li>
+                 
+                 <li><a href="/#/social-campaign">SOCIAL CAMPAIGN</a></li>
+                 <li><a href="/#/payment">PAYMENT</a></li>
+                 <li><a href="/#/sponsors">SPONSORS</a></li>
            </ul>
            </li>
        
@@ -97,16 +67,6 @@
            </div>
            </li>
  
-           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/login">LOGIN</a></li>
-           <li ng-hide="isLoggedIn()"><a class="nav_elem" href="/#/register">REGISTER</a></li>
-           <li  ng-show="isLoggedIn()" class="nav_elem user"><a class="nav_elem" aria-haspopup="true" aria-expanded="false">Hello {{ getCurrentUser().name }}&nbsp &nbsp<span class="glyphicon glyphicon-user user-icon"></span><span class="arrow_events"> &nbsp >></span></a>
-           <ul class="dropdown-menu" >
-               <li class="dashboard_menu"><a  href="/#/dashboard"><span>Dashboard</span></a></li>
-               <li class="logout_menu"><a  ng-click="logout()"><span>Logout</span></a></li>
-             </ul></li>
-           </li>
- 
-         </ul>
          </div>
        </div>
      </div>

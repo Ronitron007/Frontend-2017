@@ -19,8 +19,41 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'vcRecaptcha'
+    'vcRecaptcha',
+    'toastr'
   ])
+  .config(function (toastrConfig) {
+    angular.extend(toastrConfig, {
+      // container config
+      autoDismiss: true,
+      containterId: 'toast-container',
+      maxOpened: 1,
+      newestOnTop: true,
+      positionClass: 'toast-top-left',
+      preventDuplicates: false,
+      preventOpenDuplicates: false,
+      target: 'body',
+      // toast config
+      allowHtml: true,
+      closeButton: true,
+      extendedTimeOut: 0,
+      iconClasses: {
+        error: 'toast-error',
+        info: 'toast-info',
+        success: 'toast-success',
+        warning: 'toast-warning'
+      },
+      messageClass: 'toast-message',
+      onHidden: null,
+      onShow: null,
+      onTap: null,
+      progressBar: true,
+      tapToDismiss: false,
+      // timeOut: 5000,
+      titleClass: 'toast-title',
+      toastClass: 'toast'
+    });
+  })
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
@@ -33,21 +66,21 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/events', {
-        templateUrl: 'views/events.html',
-        controller: 'EventsCtrl',
-        controllerAs: 'events'
-      })
-      .when('/event-lists/:eventId', {
-        templateUrl: 'views/event-lists.html',
-        controller: 'EventListsCtrl',
-        controllerAs: 'eventLists'
-      })
-      .when('/event/:eventId/:detailsId', {
-        templateUrl: 'views/events-details.html',
-        controller: 'EventsDetailsCtrl',
-        controllerAs: 'eventsDetails'
-            })
+      // .when('/events', {
+      //   templateUrl: 'views/events.html',
+      //   controller: 'EventsCtrl',
+      //   controllerAs: 'events'
+      // })
+      // .when('/event-lists/:eventId', {
+      //   templateUrl: 'views/event-lists.html',
+      //   controller: 'EventListsCtrl',
+      //   controllerAs: 'eventLists'
+      // })
+      // .when('/event/:eventId/:detailsId', {
+      //   templateUrl: 'views/events-details.html',
+      //   controller: 'EventsDetailsCtrl',
+      //   controllerAs: 'eventsDetails'
+      //       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl',
@@ -119,72 +152,82 @@ angular
         controller: 'FellowshipsCtrl',
         controllerAs: 'fellowships'
       })
-      .when('/register', {
-        templateUrl: 'views/register.html',
-        controller: 'RegisterCtrl',
-        controllerAs: 'register'
-      })
-      .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl',
-        controllerAs: 'login'
-      })
+      // .when('/register', {
+      //   templateUrl: 'views/register.html',
+      //   controller: 'RegisterCtrl',
+      //   controllerAs: 'register'
+      // })
+      // .when('/login', {
+      //   templateUrl: 'views/login.html',
+      //   controller: 'LoginCtrl',
+      //   controllerAs: 'login'
+      // })
 
-      .when('/dashboard', {
-        templateUrl: 'views/dashboard.html',
-        controller: 'DashboardCtrl',
-        controllerAs: 'dashboard',
-        authenticate: true
-      })
+      // .when('/dashboard', {
+      //   templateUrl: 'views/dashboard.html',
+      //   controller: 'DashboardCtrl',
+      //   controllerAs: 'dashboard',
+      //   authenticate: true
+      // })
 
-      .when('/:eventId/:teamId/upload', {
-        templateUrl: 'views/upload.html',
-        controller: 'UploadCtrl',
-        controllerAs: 'upload'
-      })
-	     .when('/edit-profile', {
-        templateUrl: 'views/edit-profile.html',
-        controller: '',
-        controllerAs: '',
+     //  .when('/:eventId/:teamId/upload', {
+     //    templateUrl: 'views/upload.html',
+     //    controller: 'UploadCtrl',
+     //    controllerAs: 'upload'
+     //  })
+	    //  .when('/edit-profile', {
+     //    templateUrl: 'views/edit-profile.html',
+     //    controller: '',
+     //    controllerAs: '',
     
-      })
-      .when('/forgot-password', {
-        templateUrl: 'views/forgot-password.html',
-        controller: 'Forgot_PswdCtrl',
-        controllerAs: 'forgot_psw',
+     //  })
+     //  .when('/forgot-password', {
+     //    templateUrl: 'views/forgot-password.html',
+     //    controller: 'Forgot_PswdCtrl',
+     //    controllerAs: 'forgot_psw',
     
-      })
-      .when('/reset-password/:token', {
-        templateUrl: 'views/reset-password.html',
-        controller: 'Reset_PswdCtrl',
-        controllerAs: 'reset_psw',
+     //  })
+     //  .when('/reset-password/:token', {
+     //    templateUrl: 'views/reset-password.html',
+     //    controller: 'Reset_PswdCtrl',
+     //    controllerAs: 'reset_psw',
     
-      })
-     .when('/edit-profile', {
-        templateUrl: 'views/edit-profile.html',
-        controller: 'edit-profile_PswdCtrl',
-        controllerAs: 'edit-profile',
-        authenticate: true
-      })
+     //  })
+     // .when('/edit-profile', {
+     //    templateUrl: 'views/edit-profile.html',
+     //    controller: 'edit-profile_PswdCtrl',
+     //    controllerAs: 'edit-profile',
+     //    authenticate: true
+     //  })
       .when('/summit-faq', {
         templateUrl: 'views/summit-faq.html',
         controller: 'SummitFaqCtrl',
         controllerAs: 'summitFaq'
       })
-      .when('/workshops', {
-        templateUrl: 'views/workshops.html',
-        controller: 'WorkshopsCtrl',
-        controllerAs: 'workshops'
-      })
-      .when('/workshops/:workshopCat', {
-        templateUrl: 'views/workshop-categories.html',
-        controller: 'WorkshopCategoriesCtrl',
-        controllerAs: 'workshopCategories'
-      })
+      // .when('/workshops', {
+      //   templateUrl: 'views/workshops.html',
+      //   controller: 'WorkshopsCtrl',
+      //   controllerAs: 'workshops'
+      // })
+      // .when('/workshops/:workshopCat', {
+      //   templateUrl: 'views/workshop-categories.html',
+      //   controller: 'WorkshopCategoriesCtrl',
+      //   controllerAs: 'workshopCategories'
+      // })
       .when('/summit-speakers', {
         templateUrl: 'views/summit-speakers.html',
         controller: 'SummitSpeakersCtrl',
         controllerAs: 'summitSpeakers'
+      })
+      .when('/payment', {
+        templateUrl: 'views/payment.html',
+        controller: 'PaymentCtrl',
+        controllerAs: 'payment'
+      })
+      .when('/funzone', {
+        templateUrl: 'views/funzone.html',
+        controller: 'FunzoneCtrl',
+        controllerAs: 'funzone'
       })
       .otherwise({redirectTo: '/'})
       
